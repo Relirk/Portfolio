@@ -1,64 +1,46 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import {
   Avatar,
   Button,
-  TextField,
-  FormControlLabel,
-  Checkbox,
   Link,
   Paper,
   Box,
   Grid,
   Typography
 } from "@material-ui/core";
-import { LockOutlined as LockOutlinedIcon } from "@material-ui/icons";
 
 import MaterialUiStyles from "./styles";
 import Copyright from "../../components/Copyright";
 
 const useStyles = MaterialUiStyles;
+const profileImg =
+  "https://firebasestorage.googleapis.com/v0/b/portifoil-bcd7d.appspot.com/o/profile.png?alt=media&token=10ead545-56fd-43f2-8c2b-69121539af40";
 
 export default function Login() {
   const classes = useStyles();
+  const history = useHistory();
+
+  const handleSubmit = () => {
+    history.push("/home");
+  };
 
   return (
     <Grid container component="main" className={classes.root}>
       <Grid item xs={false} sm={4} md={7} className={classes.image} />
       <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
         <div className={classes.paper}>
-          <Avatar className={classes.avatar}>
-            <LockOutlinedIcon />
-          </Avatar>
-          <Typography component="h1" variant="h5">
-            Sign in
+          <Avatar className={classes.avatar} src={profileImg}></Avatar>
+          <Typography className={classes.title} component="h1" variant="h5">
+            OI, SOU O FRANCISCO{" "}
           </Typography>
-          <form className={classes.form} noValidate>
-            <TextField
-              variant="outlined"
-              margin="normal"
-              required
-              fullWidth
-              id="email"
-              label="Email Address"
-              name="email"
-              autoComplete="email"
-              autoFocus
-            />
-            <TextField
-              variant="outlined"
-              margin="normal"
-              required
-              fullWidth
-              name="password"
-              label="Password"
-              type="password"
-              id="password"
-              autoComplete="current-password"
-            />
-            <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
-              label="Remember me"
-            />
+          <form className={classes.form} noValidate onSubmit={handleSubmit}>
+            <Typography className={classes.description} component="p">
+              Procurando soluções e novas idéias para seu projeto? Pois bem, meu
+              objetivo é entender o seu negócio e criar soluções criativas de
+              alta qualidade que ajudem a consolidar o sucesso da sua empresa.
+            </Typography>
+
             <Button
               type="submit"
               fullWidth
@@ -66,20 +48,9 @@ export default function Login() {
               color="primary"
               className={classes.submit}
             >
-              Sign In
+              Quero saber mais
             </Button>
-            <Grid container>
-              <Grid item xs>
-                <Link href="#" variant="body2">
-                  Forgot password?
-                </Link>
-              </Grid>
-              <Grid item>
-                <Link href="#" variant="body2">
-                  {"Don't have an account? Sign Up"}
-                </Link>
-              </Grid>
-            </Grid>
+
             <Box mt={5}>
               <Copyright />
             </Box>

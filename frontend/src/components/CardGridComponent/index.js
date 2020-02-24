@@ -7,7 +7,7 @@ import {
   CardContent,
   CardMedia,
   Button,
-  Grow,
+  Zoom,
   Container
 } from "@material-ui/core";
 import MaterialUiStyles from "./styles";
@@ -17,15 +17,15 @@ const useStyles = MaterialUiStyles;
 export default function CardGridComponent({ projects }) {
   const classes = useStyles();
   const [checked, setChecked] = useState(false);
-  const [interval, setInterval] = useState(1000);
+  const [interval, setInterval] = useState(0);
 
   useEffect(() => {
     function initialLoad() {
-      let timeout = 1000;
+      let timeout = 500;
       let timeoutTimeline = [];
       for (let index = 0; index < projects.length; index++) {
         timeoutTimeline.push(timeout);
-        timeout += 1000;
+        timeout += 500;
       }
       setInterval(timeoutTimeline);
 
@@ -42,7 +42,7 @@ export default function CardGridComponent({ projects }) {
     <Container className={classes.cardGrid} maxWidth="xl">
       <Grid container spacing={4}>
         {projects.map((item, index) => (
-          <Grow
+          <Zoom
             key={index}
             in={checked}
             style={{ transformOrigin: "0 0 0" }}
@@ -87,7 +87,7 @@ export default function CardGridComponent({ projects }) {
                 </CardActions>
               </Card>
             </Grid>
-          </Grow>
+          </Zoom>
         ))}
       </Grid>
     </Container>

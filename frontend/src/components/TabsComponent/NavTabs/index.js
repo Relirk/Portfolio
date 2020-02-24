@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function NavTabs({ sites, clones, work, separate }) {
+export default function NavTabs({ work, frontend, backend, mobile }) {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -36,25 +36,25 @@ export default function NavTabs({ sites, clones, work, separate }) {
           onChange={handleChange}
           aria-label="nav tabs example"
         >
-          <LinkTab label="Clones" href="/clones" {...a11yProps(0)} />
-          <LinkTab label="Clientes" href="/work" {...a11yProps(1)} />
-          <LinkTab label="Estudo" href="/sites" {...a11yProps(2)} />
-          <LinkTab label="Genéricos" href="/separate" {...a11yProps(3)} />
+          <LinkTab label="Trabalhos" href="/work" {...a11yProps(0)} />
+          <LinkTab label="Front-end" href="/frontend" {...a11yProps(1)} />
+          <LinkTab label="Back-end" href="/backend" {...a11yProps(2)} />
+          <LinkTab label="Mobile" href="/mobile" {...a11yProps(3)} />
           {/* <LinkTab label="Apps" href="/apps" {...a11yProps(1)} /> */}
         </Tabs>
       </AppBar>
 
       <TabPanel value={value} index={0}>
-        {clones}
-      </TabPanel>
-      <TabPanel value={value} index={1}>
         {work}
       </TabPanel>
+      <TabPanel value={value} index={1}>
+        {frontend}
+      </TabPanel>
       <TabPanel value={value} index={2}>
-        {sites}
+        {backend}
       </TabPanel>
       <TabPanel value={value} index={3}>
-        {separate}
+        {mobile}
       </TabPanel>
       {/* <TabPanel value={value} index={1}></TabPanel> */}
     </div>

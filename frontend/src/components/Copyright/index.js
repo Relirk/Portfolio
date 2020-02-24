@@ -12,7 +12,7 @@ export default function Copyright() {
       <Typography variant="body2" color="textSecondary" align="center">
         {"Copyright © "}
         <Link color="inherit" href="https://franciscoolvera.com/">
-          Francisco Olvera - Portifoil
+          Francisco Olvera - Portfolio
         </Link>{" "}
         {new Date().getFullYear()}
         {"."}

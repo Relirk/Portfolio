@@ -2,8 +2,13 @@ import React from "react";
 
 import NavTabs from "./NavTabs";
 
-export default function TabsComponent({ sites, clones, work, separate }) {
+export default function TabsComponent({ work, frontend, backend, mobile }) {
   return (
-    <NavTabs sites={sites} clones={clones} work={work} separate={separate} />
+    <NavTabs
+      work={work}
+      frontend={frontend}
+      backend={backend}
+      mobile={mobile}
+    />
   );
 }

@@ -12,10 +12,10 @@ const useStyles = MaterialUiStyles;
 
 export default function Home() {
   const classes = useStyles();
-  const [gridSites, setGridSites] = useState("");
-  const [gridClones, setGridClones] = useState("");
-  const [gridWork, setGridWork] = useState("");
-  const [gridSeparate, setGridSeparate] = useState("");
+  const [gridWork, setGridWork] = useState([]);
+  const [gridFrontend, setGridFrontend] = useState([]);
+  const [gridBackend, setGridBackend] = useState([]);
+  const [gridMobile, setGridMobile] = useState([]);
 
   useEffect(() => {
     async function initialLoad() {
@@ -29,11 +29,11 @@ export default function Home() {
         object[key] = array;
       }
 
-      const { sites, clones, work, separate } = object;
-      setGridSites(<CardGridComponent projects={sites} />);
-      setGridClones(<CardGridComponent projects={clones} />);
+      const { work, frontend, backend, mobile } = object;
       setGridWork(<CardGridComponent projects={work} />);
-      setGridSeparate(<CardGridComponent projects={separate} />);
+      setGridFrontend(<CardGridComponent projects={frontend} />);
+      setGridBackend(<CardGridComponent projects={backend} />);
+      setGridMobile(<CardGridComponent projects={mobile} />);
     }
 
     initialLoad();
@@ -45,10 +45,10 @@ export default function Home() {
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
         <TabsComponent
-          sites={gridSites}
-          clones={gridClones}
           work={gridWork}
-          separate={gridSeparate}
+          frontend={gridFrontend}
+          backend={gridBackend}
+          mobile={gridMobile}
         />
         <Box pt={4}>
           <Copyright />
