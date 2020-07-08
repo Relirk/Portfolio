@@ -23,7 +23,7 @@ export default function SecondaryListItems() {
         }}
       >
         <ListItemIcon>
-          <AssignmentIcon />
+          <AssignmentIcon style={{ color: "#ffb86c" }} />
         </ListItemIcon>
         <ListItemText primary="Github" />
       </ListItem>
@@ -34,7 +34,7 @@ export default function SecondaryListItems() {
         }}
       >
         <ListItemIcon>
-          <ArrowBackIcon />
+          <ArrowBackIcon color="secondary" />
         </ListItemIcon>
         <ListItemText primary="Voltar para o início" />
       </ListItem>

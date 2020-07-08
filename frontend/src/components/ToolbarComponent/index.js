@@ -9,6 +9,7 @@ import {
   Divider,
   IconButton,
   Badge,
+  Avatar,
 } from "@material-ui/core";
 import {
   Menu as MenuIcon,
@@ -22,6 +23,9 @@ import SecondaryListItems from "../secondaryListItems";
 import MaterialUiStyles from "./styles";
 const useStyles = MaterialUiStyles;
 
+const profileImg =
+  "https://firebasestorage.googleapis.com/v0/b/portifoil-bcd7d.appspot.com/o/profile.png?alt=media&token=10ead545-56fd-43f2-8c2b-69121539af40";
+
 export default function ToolbarComponent() {
   const classes = useStyles();
   const location = useLocation();
@@ -29,20 +33,27 @@ export default function ToolbarComponent() {
   const [pageName, setPageName] = useState("");
 
   useEffect(() => {
-    async function verifyRoutePath() {
+    function setStartOpen() {
+      if (window.innerWidth <= 760) {
+        setOpen(false);
+      }
+    }
+
+    function verifyRoutePath() {
       console.log();
       switch (location.pathname) {
         case "/about":
-          setPageName("Conheça");
+          setPageName("Conheça um pouquinho sobre mim");
           break;
         case "/work":
-          setPageName("Projetos");
+          setPageName("Alguns projetos interessantes");
           break;
         default:
           break;
       }
     }
 
+    setStartOpen();
     verifyRoutePath();
   }, [location]);
 
@@ -97,10 +108,20 @@ export default function ToolbarComponent() {
         }}
         open={open}
       >
-        <div className={classes.toolbarIcon}>
-          <IconButton onClick={handleDrawerClose}>
-            <ChevronLeftIcon />
-          </IconButton>
+        <div className={classes.header}>
+          <Avatar
+            className={classes.avatar}
+            alt="Remy Sharp"
+            src={profileImg}
+          />
+          <Typography component="h1" variant="h6" color="inherit" noWrap>
+            Francisco
+          </Typography>
+          <div className={classes.toolbarIcon}>
+            <IconButton onClick={handleDrawerClose}>
+              <ChevronLeftIcon color="secondary" />
+            </IconButton>
+          </div>
         </div>
 
         <Divider />

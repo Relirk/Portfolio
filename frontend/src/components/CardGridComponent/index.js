@@ -8,10 +8,10 @@ import {
   CardMedia,
   Button,
   Zoom,
-  Container
+  Container,
 } from "@material-ui/core";
-import MaterialUiStyles from "./styles";
 
+import MaterialUiStyles from "./styles";
 const useStyles = MaterialUiStyles;
 
 export default function CardGridComponent({ projects }) {
@@ -35,7 +35,7 @@ export default function CardGridComponent({ projects }) {
   }, [projects.length]);
 
   const handleChange = () => {
-    setChecked(prev => !prev);
+    setChecked((prev) => !prev);
   };
 
   return (
@@ -67,7 +67,7 @@ export default function CardGridComponent({ projects }) {
                   {item.url && (
                     <Button
                       size="small"
-                      color="primary"
+                      color="secondary"
                       href={item.url}
                       target="_blank"
                     >
@@ -77,7 +77,7 @@ export default function CardGridComponent({ projects }) {
                   {item.github && (
                     <Button
                       size="small"
-                      color="primary"
+                      color="secondary"
                       href={item.github}
                       target="_blank"
                     >

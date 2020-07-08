@@ -1,16 +1,10 @@
 import React, { useState } from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import { AppBar, Tabs } from "@material-ui/core";
-
 import TabPanel from "../TabPanel";
 import LinkTab from "../LinkTab";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    backgroundColor: theme.palette.background.paper,
-  },
-}));
+import MaterialUiStyles from "./styles";
+const useStyles = MaterialUiStyles;
 
 export default function NavTabs({ work, frontend, backend, mobile }) {
   const classes = useStyles();

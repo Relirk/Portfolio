@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Box } from "@material-ui/core";
-
 import api from "../../services/api";
 import MaterialUiStyles from "./styles";
-import Copyright from "../../components/Copyright";
 import ToolbarComponent from "../../components/ToolbarComponent";
 import CardGridComponent from "../../components/CardGridComponent";
 import TabsComponent from "../../components/TabsComponent";
@@ -50,9 +47,6 @@ export default function Home() {
           backend={gridBackend}
           mobile={gridMobile}
         />
-        <Box pt={4}>
-          <Copyright />
-        </Box>
       </main>
     </div>
   );
