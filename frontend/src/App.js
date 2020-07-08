@@ -21,8 +21,8 @@ function App() {
         <MuiThemeProvider theme={theme}>
           <Switch>
             <Route exact path="/" component={Login} />
-            <Route path="/home" component={Home} />
-            <Route path="/dashboard" component={Dashboard} />
+            <Route path="/about" component={Dashboard} />
+            <Route path="/work" component={Home} />
             <Route path="/error" component={() => <h1>404</h1>} />
           </Switch>
         </MuiThemeProvider>

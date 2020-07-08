@@ -3,11 +3,10 @@ import { useHistory } from "react-router-dom";
 import {
   Avatar,
   Button,
-  Link,
   Paper,
   Box,
   Grid,
-  Typography
+  Typography,
 } from "@material-ui/core";
 
 import MaterialUiStyles from "./styles";
@@ -22,7 +21,7 @@ export default function Login() {
   const history = useHistory();
 
   const handleSubmit = () => {
-    history.push("/home");
+    history.push("/about");
   };
 
   return (

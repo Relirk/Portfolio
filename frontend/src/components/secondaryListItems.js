@@ -1,42 +1,42 @@
-import React, { useState } from "react";
+import React from "react";
+import { useHistory } from "react-router-dom";
+import { ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
 import {
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-  ListSubheader
-} from "@material-ui/core";
-import {
-  Code as CodeIcon,
-  StarBorder as StarBorderIcon,
-  Assignment as AssignmentIcon
-  // Dashboard as DashboardIcon,
-  // ShoppingCart as ShoppingCartIcon,
-  // People as PeopleIcon,
-  // BarChart as BarChartIcon,
-  // Layers as LayersIcon
+  Assignment as AssignmentIcon,
+  ArrowBack as ArrowBackIcon,
 } from "@material-ui/icons";
 
-export function SecondaryListItems() {
+export default function SecondaryListItems() {
+  const history = useHistory();
+
+  const handleClick = (route) => {
+    history.push(`/${route}`);
+  };
+
   return (
     <div>
-      <ListSubheader inset>Social</ListSubheader>
-      <ListItem button>
-        <ListItemIcon>
-          <AssignmentIcon />
-        </ListItemIcon>
-        <ListItemText primary="LinkedIn" />
-      </ListItem>
-      <ListItem button>
-        <ListItemIcon>
-          <AssignmentIcon />
-        </ListItemIcon>
-        <ListItemText primary="Instagram" />
-      </ListItem>
-      <ListItem button>
+      {/* <ListSubheader inset>Social</ListSubheader> */}
+      <ListItem
+        button
+        onClick={() => {
+          handleClick("about");
+        }}
+      >
         <ListItemIcon>
           <AssignmentIcon />
         </ListItemIcon>
         <ListItemText primary="Github" />
+      </ListItem>
+      <ListItem
+        button
+        onClick={() => {
+          handleClick("");
+        }}
+      >
+        <ListItemIcon>
+          <ArrowBackIcon />
+        </ListItemIcon>
+        <ListItemText primary="Voltar para o início" />
       </ListItem>
     </div>
   );

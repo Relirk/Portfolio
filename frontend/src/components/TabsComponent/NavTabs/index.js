@@ -1,20 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { AppBar, Tabs } from "@material-ui/core";
 
 import TabPanel from "../TabPanel";
 import LinkTab from "../LinkTab";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    backgroundColor: theme.palette.background.paper
-  }
+    backgroundColor: theme.palette.background.paper,
+  },
 }));
 
 export default function NavTabs({ work, frontend, backend, mobile }) {
   const classes = useStyles();
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -23,7 +23,7 @@ export default function NavTabs({ work, frontend, backend, mobile }) {
   function a11yProps(index) {
     return {
       id: `nav-tab-${index}`,
-      "aria-controls": `nav-tabpanel-${index}`
+      "aria-controls": `nav-tabpanel-${index}`,
     };
   }
 

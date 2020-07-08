@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import clsx from "clsx";
-
 import {
   Drawer,
   AppBar,
@@ -8,26 +8,48 @@ import {
   Typography,
   Divider,
   IconButton,
-  Badge
+  Badge,
 } from "@material-ui/core";
 import {
   Menu as MenuIcon,
   ChevronLeft as ChevronLeftIcon,
-  Notifications as NotificationsIcon
+  Notifications as NotificationsIcon,
 } from "@material-ui/icons";
 
 import MainListItems from "../mainListItems";
+import SecondaryListItems from "../secondaryListItems";
 
 import MaterialUiStyles from "./styles";
 const useStyles = MaterialUiStyles;
 
 export default function ToolbarComponent() {
   const classes = useStyles();
-  const [open, setOpen] = useState(false);
+  const location = useLocation();
+  const [open, setOpen] = useState(true);
+  const [pageName, setPageName] = useState("");
+
+  useEffect(() => {
+    async function verifyRoutePath() {
+      console.log();
+      switch (location.pathname) {
+        case "/about":
+          setPageName("Conheça");
+          break;
+        case "/work":
+          setPageName("Projetos");
+          break;
+        default:
+          break;
+      }
+    }
+
+    verifyRoutePath();
+  }, [location]);
 
   const handleDrawerOpen = () => {
     setOpen(true);
   };
+
   const handleDrawerClose = () => {
     setOpen(false);
   };
@@ -58,7 +80,7 @@ export default function ToolbarComponent() {
             noWrap
             className={classes.title}
           >
-            Projetos
+            {pageName}
           </Typography>
           <IconButton color="inherit">
             <Badge badgeContent={4} color="secondary">
@@ -71,7 +93,7 @@ export default function ToolbarComponent() {
       <Drawer
         variant="permanent"
         classes={{
-          paper: clsx(classes.drawerPaper, !open && classes.drawerPaperClose)
+          paper: clsx(classes.drawerPaper, !open && classes.drawerPaperClose),
         }}
         open={open}
       >
@@ -84,7 +106,7 @@ export default function ToolbarComponent() {
         <Divider />
         <MainListItems />
         <Divider />
-        {/* <List>{secondaryListItems}</List> */}
+        <SecondaryListItems />
       </Drawer>
     </>
   );
