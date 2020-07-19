@@ -78,11 +78,10 @@ export default function NavTabs({ work, frontend, backend, mobile }) {
       <TabPanel value={value} index={3}>
         <Slide direction="right" in={true} mountOnEnter unmountOnExit>
           <div>
-            <h1 className={classes.title}>
-              Alguns projetos de clientes em produção
-            </h1>
+            <h1 className={classes.title}>Projetos Mobile</h1>
             <p className={classes.subtitle}>
-              klasdk;lda;lkdsskl;ak;ldakl;sdkakjldasjkds
+              Trabalhos, desafios e estudos com foco no estudo e implementação
+              de aplicações híbridas e nativas para dispositívos móveis.
             </p>
           </div>
         </Slide>
