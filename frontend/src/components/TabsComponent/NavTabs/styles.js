@@ -5,6 +5,15 @@ const MaterialUiStyles = makeStyles((theme) => ({
     flexGrow: 1,
     backgroundColor: theme.palette.background.dracula,
   },
+  title: {
+    color: theme.palette.primary.contrastText,
+  },
+  subtitle: {
+    whiteSpace: "nowrap",
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+    color: theme.palette.primary.contrastText,
+  },
 }));
 
 export default MaterialUiStyles;

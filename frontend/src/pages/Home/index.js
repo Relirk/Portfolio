@@ -27,6 +27,7 @@ export default function Home() {
       }
 
       const { work, frontend, backend, mobile } = object;
+      console.log(object);
       setGridWork(<CardGridComponent projects={work} />);
       setGridFrontend(<CardGridComponent projects={frontend} />);
       setGridBackend(<CardGridComponent projects={backend} />);
