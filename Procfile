@@ -1,1 +1,1 @@
-web: sh -c 'cd backend && yarn start'
+web: cd backend && yarn start
