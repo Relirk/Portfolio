@@ -1,1 +1,1 @@
-web: pwd && ls && cd backend && yarn start
+web: cd backend && yarn start
