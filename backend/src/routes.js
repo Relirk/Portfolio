@@ -7,7 +7,7 @@ const routes = new Router();
 
 // API
 routes.get('/', async (req, res) => {
-  return res.json({ api: 'NodeJS Express Firebase API', status: 'up' });
+  return res.json({ api: 'Francisco Portfólio API', status: 'up' });
 });
 
 // routes.use(authMiddleware);
