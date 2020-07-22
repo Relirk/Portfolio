@@ -1,8 +1,1 @@
-{
-  "name": "Portfolio",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:Relirk/Portfolio.git",
-  "author": "Relirk <olverajunior2014@gmail.com>",
-  "license": "MIT"
-}
+./backend/package.json
