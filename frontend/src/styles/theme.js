@@ -17,6 +17,7 @@ const MaterialUiTheme = {
       secondary: "#bd93f9",
       third: "#f1fa8c",
       fourth: "#50fa7b",
+      fifth: "#7159c1",
       dracula: "#2e303e",
     },
   },
