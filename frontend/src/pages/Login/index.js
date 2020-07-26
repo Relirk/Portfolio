@@ -75,19 +75,6 @@ export default function Login() {
               </form>
             </div>
             <Wave></Wave>
-            {/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(
-              window.navigator.userAgent
-            ) && (
-              <div
-                Style="    height: 7em;
-              width: 100%;
-              position: absolute;
-              bottom: 0;
-              background-color: #282a36;"
-              >
-                teste
-              </div>
-            )}
           </Grid>
         </Zoom>
       </Grid>

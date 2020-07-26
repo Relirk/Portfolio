@@ -31,7 +31,7 @@ const afterAddingScript = insertContent(
 );
 
 // updates the index.html file
-FS.writeFile("./build/index.html", afterAddingScript, "utf8", err => {
+FS.writeFile("./build/index.html", afterAddingScript, "utf8", (err) => {
   if (err) {
     throw err;
   }

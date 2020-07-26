@@ -1,3 +1,13 @@
+## Cordova build
+
+### Browser
+
+- Lembrar de remover o bloco abaixo de dentro do public/index.html
+
+```html
+<base href="/android_asset/www/" />
+```
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
