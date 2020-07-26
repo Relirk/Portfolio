@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <!-- <base href="/android_asset/www/" /> -->
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta
       name="viewport"
@@ -26,15 +27,12 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
 
-    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
-    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
-
-    <!-- Add the standard Performance Monitoring library -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <!-- Libraries -->
     <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-performance.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
 
     <script>
-      // TODO: Replace the following with your app's Firebase project configuration
       const firebaseConfig = {
         apiKey: "AIzaSyC4PPUygV2bmkambNkH4Bm0SoY--VTtxZI",
         authDomain: "portifoil-bcd7d.firebaseapp.com",
@@ -44,12 +42,11 @@
         messagingSenderId: "467306918726",
         appId: "1:467306918726:web:de4974ba502368cc23eb47",
       };
-
-      // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
-
       // Initialize Performance Monitoring and get a reference to the service
       const perf = firebase.performance();
+      // Initialize Google Analytics
+      firebase.analytics();
     </script>
   </body>
 </html>
