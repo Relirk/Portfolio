@@ -5,7 +5,7 @@ const MaterialUiStyles = makeStyles((theme) => ({
     position: "absolute",
     left: 0,
     right: 0,
-    bottom: "160px",
+    bottom: 0,
   },
   wave1: { animation: `$moveWave1 3s ease-in-out infinite alternate` },
   "@keyframes moveWave1": {

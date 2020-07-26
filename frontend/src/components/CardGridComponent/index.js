@@ -9,7 +9,12 @@ import {
   Button,
   Zoom,
   Container,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+  Link,
 } from "@material-ui/core";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 import MaterialUiStyles from "./styles";
 const useStyles = MaterialUiStyles;
@@ -62,7 +67,38 @@ export default function CardGridComponent({ projects }) {
                   </Typography>
                   <Typography>{item.description}</Typography>
                 </CardContent>
-
+                {item.rights && (
+                  <Accordion className={classes.rights}>
+                    <AccordionSummary
+                      expandIcon={
+                        <ExpandMoreIcon className={classes.rightsIcon} />
+                      }
+                      aria-controls="panel1a-content"
+                      id="panel1a-header"
+                    >
+                      <Typography className={classes.rightsHeading}>
+                        Proprietários do projeto
+                      </Typography>
+                    </AccordionSummary>
+                    <AccordionDetails className={classes.rightsDetails}>
+                      {item.rights.map((right, index) => (
+                        <Typography
+                          id={right.cnpj}
+                          key={right.cnpj}
+                          className={classes.rightsItem}
+                        >
+                          <Link
+                            className={classes.rightsLink}
+                            href={right.url}
+                            target="_blank"
+                          >
+                            {right.name}
+                          </Link>
+                        </Typography>
+                      ))}
+                    </AccordionDetails>
+                  </Accordion>
+                )}
                 <CardActions>
                   {item.url && (
                     <Button
@@ -84,6 +120,37 @@ export default function CardGridComponent({ projects }) {
                       Github
                     </Button>
                   )}
+                  {item.googlePlay && (
+                    <Button
+                      size="small"
+                      color="secondary"
+                      href={item.googlePlay}
+                      target="_blank"
+                    >
+                      Google Play
+                    </Button>
+                  )}
+                  {item.appStore && (
+                    <Button
+                      size="small"
+                      color="secondary"
+                      href={item.appStore}
+                      target="_blank"
+                    >
+                      App Store
+                    </Button>
+                  )}
+
+                  {!item.url &&
+                    !item.github &&
+                    !item.googlePlay &&
+                    !item.appStore && (
+                      <div className={classes.noLinkContainer}>
+                        <Typography className={classes.noLink}>
+                          Link de acesso indisponível
+                        </Typography>
+                      </div>
+                    )}
                 </CardActions>
               </Card>
             </Grid>

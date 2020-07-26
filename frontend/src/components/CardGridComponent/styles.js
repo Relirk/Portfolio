@@ -18,6 +18,42 @@ const MaterialUiStyles = makeStyles((theme) => ({
   cardContent: {
     flexGrow: 1,
   },
+  rights: {
+    marginTop: "10px",
+    backgroundColor: "#282a36",
+    padding: "2px",
+    color: "white",
+  },
+  rightsIcon: {
+    color: theme.palette.background.secondary,
+  },
+  rightsHeading: {
+    color: "white",
+  },
+  rightsDetails: {
+    display: "flex",
+    flexDirection: "column",
+  },
+  rightsItem: {
+    marginBottom: "10px",
+    fontSize: "14px",
+    whiteSpace: "nowrap",
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+  },
+  rightsLink: {
+    color: "white",
+    cursor: "pointer",
+    margin: "5px",
+  },
+  noLinkContainer: {
+    width: "100%",
+    textAlign: "center",
+    margin: "3px",
+  },
+  noLink: {
+    color: "red",
+  },
 }));
 
 export default MaterialUiStyles;
