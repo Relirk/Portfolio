@@ -1,16 +1,11 @@
 echo
 echo "$(tput setaf 6)Exiting the scripts directory$(tput sgr0)"
-echo
-cd ..
+cd ../..
 
-echo
 echo "$(tput setaf 6)Removing build / and www / directories$(tput sgr0)"
-echo
 rm -rf ./build ./www
 
-echo
 echo "$(tput setaf 6)Starting React build$(tput sgr0)"
-echo
 yarn build 
 
 echo
