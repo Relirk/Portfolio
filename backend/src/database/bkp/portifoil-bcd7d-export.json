@@ -31,6 +31,14 @@
         "url": "https://rlk-upload-project-backend.herokuapp.com/"
       },
       {
+        "description": "Dashboard do Parse alimentada por uma extensão do MongoDB e hospedada pelo Heroku",
+        "github": "https://github.com/Relirk/relirk-parse-dashboard",
+        "id": "parse8560492ef96f860b965341d0c9698",
+        "image": "https://firebasestorage.googleapis.com/v0/b/portifoil-bcd7d.appspot.com/o/projects-screens%2Frelirk-parse-dashboard.png?alt=media&token=571055c0-89ef-4252-bff8-485293c78861",
+        "title": "Parse Dashboard",
+        "url": "https://relirk-parse-dashboard.herokuapp.com/login"
+      },
+      {
         "description": "Aplicação fake do Instagram, utilizando ReactJS, Amazon S3(já desativado) para upload de fotos e deploy pelo Heroku",
         "github": "https://github.com/Relirk/instagram-clone-backend",
         "id": "fgr8560492ef96f860b965341d0c9698",

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <!-- <base href="/android_asset/www/" /> -->
+    <base href="/android_asset/www/" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta
       name="viewport"
@@ -18,10 +18,24 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
     />
-
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
     <title>Francisco Olvera</title>
+
+    <!-- Global site tag (gtag.js) - Google Ads: 830573893 -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-830573893"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-830573893");
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -41,6 +55,7 @@
         storageBucket: "portifoil-bcd7d.appspot.com",
         messagingSenderId: "467306918726",
         appId: "1:467306918726:web:de4974ba502368cc23eb47",
+        measurementId: "G-26KXQNDSRZ",
       };
       firebase.initializeApp(firebaseConfig);
       // Initialize Performance Monitoring and get a reference to the service

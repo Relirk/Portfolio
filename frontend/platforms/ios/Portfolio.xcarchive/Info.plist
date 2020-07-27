@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ApplicationProperties</key>
+	<dict>
+		<key>ApplicationPath</key>
+		<string>Applications/Portfolio.app</string>
+		<key>CFBundleIdentifier</key>
+		<string>com.relirk.portfolio</string>
+		<key>CFBundleShortVersionString</key>
+		<string>1.0.0</string>
+		<key>CFBundleVersion</key>
+		<string>1.0.0</string>
+		<key>SigningIdentity</key>
+		<string>Apple Development: francisco.olvera@finanzero.com.br (7WMQAXT4H4)</string>
+		<key>Team</key>
+		<string>9NGLPL8DTN</string>
+	</dict>
+	<key>ArchiveVersion</key>
+	<integer>2</integer>
+	<key>CreationDate</key>
+	<date>2020-07-27T01:02:03Z</date>
+	<key>Name</key>
+	<string>Portfolio</string>
+	<key>SchemeName</key>
+	<string>Portfolio</string>
+</dict>
+</plist>
