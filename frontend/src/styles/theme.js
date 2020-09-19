@@ -1,24 +1,21 @@
 const MaterialUiTheme = {
   palette: {
     primary: {
-      light: "#282a36",
-      main: "#282a36",
-      dark: "#282b31",
-      contrastText: "#f8f8f2",
+      main: '#1d1d1d',
     },
     secondary: {
-      light: "#bd93f9",
-      main: "#bd93f9",
-      dark: "#282b31",
-      contrastText: "#f8f8f2",
+      main: '#fffff3',
+    },
+    text: {
+      clear: '#fafafa',
+      light: '#585858',
+      medium: '#848589',
+      dark: '#212121',
     },
     background: {
-      primary: "#282a36",
-      secondary: "#bd93f9",
-      third: "#f1fa8c",
-      fourth: "#50fa7b",
-      fifth: "#7159c1",
-      dracula: "#2e303e",
+      light: '#FFFFFF',
+      medium: '#2b2b2b',
+      dark: '#1d1d1d',
     },
   },
 };

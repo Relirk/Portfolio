@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 import {
   Typography,
   Grid,
@@ -13,10 +13,10 @@ import {
   AccordionSummary,
   AccordionDetails,
   Link,
-} from "@material-ui/core";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+} from '@material-ui/core';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-import MaterialUiStyles from "./styles";
+import MaterialUiStyles from './styles';
 const useStyles = MaterialUiStyles;
 
 export default function CardGridComponent({ projects }) {
@@ -40,7 +40,7 @@ export default function CardGridComponent({ projects }) {
   }, [projects.length]);
 
   const handleChange = () => {
-    setChecked((prev) => !prev);
+    setChecked(prev => !prev);
   };
 
   return (
@@ -50,7 +50,7 @@ export default function CardGridComponent({ projects }) {
           <Zoom
             key={index}
             in={checked}
-            style={{ transformOrigin: "0 0 0" }}
+            style={{ transformOrigin: '0 0 0' }}
             {...(checked ? { timeout: interval[index] } : {})}
           >
             <Grid item key={item} xs={12} sm={6} md={4}>
@@ -62,10 +62,17 @@ export default function CardGridComponent({ projects }) {
                 />
 
                 <CardContent className={classes.cardContent}>
-                  <Typography gutterBottom variant="h5" component="h2">
+                  <Typography
+                    className={classes.cardTitle}
+                    gutterBottom
+                    variant="h5"
+                    component="h2"
+                  >
                     {item.title}
                   </Typography>
-                  <Typography>{item.description}</Typography>
+                  <Typography className={classes.cardDescription}>
+                    {item.description}
+                  </Typography>
                 </CardContent>
                 {item.rights && (
                   <Accordion className={classes.rights}>
@@ -103,9 +110,9 @@ export default function CardGridComponent({ projects }) {
                   {item.url && (
                     <Button
                       size="small"
-                      color="secondary"
                       href={item.url}
                       target="_blank"
+                      style={{ color: '#ffffff' }}
                     >
                       Visualizar
                     </Button>
@@ -113,9 +120,9 @@ export default function CardGridComponent({ projects }) {
                   {item.github && (
                     <Button
                       size="small"
-                      color="secondary"
                       href={item.github}
                       target="_blank"
+                      style={{ color: '#ffffff' }}
                     >
                       Github
                     </Button>
@@ -123,9 +130,9 @@ export default function CardGridComponent({ projects }) {
                   {item.googlePlay && (
                     <Button
                       size="small"
-                      color="secondary"
                       href={item.googlePlay}
                       target="_blank"
+                      style={{ color: '#3dd382' }}
                     >
                       Google Play
                     </Button>
@@ -133,9 +140,9 @@ export default function CardGridComponent({ projects }) {
                   {item.appStore && (
                     <Button
                       size="small"
-                      color="secondary"
                       href={item.appStore}
                       target="_blank"
+                      style={{ color: '#1a75eb' }}
                     >
                       App Store
                     </Button>

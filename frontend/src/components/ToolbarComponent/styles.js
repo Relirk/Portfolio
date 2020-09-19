@@ -1,12 +1,12 @@
-import { makeStyles } from "@material-ui/core/styles/index";
+import { makeStyles } from '@material-ui/core/styles/index';
 
 const drawerWidth = 240;
 
-const MaterialUiStyles = makeStyles((theme) => ({
+const MaterialUiStyles = makeStyles(theme => ({
   appBar: {
     backgroundColor: theme.palette.background.primary,
     zIndex: theme.zIndex.drawer + 1,
-    transition: theme.transitions.create(["width", "margin"], {
+    transition: theme.transitions.create(['width', 'margin'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
@@ -15,7 +15,7 @@ const MaterialUiStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.primary,
     marginLeft: drawerWidth,
     width: `calc(100% - ${drawerWidth}px)`,
-    transition: theme.transitions.create(["width", "margin"], {
+    transition: theme.transitions.create(['width', 'margin'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
     }),
@@ -27,37 +27,37 @@ const MaterialUiStyles = makeStyles((theme) => ({
     marginRight: 36,
   },
   menuButtonHidden: {
-    display: "none",
+    display: 'none',
   },
   title: {
     flexGrow: 1,
   },
   drawerPaper: {
     backgroundColor: theme.palette.primary.main,
-    color: theme.palette.primary.contrastText,
-    position: "relative",
-    whiteSpace: "nowrap",
+    color: theme.palette.text.clear,
+    position: 'relative',
+    whiteSpace: 'nowrap',
     width: drawerWidth,
-    transition: theme.transitions.create("width", {
+    transition: theme.transitions.create('width', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
     }),
   },
   drawerPaperClose: {
-    overflowX: "hidden",
-    transition: theme.transitions.create("width", {
+    overflowX: 'hidden',
+    transition: theme.transitions.create('width', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
     width: theme.spacing(7),
-    [theme.breakpoints.up("sm")]: {
+    [theme.breakpoints.up('sm')]: {
       width: theme.spacing(9),
     },
   },
   header: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
   },
   avatar: {
     marginLeft: 15,
@@ -65,10 +65,10 @@ const MaterialUiStyles = makeStyles((theme) => ({
     height: theme.spacing(7),
   },
   toolbarIcon: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "flex-end",
-    padding: "0 8px",
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    padding: '0 8px',
     ...theme.mixins.toolbar,
   },
 }));

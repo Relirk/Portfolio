@@ -1,58 +1,63 @@
-import { makeStyles } from "@material-ui/core/styles/index";
+import { makeStyles } from '@material-ui/core/styles/index';
 
-const MaterialUiStyles = makeStyles((theme) => ({
+const MaterialUiStyles = makeStyles(theme => ({
   cardGrid: {
     paddingTop: theme.spacing(4),
     paddingBottom: theme.spacing(8),
   },
   card: {
-    height: "100%",
-    display: "flex",
-    flexDirection: "column",
-    backgroundColor: "#44475a",
-    color: "#f8f8f2",
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    backgroundColor: theme.palette.background.medium,
   },
   cardMedia: {
-    paddingTop: "56.25%", // 16:9
+    paddingTop: '56.25%', // 16:9
   },
   cardContent: {
     flexGrow: 1,
   },
+  cardTitle: {
+    color: theme.palette.text.clear,
+  },
+  cardDescription: {
+    color: theme.palette.text.medium,
+  },
   rights: {
-    marginTop: "10px",
-    backgroundColor: "#282a36",
-    padding: "2px",
-    color: "white",
+    marginTop: 10,
+    backgroundColor: theme.palette.background.dark,
+    padding: 2,
+    color: theme.palette.text.medium,
   },
   rightsIcon: {
-    color: theme.palette.background.secondary,
+    color: theme.palette.text.clear,
   },
   rightsHeading: {
-    color: "white",
+    color: theme.palette.text.medium,
   },
   rightsDetails: {
-    display: "flex",
-    flexDirection: "column",
+    display: 'flex',
+    flexDirection: 'column',
   },
   rightsItem: {
-    marginBottom: "10px",
-    fontSize: "14px",
-    whiteSpace: "nowrap",
-    overflow: "hidden",
-    textOverflow: "ellipsis",
+    marginBottom: 10,
+    fontSize: 14,
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
   },
   rightsLink: {
-    color: "white",
-    cursor: "pointer",
-    margin: "5px",
+    color: theme.palette.text.clear,
+    cursor: 'pointer',
+    margin: 5,
   },
   noLinkContainer: {
-    width: "100%",
-    textAlign: "center",
-    margin: "3px",
+    width: '100%',
+    textAlign: 'center',
+    margin: 3,
   },
   noLink: {
-    color: "red",
+    color: '#fa4003',
   },
 }));
 

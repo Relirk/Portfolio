@@ -1,10 +1,10 @@
-import React from "react";
-import { useHistory } from "react-router-dom";
-import { ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
+import React from 'react';
+import { useHistory } from 'react-router-dom';
+import { ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 import {
   Code as CodeIcon,
   StarBorder as StarBorderIcon,
-} from "@material-ui/icons";
+} from '@material-ui/icons';
 
 export default function MainListItems() {
   const history = useHistory();
@@ -17,22 +17,19 @@ export default function MainListItems() {
     <div>
       <ListItem
         button
-        onClick={(event) => handleListItemClick(event, 1, "about")}
+        onClick={event => handleListItemClick(event, 1, 'about')}
       >
         <ListItemIcon>
-          <StarBorderIcon style={{ color: "#f1fa8c" }} />
+          <StarBorderIcon style={{ color: '#f1fa8c' }} />
         </ListItemIcon>
-        <ListItemText primary="Conheça" />
+        <ListItemText primary="About" />
       </ListItem>
 
-      <ListItem
-        button
-        onClick={(event) => handleListItemClick(event, 0, "work")}
-      >
+      <ListItem button onClick={event => handleListItemClick(event, 0, 'work')}>
         <ListItemIcon>
-          <CodeIcon style={{ color: "#50fa7b" }} />
+          <CodeIcon style={{ color: '#50fa7b' }} />
         </ListItemIcon>
-        <ListItemText primary="Projetos" />
+        <ListItemText primary="Projects" />
       </ListItem>
     </div>
   );

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import clsx from "clsx";
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import clsx from 'clsx';
 import {
   Drawer,
   AppBar,
@@ -10,27 +10,27 @@ import {
   IconButton,
   Badge,
   Avatar,
-} from "@material-ui/core";
+} from '@material-ui/core';
 import {
   Menu as MenuIcon,
   ChevronLeft as ChevronLeftIcon,
   Notifications as NotificationsIcon,
-} from "@material-ui/icons";
+} from '@material-ui/icons';
 
-import MainListItems from "../mainListItems";
-import SecondaryListItems from "../secondaryListItems";
+import MainListItems from '../mainListItems';
+import SecondaryListItems from '../secondaryListItems';
 
-import MaterialUiStyles from "./styles";
+import MaterialUiStyles from './styles';
 const useStyles = MaterialUiStyles;
 
 const profileImg =
-  "https://firebasestorage.googleapis.com/v0/b/portifoil-bcd7d.appspot.com/o/profile.png?alt=media&token=10ead545-56fd-43f2-8c2b-69121539af40";
+  'https://firebasestorage.googleapis.com/v0/b/portifoil-bcd7d.appspot.com/o/profile.png?alt=media&token=10ead545-56fd-43f2-8c2b-69121539af40';
 
 export default function ToolbarComponent() {
   const classes = useStyles();
   const location = useLocation();
   const [open, setOpen] = useState(true);
-  const [pageName, setPageName] = useState("");
+  const [pageName, setPageName] = useState('');
 
   useEffect(() => {
     function setStartOpen() {
@@ -42,11 +42,11 @@ export default function ToolbarComponent() {
     function verifyRoutePath() {
       console.log();
       switch (location.pathname) {
-        case "/about":
-          setPageName("Conheça um pouquinho sobre mim");
+        case '/about':
+          setPageName('About me');
           break;
-        case "/work":
-          setPageName("Alguns projetos interessantes");
+        case '/work':
+          setPageName('Projects and studies');
           break;
         default:
           break;
@@ -93,11 +93,6 @@ export default function ToolbarComponent() {
           >
             {pageName}
           </Typography>
-          <IconButton color="inherit">
-            <Badge badgeContent={4} color="secondary">
-              <NotificationsIcon />
-            </Badge>
-          </IconButton>
         </Toolbar>
       </AppBar>
 

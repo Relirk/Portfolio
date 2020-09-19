@@ -1,14 +1,14 @@
-import { makeStyles } from "@material-ui/core/styles/index";
+import { makeStyles } from '@material-ui/core/styles/index';
 
-const MaterialUiStyles = makeStyles((theme) => ({
+const MaterialUiStyles = makeStyles(theme => ({
   root: {
-    display: "flex",
-    backgroundColor: theme.palette.background.dracula,
+    display: 'flex',
+    backgroundColor: theme.palette.background.dark,
   },
   content: {
     flexGrow: 1,
-    height: "100vh",
-    overflow: "auto",
+    height: '100vh',
+    overflow: 'auto',
   },
   appBarSpacer: theme.mixins.toolbar,
 }));
