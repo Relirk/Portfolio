@@ -5,16 +5,12 @@ const MaterialUiStyles = makeStyles(theme => ({
     display: 'flex',
   },
   content: {
+    display: 'flex',
     flexGrow: 1,
+    flexDirection: 'column',
     height: '100vh',
     overflow: 'auto',
-  },
-  about: {
-    paddingTop: '20px',
-    width: '100%',
-    height: '100%',
-    flexGrow: 1,
-    backgroundColor: theme.palette.background.sixth,
+    backgroundColor: theme.palette.background.dark,
   },
   card: {
     margin: '0 20px 20px 20px',

@@ -8,13 +8,11 @@ import {
   Typography,
   Divider,
   IconButton,
-  Badge,
   Avatar,
 } from '@material-ui/core';
 import {
   Menu as MenuIcon,
   ChevronLeft as ChevronLeftIcon,
-  Notifications as NotificationsIcon,
 } from '@material-ui/icons';
 
 import MainListItems from '../mainListItems';
