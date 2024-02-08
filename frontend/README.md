@@ -1,3 +1,15 @@
+Garantir ter instalado a cli do firebase-tools para trabalhar com o hosting do site.
+
+```bash
+npm install -g firebase-tools
+```
+
+Comando de deploy
+
+```bash
+firebase deploy
+```
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
