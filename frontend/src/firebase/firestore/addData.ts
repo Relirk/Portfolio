@@ -1,7 +1,7 @@
-import firebase_app from "../config";
+import firebaseApp from "../config";
 import { getFirestore, doc, setDoc } from "firebase/firestore";
 
-const db = getFirestore(firebase_app);
+const db = getFirestore(firebaseApp);
 export default async function addData(
   colllection: string,
   id: string,
