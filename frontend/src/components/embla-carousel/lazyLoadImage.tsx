@@ -1,15 +1,11 @@
-import React, { useState, useCallback } from 'react'
+import Image from 'next/image'
+import React, { FC, useState, useCallback } from 'react'
+import type { ILazyLoadImagePropType } from './interfaces'
 import styles from './style.module.css'
 
 const PLACEHOLDER_SRC = `data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D`
 
-type PropType = {
-  imgSrc: string
-  inView: boolean
-  index: number
-}
-
-export const LazyLoadImage: React.FC<PropType> = (props) => {
+export const LazyLoadImage: FC<ILazyLoadImagePropType> = (props) => {
   const { imgSrc, inView, index } = props
   const [hasLoaded, setHasLoaded] = useState(false)
 
@@ -26,12 +22,14 @@ export const LazyLoadImage: React.FC<PropType> = (props) => {
         <div className={styles.embla__slide__number}>
           <span>{index + 1}</span>
         </div>
-        <img
-          className={`${styles.embla__slide__img} ${styles.embla__lazy_load__img}`}
+        <Image
+          className={`${styles.embla__slide__img} ${styles.embla__lazy_load__img} ${styles.embla__parallax__img}`}
           onLoad={setLoaded}
           src={inView ? imgSrc : PLACEHOLDER_SRC}
-          alt="Your alt text"
+          alt="Project preview"
           data-src={imgSrc}
+          width={500}
+          height={500}
         />
       </div>
     </div>

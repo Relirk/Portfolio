@@ -1,7 +1,6 @@
 'use client'
 import addData from "@/firebase/firestore/addData";
 import getData from "@/firebase/firestore/getData";
-import { SliderHome } from '@/components/slider/index';
 import EmblaCarousel from '@/components/embla-carousel'
 
 export default function Home() {
@@ -23,7 +22,9 @@ export default function Home() {
 
 
   return (
-    // <SliderHome />
-    <EmblaCarousel/>
+    <>
+      <EmblaCarousel/>
+      <EmblaCarousel/>
+    </>
   );
 }

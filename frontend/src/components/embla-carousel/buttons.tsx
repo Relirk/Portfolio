@@ -1,14 +1,8 @@
-import React, { PropsWithChildren, FC, DetailedHTMLProps, ButtonHTMLAttributes } from 'react'
+import React, { FC } from 'react'
+import type { IButtonsPropType } from './interfaces'
 import styles from './style.module.css'
 
-type PropType = PropsWithChildren<
-  DetailedHTMLProps<
-    ButtonHTMLAttributes<HTMLButtonElement>,
-    HTMLButtonElement
-  >
->
-
-export const DotButton: FC<PropType> = (props) => {
+export const DotButton: FC<IButtonsPropType> = (props) => {
   const { children, ...restProps } = props
 
   return (
@@ -18,7 +12,7 @@ export const DotButton: FC<PropType> = (props) => {
   )
 }
 
-export const PrevButton: FC<PropType> = (props) => {
+export const PrevButton: FC<IButtonsPropType> = (props) => {
   const { children, ...restProps } = props
 
   return (
@@ -38,7 +32,7 @@ export const PrevButton: FC<PropType> = (props) => {
   )
 }
 
-export const NextButton: FC<PropType> = (props) => {
+export const NextButton: FC<IButtonsPropType> = (props) => {
   const { children, ...restProps } = props
 
   return (

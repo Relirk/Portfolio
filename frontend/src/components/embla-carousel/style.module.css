@@ -1,8 +1,9 @@
 .embla {
   --slide-spacing: 1rem;
-  --slide-size: 80%;
-  --slide-height: 19rem;
+  --slide-size: 40%;
+  --slide-height: 18rem;
   padding: 1.6rem;
+  position: relative;
 }
 .embla__viewport {
   overflow: hidden;
@@ -23,7 +24,7 @@
   display: block;
   height: var(--slide-height);
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 .embla__slide__number {
   width: 4.6rem;
@@ -152,11 +153,6 @@
   margin: 0;
 }
 .embla__dots {
-  z-index: 1;
-  bottom: 1.6rem;
-  position: absolute;
-  left: 0;
-  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,3 +180,34 @@
   );
 }
 /* End ArrowDotsButtons */
+
+/* Parallax */
+.embla__parallax {
+  height: 100%;
+  overflow: hidden;
+}
+.embla__parallax__layer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.embla__parallax__img {
+  max-width: none;
+  width: calc(100% + (var(--slide-spacing) * 2));
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+/* End Parallax */
+
+@media only screen and (max-width: 600px) {
+  .embla__slide {
+    flex: 0 0 100%; /* Breakpoint SM slide covers 50% of the viewport */
+  }
+
+  .embla__slide__img {
+    height: calc(var(--slide-height) - 5rem);
+  }
+
+  .embla__buttons {
+    display: none;
+  }
+}
