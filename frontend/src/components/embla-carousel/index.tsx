@@ -1,17 +1,36 @@
+'use client'
 import React, { useEffect, useState, useCallback } from 'react'
 import { flushSync } from 'react-dom'
-import { EmblaCarouselType } from 'embla-carousel'
+import { EmblaCarouselType, EmblaOptionsType } from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
+import ClassNames from 'embla-carousel-class-names'
 import { DotButton, PrevButton, NextButton } from './buttons'
 import { LazyLoadImage } from './lazyLoadImage'
 import imageByIndex from './images';
 import styles from './style.module.css'
 
-const TWEEN_FACTOR = 2.2
+const TWEEN_FACTOR = 1.5
+const {
+  embla,
+  embla__viewport,
+  embla__container,
+  embla__slide,
+  embla__slide__number,
+  embla__parallax,
+  embla__parallax__layer,
+  embla__buttons,
+  embla__dots,
+  embla__dot,
+  embla__dot__selected,
+  embla__progress,
+  embla__progress__bar,
+  carousel_title,
+  carousel_title_container} = styles;
 
 export default function EmblaCarousel() {
-  const slides = Array.from(Array(4).keys());
-  const [emblaRef, emblaApi] = useEmblaCarousel({containScroll: false, loop: false })
+  const slides = Array.from(Array(12).keys());
+  const OPTIONS: EmblaOptionsType = { containScroll: false, loop: false, dragFree: true }
+  const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS, [ClassNames()])
 
   const [slidesInView, setSlidesInView] = useState<number[]>([])
   const [prevBtnDisabled, setPrevBtnDisabled] = useState(true)
@@ -19,6 +38,7 @@ export default function EmblaCarousel() {
   const [selectedIndex, setSelectedIndex] = useState(0)
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([])
   const [tweenValues, setTweenValues] = useState<number[]>([])
+  const [scrollProgress, setScrollProgress] = useState(0)
 
   const scrollPrev = useCallback(() => {
     emblaApi && emblaApi.scrollPrev()
@@ -54,8 +74,11 @@ export default function EmblaCarousel() {
     })
   }, [])
 
-  const onScroll = useCallback(() => {
+  const onScroll = useCallback((emblaApi: EmblaCarouselType) => {
     if (!emblaApi) return
+
+    const progress = Math.max(0, Math.min(1, emblaApi.scrollProgress()))
+    setScrollProgress(progress * 100)
 
     const engine = emblaApi.internalEngine()
     const scrollProgress = emblaApi.scrollProgress()
@@ -76,18 +99,18 @@ export default function EmblaCarousel() {
       return diffToTarget * (-1 / TWEEN_FACTOR) * 100
     })
     setTweenValues(styles)
-  }, [emblaApi, setTweenValues])
+  }, [setTweenValues])
 
   useEffect(() => {
     if (!emblaApi) return
 
-    onScroll()
+    onScroll(emblaApi)
     updateSlidesInView(emblaApi)
     onInit(emblaApi)
     onSelect(emblaApi)
 
     emblaApi.on('scroll', () => {
-      flushSync(() => onScroll())
+      flushSync(() => onScroll(emblaApi))
     })
     emblaApi.on('reInit', onScroll)
     emblaApi.on('reInit', updateSlidesInView)
@@ -95,21 +118,31 @@ export default function EmblaCarousel() {
     emblaApi.on('reInit', onSelect)
     emblaApi.on('select', onSelect)
     emblaApi.on('slidesInView', updateSlidesInView)
-  }, [emblaApi, onInit, onSelect, updateSlidesInView])
+  }, [emblaApi, onInit, onScroll, onSelect, updateSlidesInView])
 
   return (
-    <div className={styles.embla}>
-      <div className={styles.embla__viewport} ref={emblaRef}>
-        <div className={styles.embla__container}>
+    <div className={embla}>
+      <div className={carousel_title_container}>
+        <h2 className={carousel_title}>Título da sessão</h2>
+        <div className={embla__progress}>
+          <div
+            className={embla__progress__bar}
+            style={{ transform: `translate3d(${scrollProgress}%,0px,0px)` }}
+          />
+        </div>
+      </div>
+
+      <div className={embla__viewport} ref={emblaRef}>
+        <div className={embla__container}>
           {slides.map((index) => (
-            <div className={styles.embla__slide} key={index}>
-              <div className={styles.embla__slide__number}>
+            <div className={embla__slide} key={index}>
+              <div className={embla__slide__number}>
                 <span>{index + 1}</span>
               </div>
 
-              <div className={styles.embla__parallax}>
+              <div className={embla__parallax}>
                 <div 
-                  className={styles.embla__parallax__layer}
+                  className={embla__parallax__layer}
                   style={{ ...(tweenValues.length && { transform: `translateX(${tweenValues[index]}%)` })}}>
                   <LazyLoadImage
                     key={index}
@@ -123,20 +156,21 @@ export default function EmblaCarousel() {
         </div>
       </div>
 
-      <div className={styles.embla__buttons}>
+      <div className={embla__buttons}>
         <PrevButton onClick={scrollPrev} disabled={prevBtnDisabled} />
         <NextButton onClick={scrollNext} disabled={nextBtnDisabled} />
       </div>
 
-      <div className={styles.embla__dots}>
+      {/* <div className={embla__dots}>
         {scrollSnaps.map((_, index) => (
           <DotButton
             key={index}
             onClick={() => scrollTo(index)}
-            className={styles.embla__dot.concat(index === selectedIndex ? ` ${styles.embla__dot__selected}` : '')}
+            className={embla__dot.concat(index === selectedIndex ? ` ${embla__dot__selected}` : '')}
           />
         ))}
-      </div>
+      </div> */}
+
     </div>
   )
 }

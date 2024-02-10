@@ -1,7 +1,26 @@
+/* Title */
+.carousel_title_container {
+  position: relative;
+}
+
+.carousel_title {
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 700;
+  position: relative;
+  text-transform: capitalize;
+
+  position: relative;
+  width: 400px;
+  color: #F9F9F9;
+}
+/* End Title */
 .embla {
   --slide-spacing: 1rem;
   --slide-size: 40%;
-  --slide-height: 18rem;
+  --slide-height: 20rem;
   padding: 1.6rem;
   position: relative;
 }
@@ -19,12 +38,23 @@
   min-width: 0;
   padding-left: var(--slide-spacing);
   position: relative;
+  
+  transition: opacity 0.2s ease-in-out;
 }
+
+/* .embla__slide:not(.is-snapped) {
+  opacity: 0.16;
+}
+
+.embla__slide .is-snapped {
+  opacity: 1;
+} */
+
 .embla__slide__img {
   display: block;
   height: var(--slide-height);
   width: 100%;
-  object-fit: fill;
+  object-fit: contain;
 }
 .embla__slide__number {
   width: 4.6rem;
@@ -175,8 +205,8 @@
 .embla__dot__selected:after {
   background: linear-gradient(
     45deg,
-    rgb(138, 180, 248),
-    rgb(193, 168, 226)
+    rgb(47, 112, 193),
+    rgb(116, 97, 195)
   );
 }
 /* End ArrowDotsButtons */
@@ -198,6 +228,38 @@
 }
 /* End Parallax */
 
+/* Progress bar */
+.embla__progress {
+  z-index: 1;
+  background-color: #605c5c;
+  position: absolute;
+  height: 4px;
+  border-radius: 0.2rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-right: auto;
+  pointer-events: none;
+  width: 21rem;
+  max-width: 90%;
+  overflow: hidden;
+}
+.embla__progress__bar {
+  background-image: linear-gradient(
+    45deg,
+    rgb(47, 112, 193),
+    rgb(116, 97, 195)
+  );
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+}
+
+/* End Progress bar */
+
+/* Media queries */
 @media only screen and (max-width: 600px) {
   .embla__slide {
     flex: 0 0 100%; /* Breakpoint SM slide covers 50% of the viewport */
@@ -211,3 +273,24 @@
     display: none;
   }
 }
+/* End Media queries */
+
+/* Keyframes */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes maxOff {
+  to {
+    width: 100%;
+  }
+}
+/* End Keyframes */
