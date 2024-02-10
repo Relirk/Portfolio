@@ -4,11 +4,11 @@
 
 html, body, #app {
   height: 100vh;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
-  overflow-x: hidden;
   background-color: black;
 }
 
