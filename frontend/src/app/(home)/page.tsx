@@ -26,10 +26,10 @@ export default function Home() {
 
   return (
     <>
-      <RevealComp y={-10} duration='300ms' threshold={0.25}>
+      <RevealComp y={-10} x={-10} duration='300ms' threshold={0.25}>
         <AboutSection/>
       </RevealComp>
-      <RevealComp y={-10} duration='300ms' threshold={0.25}>
+      <RevealComp y={-10} x={-10} duration='300ms' threshold={0.25}>
         <EmblaCarousel/>
         <EmblaCarousel/>
       </RevealComp>
