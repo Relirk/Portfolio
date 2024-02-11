@@ -1,8 +1,10 @@
 // 'use client'
 // import addData from "@/firebase/firestore/addData";
 // import getData from "@/firebase/firestore/getData";
+import RevealComp from '@/components/reveal'
+import Image from 'next/image'
 import EmblaCarousel from '@/components/embla-carousel'
-import AboutSection from '@/components/about'
+import AboutSection from '@/components/sections/about'
 
 export default function Home() {
 
@@ -24,8 +26,13 @@ export default function Home() {
 
   return (
     <>
-      <EmblaCarousel/>
-      <EmblaCarousel/>
+      <RevealComp y={-10} duration='300ms' threshold={0.25}>
+        <AboutSection/>
+      </RevealComp>
+      <RevealComp y={-10} duration='300ms' threshold={0.25}>
+        <EmblaCarousel/>
+        <EmblaCarousel/>
+      </RevealComp>
     </>
   );
 }

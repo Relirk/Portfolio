@@ -1,3 +1,36 @@
+/* Carousel Content */
+.carousel_content{
+  background-color: #13131F;
+  display: none;
+  position: absolute;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 0 1rem 1rem;
+  cursor: pointer;
+}
+
+.content_title {
+  color: #F9F9F9;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 1rem;
+  font-size: 0.8rem;
+}
+
+.link_more_info {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #F9F9F9;
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  border: 1px solid rgb(193, 47, 47);
+  border-radius: 2rem;
+  animation: backgroundScale 1s .5s forwards;
+}
+/* End Carousel Content */
+
 /* Title */
 .carousel_title_container {
   position: relative;
@@ -22,25 +55,54 @@
   --slide-spacing: 1rem;
   --slide-size: 24rem;
   --slide-height: 12rem;
-  --gradient: linear-gradient(45deg, rgb(47, 112, 193), rgb(116, 97, 195));
+  --gradient: linear-gradient(45deg, #c12f2f, #c36161);
   padding-top: 1.6rem;
   position: relative;
 }
 .embla__viewport {
   overflow: hidden;
   position: relative;
+  padding: 2.6rem 1rem 2.6rem 1rem;
 }
+
 .embla__container {
   backface-visibility: hidden;
   display: flex;
   touch-action: pan-y;
-  /* margin-left: calc(var(--slide-spacing) * 1); */
+  margin-left: calc(var(--slide-spacing) * 1);
 }
 .embla__slide {
   flex: 0 0 var(--slide-size);
   min-width: 0;
   padding-left: var(--slide-spacing);
   position: relative;
+  transition: 0.3s;
+}
+
+.embla__slide:hover {
+  transform: scale(1.2);
+  position: relative;
+  z-index: 2;
+}
+
+.embla__slide:hover .embla__slide__img {
+  opacity: 1;
+  border-width: 1px;
+  border: double .4rem black; 
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(195, 97, 97), rgb(121, 56, 56), rgb(193, 47, 47), rgb(231, 57, 57));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.embla__slide:hover .carousel_content {
+  display: flex;
+  animation: showDown .5s forwards;
+  width: 98%;
+  height: 4rem;
+  z-index: -50;
+  position: absolute;
+  bottom: -3.8rem;
+  left: 1%;
 }
 
 .embla__slide__img {
@@ -49,13 +111,9 @@
   height: var(--slide-height);
   width: 100%;
   object-fit: cover;
-  border-width: 1px;
-  border: double .4rem black;
   border-radius: .6rem;
-  background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(116, 97, 195), #b20949, rgb(47, 112, 193), #00afc3);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
 }
+
 .embla__slide__number {
   width: 4.6rem;
   height: 4.6rem;
@@ -71,7 +129,7 @@
   pointer-events: none;
 }
 .embla__slide__number > span {
-  color: rgb(47, 112, 193);
+  color: rgb(193, 47, 47);
   background-image: var(--gradient);
   background-clip: text;
   -webkit-background-clip: text;
@@ -116,8 +174,9 @@
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
 }
+
 .embla__lazy_load__has_loaded .embla__lazy_load__img {
-  opacity: 1;
+  opacity: 0.45;
 }
 
 @keyframes loading {
@@ -218,6 +277,25 @@
 @keyframes maxOff {
   to {
     width: 100%;
+  }
+}
+
+@keyframes showDown {
+  from {
+    opacity: 0;
+    transform: translateY(-200%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes backgroundScale {
+  to {  
+    background-color: rgb(193, 47, 47);
+    transform: scale(1.1);
   }
 }
 /* End Keyframes */

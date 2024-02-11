@@ -13,8 +13,6 @@ const {
   embla,
   embla__viewport,
   embla__container,
-  embla__slide,
-  embla__slide__number,
   embla__buttons,
   embla__progress,
   embla__progress__bar,
@@ -82,6 +80,7 @@ export default function EmblaCarousel() {
 
   return (
     <div className={embla}>
+      {/* Carousel Header */}
       <div className={carousel_title_container}>
         <h2 className={carousel_title}>Título da sessão</h2>
         <div className={embla__progress}>
@@ -92,23 +91,21 @@ export default function EmblaCarousel() {
         </div>
       </div>
 
+      {/* Carousel */}
       <div className={embla__viewport} ref={emblaRef}>
         <div className={embla__container}>
           {slides.map((index) => (
-            <div className={embla__slide} key={index}>
-              <div className={embla__slide__number}>
-                <span>{index + 1}</span>
-              </div>
-              
+            <> 
               <LazyLoadImage
                 key={index}
                 index={index}
                 imgSrc={imageByIndex(index)}
-                inView={slidesInView.indexOf(index) > -1}/>    
-            </div>
+                inView={slidesInView.indexOf(index) > -1}/>
+            </>
           ))}
         </div>
 
+        {/* Carousel Navigation Buttons */}
         <div className={embla__buttons}>
           <PrevButton onClick={scrollPrev} disabled={prevBtnDisabled} />
           <NextButton onClick={scrollNext} disabled={nextBtnDisabled} />
