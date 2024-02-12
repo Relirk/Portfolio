@@ -1,12 +1,12 @@
 import Image from 'next/image'
-import React, { FC, useState, useCallback } from 'react'
+import React, { useState, useCallback } from 'react'
 import type { ILazyLoadImagePropType } from './interfaces'
 import ProjectDetails from './details'
 import styles from './style.module.css'
 
 const PLACEHOLDER_SRC = `data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D`
 
-export const LazyLoadImage: FC<ILazyLoadImagePropType> = (props) => {
+export function LazyLoadImageComponent(props: ILazyLoadImagePropType) {
   const { imgSrc, inView, index } = props
   const [hasLoaded, setHasLoaded] = useState(false)
 

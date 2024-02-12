@@ -18,7 +18,8 @@ const {sobre,
   profile,
   profile_img } = styles;
 
-export default function AboutSection() {
+export default async function AboutSection() {
+
   return(
     <section id={sobre}>
       <div className={container}>

@@ -2,16 +2,6 @@ import React, { FC } from 'react'
 import type { IButtonsPropType } from './interfaces'
 import styles from './style.module.css'
 
-export const DotButton: FC<IButtonsPropType> = (props) => {
-  const { children, ...restProps } = props
-
-  return (
-    <button type="button" {...restProps}>
-      {children}
-    </button>
-  )
-}
-
 export const PrevButton: FC<IButtonsPropType> = (props) => {
   const { children, ...restProps } = props
 

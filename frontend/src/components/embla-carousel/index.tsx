@@ -4,8 +4,8 @@ import { flushSync } from 'react-dom'
 import { EmblaCarouselType, EmblaOptionsType } from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
 import ClassNames from 'embla-carousel-class-names'
-import { PrevButton, NextButton } from './buttons'
-import { LazyLoadImage } from './lazyLoadImage'
+import { PrevButton, NextButton } from './next-prev-buttons'
+import { LazyLoadImageComponent } from './lazy-load-image'
 import imageByIndex from './images';
 import styles from './style.module.css'
 
@@ -19,8 +19,10 @@ const {
   carousel_title,
   carousel_title_container} = styles;
 
-export default function EmblaCarousel() {
-  const slides = Array.from(Array(12).keys());
+export default function EmblaCarousel(props: { projects: any, title: string }) {
+  const { projects, title } = props;
+
+  const slides = Array.from(Array(projects.result.length).keys());
   const OPTIONS: EmblaOptionsType = { align: 'start', containScroll: false, loop: false, dragFree: true }
   const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS, [ClassNames()])
 
@@ -82,7 +84,10 @@ export default function EmblaCarousel() {
     <div className={embla}>
       {/* Carousel Header */}
       <div className={carousel_title_container}>
-        <h2 className={carousel_title}>Título da sessão</h2>
+        <h2 className={carousel_title}>
+          {title}
+        </h2>
+
         <div className={embla__progress}>
           <div
             className={embla__progress__bar}
@@ -94,14 +99,12 @@ export default function EmblaCarousel() {
       {/* Carousel */}
       <div className={embla__viewport} ref={emblaRef}>
         <div className={embla__container}>
-          {slides.map((index) => (
-            <> 
-              <LazyLoadImage
-                key={index}
-                index={index}
-                imgSrc={imageByIndex(index)}
-                inView={slidesInView.indexOf(index) > -1}/>
-            </>
+          {projects.result.map((project: any, index: number) => (
+            <LazyLoadImageComponent
+              key={project.id}
+              index={index}
+              imgSrc={project.cover_image}
+              inView={slidesInView.indexOf(index) > -1}/>
           ))}
         </div>
 
