@@ -1,19 +1,31 @@
 import { getAllDocuments }  from '@/firebase/firestore/getData'
 import EmblaCarousel from '@/components/embla-carousel'
+import transformProjectsResponse from '@/util/transform';
 
 export default async function ProjectsSection() {
-  const frontendProjects = JSON.parse(JSON.stringify(await getAllDocuments('frontend-projects')));
-  const mobileProjects = JSON.parse(JSON.stringify(await getAllDocuments('mobile-projects')));
-  const backendProjects = JSON.parse(JSON.stringify(await getAllDocuments('backend-projects')));
-  const gameProjects = JSON.parse(JSON.stringify(await getAllDocuments('game-projects')));
-  
+
+  const firestoreProjects = await getAllDocuments('projects')
+  const projects = transformProjectsResponse(firestoreProjects.result);
+  const {frontendProjects, backendProjects, mobileProjects, gameProjects} = projects;
+  console.log(frontendProjects.length)
 
   return (
     <>
-      <EmblaCarousel title="Desenvolvimento - Front-End" projects={frontendProjects}/>
-      <EmblaCarousel title="Desenvolvimento - Mobile" projects={mobileProjects}/>
-      <EmblaCarousel title="Desenvolvimento - Back-End" projects={backendProjects}/>
-      <EmblaCarousel title="Desenvolvimento - Games" projects={gameProjects}/>
+      {frontendProjects.length > 0 && (
+        <EmblaCarousel title="Desenvolvimento - Front-End" projects={frontendProjects}/>
+      )}
+
+      {mobileProjects.length > 0 && (
+        <EmblaCarousel title="Desenvolvimento - Mobile" projects={mobileProjects}/>
+      )}
+      
+      {backendProjects.length > 0 && (
+        <EmblaCarousel title="Desenvolvimento - Back-End" projects={backendProjects}/>
+      )}
+      
+      {gameProjects.length > 0 && (
+        <EmblaCarousel title="Desenvolvimento - Games" projects={gameProjects}/>
+      )}
     </>
   )
 }

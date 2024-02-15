@@ -1,5 +1,11 @@
 import firebase_app from "../config";
-import { getFirestore, getDocs, collection } from "firebase/firestore";
+import {
+  getFirestore,
+  getDocs,
+  getDoc,
+  collection,
+  doc,
+} from "firebase/firestore";
 
 const db = getFirestore(firebase_app);
 
@@ -21,16 +27,16 @@ export async function getAllDocuments(collectionName: string) {
   return { result, error };
 }
 
-// export default async function getDoument(collection: string, id: string) {
-//   const docRef = doc(db, collection, id);
-//   let result = null;
-//   let error = null;
+export default async function getDoument(collection: string, id: string) {
+  const docRef = doc(db, collection, id);
+  let result = null;
+  let error = null;
 
-//   try {
-//     result = await getDoc(docRef);
-//   } catch (e) {
-//     error = e;
-//   }
+  try {
+    result = await getDoc(docRef);
+  } catch (e) {
+    error = e;
+  }
 
-//   return { result, error };
-// }
+  return { result, error };
+}

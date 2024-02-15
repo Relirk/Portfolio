@@ -22,7 +22,7 @@ const {
 export default function EmblaCarousel(props: { projects: any, title: string }) {
   const { projects, title } = props;
 
-  const slides = Array.from(Array(projects.result.length).keys());
+  const slides = Array.from(Array(projects.length).keys());
   const OPTIONS: EmblaOptionsType = { align: 'start', containScroll: false, loop: false, dragFree: true }
   const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS, [ClassNames()])
 
@@ -99,7 +99,7 @@ export default function EmblaCarousel(props: { projects: any, title: string }) {
       {/* Carousel */}
       <div className={embla__viewport} ref={emblaRef}>
         <div className={embla__container}>
-          {projects.result.map((project: any, index: number) => (
+          {projects.map((project: any, index: number) => (
             <LazyLoadImageComponent
               key={project.id}
               index={index}
