@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200..900&family=Water+Brush&display=swap&display=swap");
 
 .header_component {
+  --brand: #00ffed;
+  --brand-2: #00e0c0;
+  --background: #111014;
+  --cyber: #ff399e;
   position: sticky;
   height: 5.5rem;
   display: grid;
   top: 0;
   z-index: 100;
-  background-color: rgb(0 0 0 / 64%);
-  --brand: #00ffed;
-  --brand-2: #00e0c0;
-  --cyber: #ff399e;
+  background-color: var(--background);
 }
 
 .header_component::before {

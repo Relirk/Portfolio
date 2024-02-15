@@ -104,15 +104,16 @@ export default function EmblaCarousel(props: { projects: any, title: string }) {
               key={project.id}
               index={index}
               imgSrc={project.cover_image}
+              projectTitle={project.title}
               inView={slidesInView.indexOf(index) > -1}/>
           ))}
         </div>
+      </div>
 
-        {/* Carousel Navigation Buttons */}
-        <div className={embla__buttons}>
-          <PrevButton onClick={scrollPrev} disabled={prevBtnDisabled} />
-          <NextButton onClick={scrollNext} disabled={nextBtnDisabled} />
-        </div>
+      {/* Carousel Navigation Buttons */}
+      <div className={embla__buttons}>
+        <PrevButton onClick={scrollPrev} disabled={prevBtnDisabled} />
+        <NextButton onClick={scrollNext} disabled={nextBtnDisabled} />
       </div>
     </div>
   )

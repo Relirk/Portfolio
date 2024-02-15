@@ -12,4 +12,5 @@ export type ILazyLoadImagePropType = {
   imgSrc: string;
   inView: boolean;
   index: number;
+  projectTitle: string;
 };

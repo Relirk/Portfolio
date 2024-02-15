@@ -6,8 +6,19 @@ import styles from './style.module.css'
 
 const PLACEHOLDER_SRC = `data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D`
 
+const { 
+  embla__slide,
+  embla__lazy_load,
+  embla__lazy_load__has_loaded,
+  embla__lazy_load__spinner,
+  embla__slide__number,
+  image_filter,
+  image_filter_text,
+  embla__slide__img,
+  embla__lazy_load__img } = styles;
+
 export function LazyLoadImageComponent(props: ILazyLoadImagePropType) {
-  const { imgSrc, inView, index } = props
+  const { imgSrc, inView, projectTitle, index } = props
   const [hasLoaded, setHasLoaded] = useState(false)
 
   const setLoaded = useCallback(() => {
@@ -15,18 +26,18 @@ export function LazyLoadImageComponent(props: ILazyLoadImagePropType) {
   }, [inView, setHasLoaded])
 
   return (
-    <div className={styles.embla__slide}>
-      <div className={styles.embla__lazy_load.concat(hasLoaded ? ` ${styles.embla__lazy_load__has_loaded}` : '')}>
+    <div className={embla__slide}>
+      <div className={embla__lazy_load.concat(hasLoaded ? ` ${embla__lazy_load__has_loaded}` : '')}>
         {!hasLoaded && (
-          <span className={styles.embla__lazy_load__spinner} />)
+          <span className={embla__lazy_load__spinner} />)
         }
 
-        <div className={styles.embla__slide__number}>
+        <div className={embla__slide__number}>
           <span>{index + 1}</span>
         </div>
 
         <Image
-          className={`${styles.embla__slide__img} ${styles.embla__lazy_load__img} ${styles.embla__parallax__img}`}
+          className={`${embla__slide__img} ${embla__lazy_load__img}`}
           onLoad={setLoaded}
           src={inView ? imgSrc : PLACEHOLDER_SRC}
           alt="Project preview"
@@ -35,7 +46,11 @@ export function LazyLoadImageComponent(props: ILazyLoadImagePropType) {
           height={500}
         />
 
-        <ProjectDetails/>
+        <div className={image_filter}>
+          <p className={image_filter_text}>{projectTitle}</p>
+        </div>
+
+        <ProjectDetails projectTitle={projectTitle}/>
       </div>
     </div>
   )

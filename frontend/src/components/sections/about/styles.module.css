@@ -1,20 +1,36 @@
 #sobre {
-  padding-bottom: 12rem;
+  padding-bottom: 2rem;
+  --font: 'Poppins', sans-serif;
+  --light: #F9F9F9;
+  --dark: #111014;
+  --primary: #ccff00;
+  --secondary: #45414b;
+  --secondary-light: #6b6574;
+  --border: #00e1c0;
+  --dark-red: #a30101;
 }
 
 .container {
   display: flex;
-  flex-direction: column; 
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
+}
+
+.filter {
+  background-color: rgb(0 0 0 / 71%);
 }
 
 .banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem 2.5rem
+  padding: 6rem 12rem;
 }
 
 .intro {
@@ -30,28 +46,28 @@
 }
 
 .title_text {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font);
   font-size: 2.5rem;
   font-weight: 500;
-  color: #F9F9F9;
-  line-height: 5.4rem;
+  color: var(--light);
+  line-height: 4.4rem;
 }
 
 .my_name {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font);
   font-size: 2.5rem;
   font-weight: 500;
-  color: #F9F9F9;
+  color: var(--light);
   line-height: 1rem;
   display: block;
-  color: #c36161;
+  color: var(--primary);
 }
 
 .job {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font);
   font-size: 1.2rem;
   font-weight: 500;
-  color: #828282;
+  color: var(--secondary-light);
   line-height: 3rem;
 }
 
@@ -63,9 +79,11 @@
 .action_link {
   font-size: 1rem;
     font-weight: 500;
-    color: #F9F9F9;
+    color: var(--light);
     padding: 0.5rem 1.5rem;
-    background-image: linear-gradient(90deg, rgb(230 87 87 / 80%) 0.2%, rgb(190 48 48 / 65%) 100%);
+    background-color: var(--primary);
+    color: var(--dark);
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,12 +92,15 @@
 }
 
 .action_link:nth-child(2) {
-  background-image: none;
-  border: .1rem solid #F9F9F9;
+  background-color: transparent;
+  color: var(--light);
+  border: .1rem solid var(--light);
 }
 
 .action_link:hover {
-  background-image: linear-gradient(90deg, rgb(190 48 48 / 65%) 100%, rgb(230 87 87 / 80%) 0.2%);
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--dark);
   transform: scale(0.95);
 }
 
@@ -87,32 +108,70 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2.5rem;
+  gap: 1rem;
+  padding-bottom: 5rem;
+}
+
+.about_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--dark);
+  margin: 0 14em;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.about_card:hover {
+  border: solid .1rem var(--border);
+  box-shadow: 0 0 0.2rem var(--light), 0 0 0.2rem var(--light), 0 0 2rem var(--border), 0 0 0.8rem var(--border), 0 0 2.8rem var(--border), inset 0 0 1.3rem var(--border);
+  transition: .3s;
+}
+
+.about_card:hover .about_title{
+  transition: .3s;
+  color: var(--primary);
+}
+
+.about_card:hover .about_description{
+  transition: .3s;
+  color: var(--light);
 }
 
 .about_title {
-  font-size: 3.2rem;
-  color: #F9F9F9;
+  font-size: 1.8rem;
+  color: var(--light);
   font-weight: 600;
 }
 
+
 .about_description {
-  color: #828282;
-  font-size: 1.8rem;
+  color: var(--secondary);
+  font-size: 1.5rem;
   text-align: center;
-  width: 55%;
-  line-height: 180%;
+  line-height: 1.5em;
 }
 
 .profile { 
   width: 24rem;
+  height: 24rem;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 0.2rem solid var(--light);
+  border-radius: 50%;
+  box-shadow: 0 0 0.2rem var(--light), 0 0 0.2rem var(--light), 0 0 2rem var(--dark-red), 0 0 0.8rem var(--dark-red), 0 0 2.8rem var(--dark-red), inset 0 0 1.3rem var(--dark-red);
+  transition: .2s;
+  animation: scaleDelayed 1s 6.5s;
 }
 
 .profile_img {
   cursor: pointer;
-  transition: .2s;
   max-width: 100%;
-  animation: scaleDelayed 1s 6.5s;
 }
 
 .profile_img:hover {
@@ -130,5 +189,19 @@
 
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes hoverBlink {
+  0% {
+    transform: none;
+  }
+
+  50% {
+    transform: scaleX(.75) scaleY(1.2) translateY(-8px);
+  }
+
+  100% {
+    transform: none;
   }
 }

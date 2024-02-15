@@ -5,11 +5,12 @@
 html, body, #app {
   height: 100vh;
   overflow-x: hidden;
+  --background: #24202a;
 }
 
 body {
   margin: 0;
-  background-color: black;
+  background-color: var(--background);
 }
 
 #app {
