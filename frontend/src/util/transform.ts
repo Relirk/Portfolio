@@ -1,5 +1,9 @@
+import type { IFirestoreObject } from "./interfaces";
+
 export default function transformProjectsResponse(firestoreProjects: any) {
-  const formattedPayload = JSON.parse(JSON.stringify(firestoreProjects));
+  const formattedPayload: IFirestoreObject[] = JSON.parse(
+    JSON.stringify(firestoreProjects)
+  );
   const transform = {
     frontendProjects: [],
     backendProjects: [],
@@ -8,8 +12,8 @@ export default function transformProjectsResponse(firestoreProjects: any) {
   };
 
   for (let index = 0; index < formattedPayload.length; index++) {
-    const element = formattedPayload[index];
-    switch (element?.type) {
+    const element: IFirestoreObject = formattedPayload[index];
+    switch (element.type) {
       case "frontend":
         transform.frontendProjects.push(element);
         break;
