@@ -36,7 +36,7 @@ export default async function AboutSection() {
               
               <div className={title}>
                 <h1 className={title_text}>Olá, eu sou o </h1> 
-                <span className={my_name}>Francisco Olvera</span>
+                <span className={my_name}>Francisco Olvera teste</span>
                 <p className={job}>Desenvolvedor multiplataforma</p>
               </div>
 
