@@ -7,7 +7,7 @@ export default async function ProjectsSection() {
   const firestoreProjects = await getAllDocuments('projects')
   const projects = transformProjectsResponse(firestoreProjects.result);
   const {frontendProjects, backendProjects, mobileProjects, gameProjects} = projects;
-  console.log(frontendProjects.length)
+  console.log(frontendProjects.length + backendProjects.length + mobileProjects.length + gameProjects.length)
 
   return (
     <>
