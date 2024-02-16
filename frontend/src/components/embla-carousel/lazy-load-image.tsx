@@ -41,7 +41,6 @@ export function LazyLoadImageComponent(props: ILazyLoadImagePropType) {
           onLoad={setLoaded}
           src={inView ? imgSrc : PLACEHOLDER_SRC}
           alt="Project preview"
-          data-src={imgSrc}
           width={500}
           height={500}
         />
