@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.1.4",
     "embla-carousel": "^8.0.0-rc22",
     "embla-carousel-class-names": "^8.0.0-rc22",
     "embla-carousel-react": "^8.0.0-rc22",
