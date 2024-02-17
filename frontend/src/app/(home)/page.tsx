@@ -1,5 +1,5 @@
-import AboutSection from '@/components/sections/about'
-import ProjectsSection from '@/components/sections/projects'
+import AboutSection from '@/sections/about'
+import ProjectsSection from '@/sections/projects'
 
 export default async function Home() {
 
