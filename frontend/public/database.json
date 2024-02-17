@@ -424,11 +424,20 @@
   "gameProjects":[
      {
         "id":"YAxoPTzRaKvYl1uh93ae",
-        "title":"Top Down Game 2D",
+        "title":"Top Down 2D Game",
         "github_url":"",
-        "cdn_url":"https://relirk-top-down-game-2d.surge.sh/",
+        "cdn_url":"https://relirk-top-down-2d-game.surge.sh/",
         "description":"Projeto realizado durante o curso Start Gamedev da empresa Crie seus jogos. Durante o curso aprendemos a desenvolver algumas mecânicas para um jogo top down 2D, sendo elas: Tilesets, personagem, NPCs, sistema de crafting, sistema de farm, sistema de plantação, HUDs, sistema de pesca, sistema de construção, combate e sonorização. Como features adicionais tomei a liberdade de acrescentar novas funcionalidades ao projeto, como: Barra e sistema de vida para o personagem, 2 novas opções de ferramentas (picareta e espada), balanceamento de dano para armas diferentes, passar dialogo através de tecla e não de clique, novo sistema de mineração.",
-        "cover_image":"/assets/projects/game-projects/relirk-top-down-game-2d.png",
+        "cover_image":"/assets/projects/game-projects/relirk-top-down-2d-game.jpeg",
+        "type":"game"
+     },
+     {
+      "id":"3tDXuksbCS5OoBOIVzP5",
+        "title":"Platformer 2D Game",
+        "github_url":"",
+        "cdn_url":"https://relirk-platformer-2d-game.surge.sh/",
+        "description":"Sem descrição",
+        "cover_image":"/assets/projects/game-projects/relirk-platformer-2d-game.png",
         "type":"game"
      }
   ]
