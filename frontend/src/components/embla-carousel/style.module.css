@@ -42,26 +42,28 @@
 .carousel_title_container {
   position: relative;
   margin-left: 3rem;
+  margin-top: 6rem;
 }
 
 .carousel_title {
-  margin-bottom: 2rem;
   padding-bottom: 1rem;
-  font-size: 1.3rem;
-  line-height: 2rem;
-  font-weight: 700;
-  position: relative;
+  font-size: 2rem;
+  font-family: var(--font);
+  font-weight: unset;
+  width: 100%;
   text-transform: capitalize;
-
   position: relative;
-  width: 400px;
   color: var(--light);
+  cursor: pointer;
+}
+
+.carousel_title:hover {
+  color: var(--primary);
 }
 /* End Title */
 .embla {
-  padding-top: 1.6rem;
   position: relative;
-  --font: 'Poppins', sans-serif;
+  --font: "Pixelify Sans", sans-serif;
   --slide-spacing: 1rem;
   --slide-size: 24rem;
   --slide-height: 12rem;
@@ -70,14 +72,18 @@
   --primary: #ccff00;
   --secondary: #00e1c0;
   --background: #2b2731;
-  --background-opacity: rgb(0 0 0 / 72%);
+  --background-opacity: rgb(0 0 0 / 60%);
   --gradient: linear-gradient(45deg, var(--primary), var(--primary));
 }
 .embla__viewport {
   overflow: hidden;
   position: relative;
-  padding: 2.6rem 1rem 6.5rem 1rem;
-  background-color: var(--background);
+  padding: 2.6rem 1rem 8rem 1rem;
+  box-shadow: inset 0 0 0 2000px var(--background-opacity);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   transition: .5s;
 }
 
@@ -149,8 +155,8 @@
 .image_filter_text {
   color: var(--light);
   text-align: center;
-  font-weight: 600;
   font-family: var(--font);
+  font-size: 1.2rem;
   transition: .5s;
 }
 
@@ -238,11 +244,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  bottom: -1.5rem;
 }
 
 .embla__button {
-  background-color: black;
-  color: var(--light);
+  background-color: var(--dark);
+  box-shadow: -4px 0 0 0 var(--light), 4px 0 0 0 var(--light), 0 -4px 0 0 var(--light), 0 4px 0 0 var(--light);
   cursor: pointer;
   width: 4rem;
   height: 3rem;
@@ -252,21 +261,36 @@
 }
 
 .embla__button__prev {
-  border-radius: 0 10rem 10rem 0;
-  border-left: none;
+  border: none;
 }
 
 .embla__button__next {
-  border-radius: 10rem 0 0 10rem;
-  border-right: none;
+  border: none;
+}
+
+.embla__button__prev:hover {
+  box-shadow:   -6px 0 0 0 var(--primary), 6px 0 0 0 var(--primary), 0 -6px 0 0 var(--primary), 0 6px 0 0 var(--primary);
+}
+
+.embla__button__prev:hover .embla__button__svg{
+  color: var(--primary);
+}
+
+.embla__button__next:hover {
+  box-shadow:   -6px 0 0 0 var(--primary), 6px 0 0 0 var(--primary), 0 -6px 0 0 var(--primary), 0 6px 0 0 var(--primary);
+}
+
+.embla__button__next:hover .embla__button__svg{
+  color: var(--primary);
 }
 
 .embla__button:disabled {
   opacity: 0.3;
 }
 .embla__button__svg {
-  width: 50%;
-  height: 50%;
+  color: var(--light);
+  height: 100%;
+  width: 70%;
 }
 /* End ArrowDotsButtons */
 

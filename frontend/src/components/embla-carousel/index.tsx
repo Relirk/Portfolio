@@ -18,8 +18,8 @@ const {
   carousel_title,
   carousel_title_container} = styles;
 
-export default function EmblaCarousel(props: { projects: any, title: string }) {
-  const { projects, title } = props;
+export default function EmblaCarousel(props: { projects: any, title: string, backgroundImage: any }) {
+  const { projects, title, backgroundImage } = props;
 
   const slides = Array.from(Array(projects.length).keys());
   const OPTIONS: EmblaOptionsType = { align: 'start', containScroll: false, loop: false, dragFree: true }
@@ -96,17 +96,21 @@ export default function EmblaCarousel(props: { projects: any, title: string }) {
       </div>
 
       {/* Carousel */}
-      <div className={embla__viewport} ref={emblaRef}>
-        <div className={embla__container}>
-          {projects.map((project: any, index: number) => (
-            <LazyLoadImageComponent
-              key={project.id}
-              index={index}
-              project={project}
-              inView={slidesInView.indexOf(index) > -1}/>
-          ))}
-        </div>
+      <div 
+        className={embla__viewport}
+        ref={emblaRef}
+        style={{ backgroundImage: `url(${backgroundImage.src})` }}>
+          <div className={embla__container}>
+            {projects.map((project: any, index: number) => (
+              <LazyLoadImageComponent
+                key={project.id}
+                index={index}
+                project={project}
+                inView={slidesInView.indexOf(index) > -1}/>
+            ))}
+          </div>
       </div>
+
 
       {/* Carousel Navigation Buttons */}
       <div className={embla__buttons}>

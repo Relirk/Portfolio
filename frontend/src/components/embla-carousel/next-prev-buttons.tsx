@@ -11,12 +11,21 @@ export const PrevButton: FC<IButtonsPropType> = (props) => {
       type="button"
       {...restProps}
     >
-      <svg className={styles.embla__button__svg} viewBox="0 0 532 532">
-        <path
-          fill="currentColor"
-          d="M355.66 11.354c13.793-13.805 36.208-13.805 50.001 0 13.785 13.804 13.785 36.238 0 50.034L201.22 266l204.442 204.61c13.785 13.805 13.785 36.239 0 50.044-13.793 13.796-36.208 13.796-50.002 0a5994246.277 5994246.277 0 0 0-229.332-229.454 35.065 35.065 0 0 1-10.326-25.126c0-9.2 3.393-18.26 10.326-25.2C172.192 194.973 332.731 34.31 355.66 11.354Z"
-        />
+      <svg className={styles.embla__button__svg} width="50" height="50" viewBox="0 0 182 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="79" width="26" height="104" fill="currentColor"/>
+        <rect x="79" width="26" height="104" fill="currentColor"/>
+        <rect x="79" width="26" height="104" fill="currentColor"/>
+        <rect x="182" y="39" width="27" height="182" transform="rotate(90 182 39)" fill="currentColor"/>
+        <rect x="182" y="39" width="27" height="182" transform="rotate(90 182 39)" fill="currentColor"/>
+        <rect x="182" y="39" width="27" height="182" transform="rotate(90 182 39)" fill="currentColor"/>
+        <rect x="53" y="13" width="26" height="78" fill="currentColor"/>
+        <rect x="53" y="13" width="26" height="78" fill="currentColor"/>
+        <rect x="53" y="13" width="26" height="78" fill="currentColor"/>
+        <rect x="27" y="26" width="26" height="52" fill="currentColor"/>
+        <rect x="27" y="26" width="26" height="52" fill="currentColor"/>
+        <rect x="27" y="26" width="26" height="52" fill="currentColor"/>
       </svg>
+
       {children}
     </button>
   )
@@ -31,11 +40,20 @@ export const NextButton: FC<IButtonsPropType> = (props) => {
       type="button"
       {...restProps}
     >
-      <svg className={styles.embla__button__svg} viewBox="0 0 532 532">
-        <path
-          fill="currentColor"
-          d="M176.34 520.646c-13.793 13.805-36.208 13.805-50.001 0-13.785-13.804-13.785-36.238 0-50.034L330.78 266 126.34 61.391c-13.785-13.805-13.785-36.239 0-50.044 13.793-13.796 36.208-13.796 50.002 0 22.928 22.947 206.395 206.507 229.332 229.454a35.065 35.065 0 0 1 10.326 25.126c0 9.2-3.393 18.26-10.326 25.2-45.865 45.901-206.404 206.564-229.332 229.52Z"
-        />
+
+      <svg className={styles.embla__button__svg} width="182" height="104" viewBox="0 0 182 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="103" y="103.997" width="26" height="104" transform="rotate(180 103 103.997)" fill="currentColor"/>
+        <rect x="103" y="103.997" width="26" height="104" transform="rotate(180 103 103.997)" fill="currentColor"/>
+        <rect x="103" y="103.997" width="26" height="104" transform="rotate(180 103 103.997)" fill="currentColor"/>
+        <rect x="0.000244141" y="64.9971" width="27" height="182" transform="rotate(-90 0.000244141 64.9971)" fill="currentColor"/>
+        <rect x="0.000244141" y="64.9971" width="27" height="182" transform="rotate(-90 0.000244141 64.9971)" fill="currentColor"/>
+        <rect x="0.000244141" y="64.9971" width="27" height="182" transform="rotate(-90 0.000244141 64.9971)" fill="currentColor"/>
+        <rect x="129" y="90.9971" width="26" height="78" transform="rotate(180 129 90.9971)" fill="currentColor"/>
+        <rect x="129" y="90.9971" width="26" height="78" transform="rotate(180 129 90.9971)" fill="currentColor"/>
+        <rect x="129" y="90.9971" width="26" height="78" transform="rotate(180 129 90.9971)" fill="currentColor"/>
+        <rect x="155" y="77.9971" width="26" height="52" transform="rotate(180 155 77.9971)" fill="currentColor"/>
+        <rect x="155" y="77.9971" width="26" height="52" transform="rotate(180 155 77.9971)" fill="currentColor"/>
+        <rect x="155" y="77.9971" width="26" height="52" transform="rotate(180 155 77.9971)" fill="currentColor"/>
       </svg>
       {children}
     </button>

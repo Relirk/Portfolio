@@ -4,7 +4,7 @@ import { staticUrlImages, staticUrlDocuments } from '@/constants'
 import styles from './styles.module.css'
 
 const { 
-  sobre,
+  aboutSection,
   container,
   filter,
   banner,
@@ -28,7 +28,7 @@ const { cv, email} = staticUrlDocuments;
 export default async function AboutSection() {
 
   return(
-    <section id={sobre}>
+    <section id={aboutSection}>
       <div className={container} style={{ backgroundImage: `url(${aboutBackgroundImage})` }}>
         <div className={filter}>
           <div className={banner}>
