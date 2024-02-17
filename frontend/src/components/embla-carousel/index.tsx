@@ -6,7 +6,6 @@ import useEmblaCarousel from 'embla-carousel-react'
 import ClassNames from 'embla-carousel-class-names'
 import { PrevButton, NextButton } from './next-prev-buttons'
 import { LazyLoadImageComponent } from './lazy-load-image'
-import imageByIndex from './images';
 import styles from './style.module.css'
 
 const {
@@ -103,8 +102,7 @@ export default function EmblaCarousel(props: { projects: any, title: string }) {
             <LazyLoadImageComponent
               key={project.id}
               index={index}
-              imgSrc={project.cover_image}
-              projectTitle={project.title}
+              project={project}
               inView={slidesInView.indexOf(index) > -1}/>
           ))}
         </div>

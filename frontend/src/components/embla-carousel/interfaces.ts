@@ -9,8 +9,7 @@ export type IButtonsPropType = PropsWithChildren<
 >;
 
 export type ILazyLoadImagePropType = {
-  imgSrc: string;
+  project: any;
   inView: boolean;
   index: number;
-  projectTitle: string;
 };

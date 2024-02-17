@@ -7,5 +7,5 @@ export const staticUrlImages = {
 
 export const staticUrlDocuments = {
   email: "mailto:olverajunior2014@gmail.com",
-  cv: `${firebaseBasePath}cv-folvera-linkedin.pdf?alt=media&token=39cfb1b0-a77d-4996-9145-c85227137eb7`,
+  cv: "/assets/cv/cv-folvera.pdf",
 };

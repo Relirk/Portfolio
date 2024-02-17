@@ -6,7 +6,7 @@
   --background: #111014;
   --cyber: #ff399e;
   position: sticky;
-  height: 5.5rem;
+  height: 4.2rem;
   display: grid;
   top: 0;
   z-index: 100;
@@ -32,6 +32,7 @@
   justify-self: center;
   padding: 1rem 0;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .header_link {
@@ -47,6 +48,8 @@
   text-shadow: 3px 0px 0px var(--brand-2), 8px 4px 30px var(--brand);
   font-synthesis: none;
   animation: cyberpunk-glitch 7s step-end infinite, skew-glitch 7s step-end infinite;
+  margin: 0;
+  padding: 0;
 }
 
 @keyframes gradient {

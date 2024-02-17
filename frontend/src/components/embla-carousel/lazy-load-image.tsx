@@ -18,7 +18,7 @@ const {
   embla__lazy_load__img } = styles;
 
 export function LazyLoadImageComponent(props: ILazyLoadImagePropType) {
-  const { imgSrc, inView, projectTitle, index } = props
+  const { project, inView, index } = props
   const [hasLoaded, setHasLoaded] = useState(false)
 
   const setLoaded = useCallback(() => {
@@ -39,17 +39,17 @@ export function LazyLoadImageComponent(props: ILazyLoadImagePropType) {
         <Image
           className={`${embla__slide__img} ${embla__lazy_load__img}`}
           onLoad={setLoaded}
-          src={inView ? imgSrc : PLACEHOLDER_SRC}
+          src={inView ? project.cover_image : PLACEHOLDER_SRC}
           alt="Project preview"
           width={500}
           height={500}
         />
 
         <div className={image_filter}>
-          <p className={image_filter_text}>{projectTitle}</p>
+          <p className={image_filter_text}>{project.title}</p>
         </div>
 
-        <ProjectDetails projectTitle={projectTitle}/>
+        <ProjectDetails projectTitle={project.title}/>
       </div>
     </div>
   )
