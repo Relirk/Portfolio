@@ -1,9 +1,10 @@
 'use client'
-import React, { useEffect, useState, useCallback } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import { flushSync } from 'react-dom'
 import { EmblaCarouselType, EmblaOptionsType } from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
 import ClassNames from 'embla-carousel-class-names'
+import Modal from '@/components/modal'
 import { PrevButton, NextButton } from './next-prev-buttons'
 import { LazyLoadImageComponent } from './lazy-load-image'
 import styles from './style.module.css'
@@ -21,7 +22,6 @@ const {
 export default function EmblaCarousel(props: { projects: any, title: string, backgroundImage: any }) {
   const { projects, title, backgroundImage } = props;
 
-  const slides = Array.from(Array(projects.length).keys());
   const OPTIONS: EmblaOptionsType = { align: 'start', containScroll: false, loop: false, dragFree: true }
   const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS, [ClassNames()])
 
@@ -110,7 +110,10 @@ export default function EmblaCarousel(props: { projects: any, title: string, bac
             ))}
           </div>
       </div>
-
+      
+      {projects.map((project: any, index: number) => (
+        <Modal key={project.id}/>
+      ))}
 
       {/* Carousel Navigation Buttons */}
       <div className={embla__buttons}>

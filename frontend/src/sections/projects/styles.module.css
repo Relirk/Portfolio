@@ -1,3 +1,7 @@
 #projectsSection {
   --font: "Pixelify Sans", sans-serif;
 }
+
+.disable-hover{
+  pointer-events: none;
+}

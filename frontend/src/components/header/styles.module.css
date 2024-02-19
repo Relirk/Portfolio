@@ -3,6 +3,9 @@
   --brand-2: #00e0c0;
   --background: #111014;
   --cyber: #ff399e;
+  --light: #F9F9F9;
+  --primary: #ccff00;
+  --font: "Pixelify Sans", sans-serif;
   position: sticky;
   height: 4.2rem;
   display: grid;
@@ -24,11 +27,11 @@
 }
 
 .header_container {
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   justify-self: center;
-  padding: 1rem 0;
   flex-wrap: wrap;
   padding: 0;
 }
@@ -48,6 +51,46 @@
   animation: cyberpunk-glitch 7s step-end infinite, skew-glitch 7s step-end infinite;
   margin: 0;
   padding: 0;
+}
+
+.other_menus {
+  width: 50%;
+  font-family: var(--font);
+  font-size: 1.5rem;
+  font-weight: unset;
+  transition: all .3s ease-out 0s;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.other_link {
+  text-decoration: none;
+  color: var(--light);
+}
+
+.other_link:hover {
+  color: var(--primary);
+}
+
+.other_link:hover::after {
+  width: 100%;
+}
+
+.other_link::after {
+  background: var(--primary);
+  border-radius: 16px;
+  bottom: 1px;
+  content: "";
+  display: block;
+  height: 5px;
+  left: 0;
+  position: relative;
+  transition: all .3s ease-out 0s;
+  width: 0;
+  z-index: -1;
 }
 
 @keyframes gradient {

@@ -1,15 +1,15 @@
 import EmblaCarousel from '@/components/embla-carousel'
 import styles from './styles.module.css'
 import projects from '../../../public/database.json'
-import bgBackend from '../../../public/assets/carousel/background/backend-background.jpg'
-import bgFrontend from '../../../public/assets/carousel/background/frontend-background.jpg'
-import bgMobile from '../../../public/assets/carousel/background/mobile-background.jpg'
-import bgGame from '../../../public/assets/carousel/background/game-background.jpg'
+import bgBackend from '../../../public/assets/carousel/background/webp/backend-background.webp'
+import bgFrontend from '../../../public/assets/carousel/background/webp/frontend-background.webp'
+import bgMobile from '../../../public/assets/carousel/background/webp/mobile-background.webp'
+import bgGame from '../../../public/assets/carousel/background/webp/game-background.webp'
 
 const { projectsSection } = styles;
 
-export default async function ProjectsSection() {
-  
+export default function ProjectsSection() {
+
   return (
     <section id={projectsSection}>
       {projects.frontendProjects.length > 0 && (

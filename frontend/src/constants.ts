@@ -2,7 +2,7 @@ const firebaseBasePath =
   "https://firebasestorage.googleapis.com/v0/b/portifolio-nextjs-4ab5d.appspot.com/o/";
 
 export const staticUrlImages = {
-  aboutBackgroundImage: "/assets/background.jpg",
+  aboutBackgroundImage: "/assets/background.webp",
 };
 
 export const staticUrlDocuments = {

@@ -41,8 +41,11 @@ export function LazyLoadImageComponent(props: ILazyLoadImagePropType) {
           onLoad={setLoaded}
           src={inView ? project.cover_image : PLACEHOLDER_SRC}
           alt="Project preview"
-          width={500}
-          height={500}
+          width={300}
+          height={300}
+          quality={80}
+          placeholder="blur"
+          blurDataURL={PLACEHOLDER_SRC}
         />
 
         <div className={image_filter}>

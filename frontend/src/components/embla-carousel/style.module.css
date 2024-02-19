@@ -47,10 +47,10 @@
 
 .carousel_title {
   padding-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: var(--font);
   font-weight: unset;
-  width: 100%;
+  width: 21rem;
   text-transform: capitalize;
   position: relative;
   color: var(--light);
@@ -140,12 +140,11 @@
   position: absolute;
   top: 0;
   background-color: var(--background-opacity);
-  border-bottom: solid 3px var(--secondary);
+  border-bottom: solid 3px var(--primary);
   height: var(--slide-height);
   width: 100%;
   border-radius: .6rem;
   cursor: pointer;
-
   display: flex;
   align-items: center;
   justify-content: center;
