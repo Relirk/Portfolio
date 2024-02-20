@@ -1,23 +1,22 @@
 import Image from 'next/image'
-import React, { useState, useCallback } from 'react'
-import type { ILazyLoadImagePropType } from './interfaces'
-import ProjectDetails from './details'
-import styles from './style.module.css'
-
-const PLACEHOLDER_SRC = `data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D`
+import { useState, useCallback } from 'react'
+import { placeholderLoadingImage } from '@/constants'
+import CarouselItemDetail from '@/components/carousel-item-detail'
+import type { ICarouselItemPropType } from './types/interfaces'
+import styles from './styles.module.css'
 
 const { 
   embla__slide,
+  embla__slide__img,
+  embla__slide__number,
   embla__lazy_load,
   embla__lazy_load__has_loaded,
   embla__lazy_load__spinner,
-  embla__slide__number,
+  embla__lazy_load__img,
   image_filter,
-  image_filter_text,
-  embla__slide__img,
-  embla__lazy_load__img } = styles;
+  image_filter_text } = styles;
 
-export function LazyLoadImageComponent(props: ILazyLoadImagePropType) {
+export default function CarouselItem(props: ICarouselItemPropType) {
   const { project, inView, index } = props
   const [hasLoaded, setHasLoaded] = useState(false)
 
@@ -39,20 +38,20 @@ export function LazyLoadImageComponent(props: ILazyLoadImagePropType) {
         <Image
           className={`${embla__slide__img} ${embla__lazy_load__img}`}
           onLoad={setLoaded}
-          src={inView ? project.cover_image : PLACEHOLDER_SRC}
+          src={inView ? project.cover_image : placeholderLoadingImage}
           alt="Project preview"
           width={300}
           height={300}
           quality={80}
           placeholder="blur"
-          blurDataURL={PLACEHOLDER_SRC}
+          blurDataURL={placeholderLoadingImage}
         />
 
         <div className={image_filter}>
           <p className={image_filter_text}>{project.title}</p>
         </div>
 
-        <ProjectDetails projectTitle={project.title}/>
+        <CarouselItemDetail projectTitle={project.title} projectId={project.id}/>
       </div>
     </div>
   )

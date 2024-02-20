@@ -1,0 +1,25 @@
+.embla__progress {
+  background-color: #605c5c;
+  position: absolute;
+  height: 4px;
+  border-radius: 0.2rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 90%;
+  overflow: hidden;
+}
+.embla__progress__bar {
+  background-image: var(--gradient);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .embla__progress {
+    max-width: 60%;
+  }
+}

@@ -1,23 +1,21 @@
 'use client'
-import { useEffect, useState, useCallback } from 'react'
 import { flushSync } from 'react-dom'
-import { EmblaCarouselType, EmblaOptionsType } from 'embla-carousel'
+import { useEffect, useState, useCallback } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import ClassNames from 'embla-carousel-class-names'
+import { EmblaCarouselType, EmblaOptionsType } from 'embla-carousel'
 import Modal from '@/components/modal'
-import { PrevButton, NextButton } from './next-prev-buttons'
-import { LazyLoadImageComponent } from './lazy-load-image'
-import styles from './style.module.css'
+import CarouselItem from '@/components/carousel-item'
+import CarouselHeader from '@/components/caroulsel-header'
+import CarouselButtons from '@/components/carousel-buttons'
+import carouselItemStyles from '@/components/carousel-item/styles.module.css'
+import styles from './styles.module.css'
 
 const {
   embla,
-  embla__viewport,
-  embla__container,
-  embla__buttons,
-  embla__progress,
-  embla__progress__bar,
-  carousel_title,
-  carousel_title_container} = styles;
+  embla__container} = styles;
+
+const { embla__viewport } = carouselItemStyles;
 
 export default function EmblaCarousel(props: { projects: any, title: string, backgroundImage: any }) {
   const { projects, title, backgroundImage } = props;
@@ -81,28 +79,14 @@ export default function EmblaCarousel(props: { projects: any, title: string, bac
 
   return (
     <div className={embla}>
-      {/* Carousel Header */}
-      <div className={carousel_title_container}>
-        <h2 className={carousel_title}>
-          {title}
-        </h2>
+      <CarouselHeader title={title} scrollProgress={scrollProgress}/>
 
-        <div className={embla__progress}>
-          <div
-            className={embla__progress__bar}
-            style={{ transform: `translate3d(${scrollProgress}%,0px,0px)` }}
-          />
-        </div>
-      </div>
-
-      {/* Carousel */}
       <div 
         className={embla__viewport}
-        ref={emblaRef}
-        style={{ backgroundImage: `url(${backgroundImage.src})` }}>
+        ref={emblaRef}>
           <div className={embla__container}>
             {projects.map((project: any, index: number) => (
-              <LazyLoadImageComponent
+              <CarouselItem
                 key={project.id}
                 index={index}
                 project={project}
@@ -112,14 +96,15 @@ export default function EmblaCarousel(props: { projects: any, title: string, bac
       </div>
       
       {projects.map((project: any, index: number) => (
-        <Modal key={project.id}/>
+        <Modal key={project.id} customId={`id-${project.id}`} project={project}/>
       ))}
 
-      {/* Carousel Navigation Buttons */}
-      <div className={embla__buttons}>
-        <PrevButton onClick={scrollPrev} disabled={prevBtnDisabled} />
-        <NextButton onClick={scrollNext} disabled={nextBtnDisabled} />
-      </div>
+      <CarouselButtons
+        scrollPrev={scrollPrev}
+        scrollNext={scrollNext}
+        prevBtnDisabled={prevBtnDisabled}
+        nextBtnDisabled={nextBtnDisabled}
+      />
     </div>
   )
 }

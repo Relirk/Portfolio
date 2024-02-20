@@ -1,0 +1,76 @@
+.embla__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  bottom: -1.5rem;
+  --dark: #111014;
+  --light: #F9F9F9;
+  --primary: #ccff00;
+  --pixel-border: 3px;
+  --negative-pixel-border: -3px;
+  --gradient: linear-gradient(45deg, var(--primary), var(--primary));
+}
+
+.embla__button {
+  background-color: var(--dark);
+  box-shadow: 
+    var(--negative-pixel-border) 0 0 0 var(--light),
+    var(--pixel-border) 0 0 0 var(--light),
+    0 var(--negative-pixel-border) 0 0 var(--light),
+    0 var(--pixel-border) 0 0 var(--light);
+  cursor: pointer;
+  width: 3rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.embla__button__prev {
+  border: none;
+}
+
+.embla__button__next {
+  border: none;
+}
+
+.embla__button__prev:hover {
+  box-shadow: 
+    var(--negative-pixel-border) 0 0 0 var(--primary),
+    var(--pixel-border) 0 0 0 var(--primary),
+    0 var(--negative-pixel-border) 0 0 var(--primary),
+    0 var(--pixel-border) 0 0 var(--primary);
+}
+
+.embla__button__prev:hover .embla__button__svg{
+  color: var(--primary);
+}
+
+.embla__button__next:hover {
+  box-shadow: 
+    var(--negative-pixel-border) 0 0 0 var(--primary),
+    var(--pixel-border) 0 0 0 var(--primary),
+    0 var(--negative-pixel-border) 0 0 var(--primary),
+    0 var(--pixel-border) 0 0 var(--primary);
+}
+
+.embla__button__next:hover .embla__button__svg{
+  color: var(--primary);
+}
+
+.embla__button:disabled {
+  opacity: 0.3;
+}
+.embla__button__svg {
+  color: var(--light);
+  height: 100%;
+  width: 70%;
+}
+
+@media only screen and (max-width: 600px) {
+  .embla__buttons {
+    justify-content: start;
+  }
+}

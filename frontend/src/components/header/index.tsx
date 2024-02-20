@@ -21,7 +21,6 @@ export default function Header() {
           </Link>
 
           <div className={other_menus}>
-            <a className={other_link} href="#google">css modal</a>
             <Link className={other_link} href="/">Home</Link>
             <Link className={other_link} href="/projects">Projects</Link>
           </div>

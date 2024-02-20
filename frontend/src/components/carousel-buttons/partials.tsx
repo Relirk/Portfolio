@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
-import type { IButtonsPropType } from './interfaces'
-import styles from './style.module.css'
+import type { IButtonsPropType } from './types/interfaces'
+import styles from './styles.module.css'
 
 export const PrevButton: FC<IButtonsPropType> = (props) => {
   const { children, ...restProps } = props

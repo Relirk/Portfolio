@@ -5,6 +5,7 @@ html, body, #app {
   height: 100vh;
   overflow-x: hidden;
   --background: #24202a;
+  --background-dark: #111014;
 }
 
 body {

@@ -1,0 +1,25 @@
+.carousel_title_container {
+  --font: "Pixelify Sans", sans-serif;
+  --dark: #111014;
+  --light: #F9F9F9;
+  --primary: #ccff00;
+  position: relative;
+  margin-left: 3rem;
+  margin-top: 6rem;
+}
+
+.carousel_title {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  font-family: var(--font);
+  font-weight: unset;
+  width: 21rem;
+  text-transform: capitalize;
+  position: relative;
+  color: var(--light);
+  cursor: pointer;
+}
+
+.carousel_title:hover {
+  color: var(--primary);
+}

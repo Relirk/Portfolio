@@ -1,21 +1,24 @@
 .modal_overlay {
-  background: rgb(0 0 0 / 34%);
+  --light: #F9F9F9;
+  --dark: #111014;
+  --background-opacity: rgb(0 0 0 / 34%);
+  --background: #2b2731;
+  --primary: #ccff00;
+  position: fixed;
   bottom: 0;
   left: 0;
-  opacity: 0;
-  pointer-events: none;
-  position: fixed;
   right: 0;
   top: 0;
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none;
   -webkit-transition: opacity 400ms ease-in;
   -moz-transition: opacity 400ms ease-in;
   transition: opacity 400ms ease-in;
-  z-index: -1;
   display: none;
   animation: fade 1s;
   transition: .5s;
-  --light: #F9F9F9;
-  --secondary: #00e1c0;
+  background: var(--background-opacity);
 }
 .modal_overlay:target {
   display: block;
@@ -24,7 +27,9 @@
   z-index: 99999;
 }
 .modal_overlay .modal {
-  background-color: var(--light);
+  color: var(--light);
+  background-color: var(--background);
+  border-radius: 1rem;
   height: 100%;
   position: relative;
   margin: 0 auto;
@@ -34,7 +39,7 @@
 @media (min-width: 60em) {
   .modal_overlay .modal {
     height: 75%;
-    margin: 5% auto;
+    margin: 6% auto;
     /* max-height: 57em; */
     max-width: 66em;
     width: 85%;
@@ -46,16 +51,19 @@
   height: 100%;
 }
 .modal_overlay .close {
-  background-color: var(--secondary);
-  color: var(--light);
+  background-color: var(--primary);
+  color: var(--dark);
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
   font-size: 24px;
   padding: 8px 12px;
   position: absolute;
   right: 0;
-  text-align: center;
-  text-decoration: none;
   top: 0;
   z-index: 1;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 3px 3px -2px #00000026, 0 3px 4px #0000001a, 0 1px 8px #00000017;
 }
 
 @keyframes fade {

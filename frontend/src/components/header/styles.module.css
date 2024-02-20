@@ -1,8 +1,5 @@
 .header_component {
-  --brand: #00ffed;
-  --brand-2: #00e0c0;
   --background: #111014;
-  --cyber: #ff399e;
   --light: #F9F9F9;
   --primary: #ccff00;
   --font: "Pixelify Sans", sans-serif;
@@ -21,7 +18,7 @@
   bottom: 0;
   width: 100%;
   height: .1rem;
-  background: linear-gradient(-45deg, var(--brand), #34beff,var(--brand-2) ,#0e3485);
+  background: linear-gradient(-45deg, var(--primary), var(--primary), var(--primary) , var(--primary));
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
@@ -46,7 +43,7 @@
   font-family: "Water Brush", cursive;
   font-size: 3rem;
   font-weight: normal;
-  text-shadow: 3px 0px 0px var(--brand-2), 8px 4px 30px var(--brand);
+  text-shadow: 3px 0px 0px var(--primary), 8px 4px 30px var(--primary);
   font-synthesis: none;
   animation: cyberpunk-glitch 7s step-end infinite, skew-glitch 7s step-end infinite;
   margin: 0;
@@ -54,19 +51,18 @@
 }
 
 .other_menus {
-  width: 50%;
   font-family: var(--font);
   font-size: 1.5rem;
   font-weight: unset;
   transition: all .3s ease-out 0s;
   display: flex;
   align-items: center;
-  justify-content: space-around;
   margin: 0;
   padding: 0;
 }
 
 .other_link {
+  margin-left: 1rem;
   text-decoration: none;
   color: var(--light);
 }

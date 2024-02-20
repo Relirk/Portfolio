@@ -1,16 +1,29 @@
+import Image from 'next/image'
+import { placeholderLoadingImage } from '@/constants'
 import styles from './styles.module.css'
 
 const { modal_overlay, modal, close} = styles;
 
-export default function Modal() {
+export default function Modal(props: { customId: string; project: any; }) {
+  const { customId, project } = props;
 
   return (
-    <div id="google" className={modal_overlay}>
+    <div id={customId} className={modal_overlay}>
       <div className={modal}>
         <a href="#close" className={close}>&times;</a>
         <div>
-          <h1>Here is some content inside the Modal.</h1>
-          <p>If the modal shrinks below the breakpoint then the modal goes full screen for mobile use.</p>
+          <h1>{project.title}</h1>
+          <Image
+          className=''
+          src={project.cover_image}
+          alt="Project modal preview"
+          width={300}
+          height={300}
+          quality={80}
+          placeholder="blur"
+          blurDataURL={placeholderLoadingImage}
+        />
+          <p>{project.description}</p>
         </div>
       </div>
     </div>

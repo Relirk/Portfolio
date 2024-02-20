@@ -1,5 +1,6 @@
 #projectsSection {
   --font: "Pixelify Sans", sans-serif;
+  --dark: #111014;
 }
 
 .disable-hover{
