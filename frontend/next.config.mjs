@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    // unoptimized: true, // sem essa merda as imagens não aparecem em prod
+    unoptimized: true, // sem essa merda as imagens não aparecem em prod
     remotePatterns: [
       {
         protocol: "https",

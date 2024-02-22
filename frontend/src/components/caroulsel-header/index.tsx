@@ -9,11 +9,11 @@ export default function CarouselHeader(props: { title: string; scrollProgress: n
 
   return (
     <div className={carousel_title_container}>
-        <h2 className={carousel_title}>
-          {title}
-        </h2>
+      <h2 className={carousel_title}>
+        {title}
+      </h2>
 
-        <CarouselProgressBar scrollProgress={scrollProgress}/>
-      </div>
+      <CarouselProgressBar scrollProgress={scrollProgress}/>
+    </div>
   )
 }

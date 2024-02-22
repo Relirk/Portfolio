@@ -1,4 +1,6 @@
 .embla__progress {
+  --primary: #ccff00;
+  --gradient: linear-gradient(45deg, var(--primary), var(--primary));
   background-color: #605c5c;
   position: absolute;
   height: 4px;

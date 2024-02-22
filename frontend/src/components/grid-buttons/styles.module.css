@@ -1,0 +1,42 @@
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  --dark: #111014;
+  --border-color: #3c3c3c;
+  --light: #F9F9F9;
+  --primary: #ccff00;
+}
+
+.grid_content {
+  margin: 1rem;
+}
+
+.grid_button {
+  cursor: pointer;
+  border-radius: 50%;
+  height: 8rem;
+  width: 8rem;
+  background-color: var(--dark);
+  border: solid .4rem var(--border-color);
+  transition: border-color .5s ease;
+}
+
+.grid_button:hover {
+  border-color: var(--primary);
+}
+
+.grid_button:hover .grid_image {
+  filter: invert(95%) sepia(90%) saturate(6323%) hue-rotate(15deg) brightness(106%) contrast(103%);
+}
+
+
+.grid_image {
+  width: 4rem;
+  height: 4rem;
+  filter: invert(17%) sepia(34%) saturate(7%) hue-rotate(314deg) brightness(102%) contrast(84%);
+  transition: filter .5s ease;
+}

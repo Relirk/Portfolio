@@ -8,17 +8,20 @@ import Modal from '@/components/modal'
 import CarouselItem from '@/components/carousel-item'
 import CarouselHeader from '@/components/caroulsel-header'
 import CarouselButtons from '@/components/carousel-buttons'
+import CarouselProgressBar from '@/components/caroulsel-progress-bar';
 import carouselItemStyles from '@/components/carousel-item/styles.module.css'
 import styles from './styles.module.css'
 
 const {
   embla,
-  embla__container} = styles;
+  embla__container,
+  display_visible,
+  display_none} = styles;
 
 const { embla__viewport } = carouselItemStyles;
 
-export default function EmblaCarousel(props: { projects: any, title: string, backgroundImage: any }) {
-  const { projects, title, backgroundImage } = props;
+export default function EmblaCarousel(props: { projects: any, title: string, backgroundImage: any, active: boolean }) {
+  const { projects, title, active, backgroundImage } = props;
 
   const OPTIONS: EmblaOptionsType = { align: 'start', containScroll: false, loop: false, dragFree: true }
   const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS, [ClassNames()])
@@ -55,7 +58,6 @@ export default function EmblaCarousel(props: { projects: any, title: string, bac
 
   const onScroll = useCallback((emblaApi: EmblaCarouselType) => {
     if (!emblaApi) return
-
     const progress = Math.max(0, Math.min(1, emblaApi.scrollProgress()))
     setScrollProgress(progress * 100)
   }, [])
@@ -78,7 +80,7 @@ export default function EmblaCarousel(props: { projects: any, title: string, bac
   }, [emblaApi, onScroll, onSelect, updateSlidesInView])
 
   return (
-    <div className={embla}>
+    <div className={embla.concat(active ? ` ${display_visible}` : ` ${display_none}`)}>
       <CarouselHeader title={title} scrollProgress={scrollProgress}/>
 
       <div 

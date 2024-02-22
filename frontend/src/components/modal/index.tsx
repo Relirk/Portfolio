@@ -19,22 +19,23 @@ export default function Modal(props: { customId: string; project: any; }) {
       <div className={modal}>
         <a href="#close" className={close}>&times;</a>
           <h1>{project.title}</h1>
-          
-          <div className={project_info}>
-            <Image
-              className={project_image}
-              src={project.cover_image}
-              alt="Project modal preview"
-              width={300}
-              height={300}
-              quality={80}
-              placeholder="blur"
-              blurDataURL={placeholderLoadingImage} />
 
-            <div className={project_data_1}>
-              <p className={description}>{project.description}</p>
+          <div className={project_info}>
+            <div>
+              <Image
+                className={project_image}
+                src={project.cover_image}
+                alt="Project modal preview"
+                width={300}
+                height={300}
+                quality={80}
+                placeholder="blur"
+                blurDataURL={placeholderLoadingImage} />
             </div>
-        </div>
+
+            <div className={project_data_1} dangerouslySetInnerHTML={ { __html: project.description } }>
+            </div>
+          </div>
       </div>
     </div>
   )
