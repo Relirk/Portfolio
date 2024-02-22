@@ -21,8 +21,8 @@ export default function Header() {
           </Link>
 
           <div className={other_menus}>
-            <Link className={other_link} href="/">Home</Link>
-            <Link className={other_link} href="/projects">Projects</Link>
+            <Link className={other_link} href="/">Sobre</Link>
+            <Link className={other_link} href="/projects">Projetos</Link>
           </div>
         </div>
       </header>

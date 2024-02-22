@@ -76,17 +76,17 @@
 }
 
 .other_link::after {
-  background: var(--primary);
-  border-radius: 16px;
-  bottom: 1px;
   content: "";
   display: block;
-  height: 5px;
-  left: 0;
   position: relative;
-  transition: all .3s ease-out 0s;
-  width: 0;
+  bottom: 1px;
+  left: 0;
   z-index: -1;
+  height: 5px;
+  width: 0;
+  background: var(--primary);
+  border-radius: 16px;
+  transition: all .3s ease-out 0s;
 }
 
 @keyframes gradient {

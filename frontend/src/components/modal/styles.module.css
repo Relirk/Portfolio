@@ -36,15 +36,7 @@
   padding: 3em;
   -webkit-overflow-scrolling: touch;
 }
-@media (min-width: 60em) {
-  .modal_overlay .modal {
-    height: 75%;
-    margin: 6% auto;
-    /* max-height: 57em; */
-    max-width: 66em;
-    width: 85%;
-  }
-}
+
 .modal_overlay .modal > iframe, .modal_overlay .modal > div {
   border: none;
   width: 100%;
@@ -64,6 +56,40 @@
   text-align: center;
   text-decoration: none;
   box-shadow: 0 3px 3px -2px #00000026, 0 3px 4px #0000001a, 0 1px 8px #00000017;
+}
+
+.project_image {
+  cursor: pointer;
+  display: block;
+  height: 20rem;
+  width: 44rem;
+  object-fit: contain;
+  border-radius: 0.6rem;
+}
+
+.project_info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.project_data_1 {
+  padding: 0 1rem;
+}
+
+.description {
+  margin-top: 0;
+}
+
+@media (min-width: 60em) {
+  .modal_overlay .modal {
+    height: 75%;
+    margin: 6% auto;
+    /* max-height: 57em; */
+    max-width: 66em;
+    width: 85%;
+  }
 }
 
 @keyframes fade {
