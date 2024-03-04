@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import profilePic from '@/assets/profile.svg'
+import profilePic from '../../../public/assets/profile_pic.svg'
 import { staticUrlImages, staticUrlDocuments } from '@/constants'
 import styles from './styles.module.css'
 
@@ -47,7 +47,7 @@ export default async function AboutSection() {
             </div>
               
             <div className={profile}>
-              {/* <Image className={profile_img} src={profilePic} alt="avatar"/> */}
+              <Image className={profile_img} src={profilePic} alt="avatar"/>
             </div>
           </div>
 

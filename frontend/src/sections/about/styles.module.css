@@ -163,9 +163,9 @@
 .profile { 
   width: 24rem;
   height: 24rem;
-  background: rgba(255, 255, 255, 0);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   border: 0.2rem solid var(--light);
@@ -177,10 +177,12 @@
 
 .profile_img {
   cursor: pointer;
-  max-width: 100%;
+  width: 20em;
+  height: 20em;
+  transition: .2s;
 }
 
-.profile_img:hover {
+.profile:hover {
   transform: scale(1.1);
 }
 
