@@ -2,24 +2,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
   --dark: #111014;
+  --dark-2: #18161c;
   --border-color: #3c3c3c;
   --light: #F9F9F9;
   --primary: #ccff00;
+  --font: "Pixelify Sans", sans-serif;
+  background-color: var(--dark-2);
+  padding-top: 6rem;
 }
 
 .grid_content {
   margin: 1rem;
+  text-align: center;
+}
+
+.grid_title {
+  font-family: var(--font);
+  font-size: 1.4rem;
+  font-weight: unset;
+  color: var(--light);
+  margin: 0.5rem 0 0.5rem;
 }
 
 .grid_button {
   cursor: pointer;
   border-radius: 50%;
-  height: 8rem;
-  width: 8rem;
+  height: 6rem;
+  width: 6rem;
   background-color: var(--dark);
   border: solid .4rem var(--border-color);
   transition: border-color .5s ease;
@@ -34,8 +46,25 @@
 }
 
 .grid_image {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   filter: invert(17%) sepia(34%) saturate(7%) hue-rotate(314deg) brightness(102%) contrast(84%);
+  transition: filter .5s ease;
+}
+
+.active {
+  cursor: pointer;
+  border-radius: 50%;
+  height: 6rem;
+  width: 6rem;
+  background-color: var(--dark);
+  border: solid .4rem var(--primary);
+  transition: border-color .5s ease;
+}
+
+.active_image {
+  width: 3rem;
+  height: 3rem;
+  filter: invert(95%) sepia(90%) saturate(6323%) hue-rotate(15deg) brightness(106%) contrast(103%);
   transition: filter .5s ease;
 }

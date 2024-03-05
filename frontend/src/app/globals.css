@@ -11,6 +11,11 @@ html, body, #app {
 body {
   margin: 0;
   background-color: var(--background);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 #app {

@@ -81,7 +81,10 @@ export default function EmblaCarousel(props: { projects: any, title: string, bac
 
   return (
     <div className={embla.concat(active ? ` ${display_visible}` : ` ${display_none}`)}>
-      <CarouselHeader title={title} scrollProgress={scrollProgress}/>
+      <CarouselHeader
+        title={title}
+        scrollProgress={scrollProgress}
+        projectNumber={projects.length}/>
 
       <div 
         className={embla__viewport}

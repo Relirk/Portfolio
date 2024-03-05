@@ -3,15 +3,20 @@
   --light: #F9F9F9;
   --primary: #ccff00;
   --font: "Pixelify Sans", sans-serif;
-  position: sticky;
   height: 4.2rem;
   display: grid;
-  top: 0;
-  z-index: 100;
   background-color: var(--background);
+  border-radius: 1rem;
+  border-bottom: solid 2px var(--primary);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 1rem;
+  margin: 0 1rem;
+  z-index: 99999;
 }
 
-.header_component::before {
+/* .header_component::before {
   content: "";
   display: block;
   position: absolute;
@@ -21,7 +26,7 @@
   background: linear-gradient(-45deg, var(--primary), var(--primary), var(--primary) , var(--primary));
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-}
+} */
 
 .header_container {
   width: 90%;

@@ -12,7 +12,7 @@ import styles from './styles.module.css'
 const { projectsSection } = styles;
 
 export default function ProjectsSection() {
-  const [frontendVisible, setFrontendVisible] = useState(false);
+  const [frontendVisible, setFrontendVisible] = useState(true);
   const [backendVisible, setBackendVisible] = useState(false);
   const [mobileVisible, setMobileVisible] = useState(false);
   const [gameVisible, setGameVisible] = useState(false);
@@ -55,9 +55,17 @@ export default function ProjectsSection() {
 
   return (
     <section id={projectsSection}>
-      <GridButtons selectionFunction={changePresentation}/>
+      <GridButtons 
+        selectionFunction={changePresentation}
+        visibleStructure={{
+          frontendVisible,
+          backendVisible,
+          mobileVisible,
+          gameVisible
+        }}/>
 
       {projects.frontendProjects.length > 0 && (
+        
         <EmblaCarousel
           title="Desenvolvimento - Front-End"
           projects={projects.frontendProjects}
