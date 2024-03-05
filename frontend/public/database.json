@@ -225,6 +225,24 @@
          "github_url":"https://github.com/Relirk/Origamid/tree/master/rest",
          "cdn_url":"http://relirk-rest.surge.sh/",
          "description":"Template de cardápio para aplicação de estudos de Tipografia"
+      },
+      {
+         "id":"Jb1XwaHKHcpTkjITT7qX",
+         "title":"Gestão de chaves PIX",
+         "cover_image":"/assets/projects/frontend-projects/webp/relirk_mp_pix.webp",
+         "type":"frontend",
+         "github_url":"",
+         "cdn_url":"https://www.mercadopago.com.br/pix-keys/app/key-management",
+         "description":"<p>Experiência de Gestão de chaves PIX para o Mercado pago</p> <br> <p>Projeto estruturado com o uso de webview + ReactJS com arquitetura SSR.</p> <p>Utilização de Wrappers e APIs em NodeJS e Golang.</p>"
+      },
+      {
+         "id":"Bqu02H6nBWrq4O12ZARL",
+         "title":"Open Finance",
+         "cover_image":"/assets/projects/frontend-projects/webp/relirk_mp_opf.webp",
+         "type":"frontend",
+         "github_url":"",
+         "cdn_url":"https://www.mercadopago.com.br/open-banking/app/consent-management",
+         "description":"<p>Primeira versão da experiência de Open Finance para o Mercado pago</p> <br> <p>Projeto estruturado com o uso de webview + ReactJS com arquitetura SSR.</p> <p>Utilização de Wrappers e APIs em NodeJS e Golang.</p>"
       }
    ],
    "backendProjects":[
@@ -417,8 +435,8 @@
          "description":"Aplicativo escolar para estudantes",
          "type":"mobile",
          "creation_date":"",
-         "apple_store_url":"https://apps.apple.com/br/app/waybee-student/id1418549753",
          "cover_image":"/assets/projects/mobile-projects/webp/relirk-waybee-student.webp",
+         "apple_store_url":"https://apps.apple.com/br/app/waybee-student/id1418549753",
          "google_play_url":"https://play.google.com/store/apps/details?id=com.waybee.apps.student&hl=pt_BR&gl=US"
       },
       {
@@ -429,6 +447,39 @@
          "github_url":"https://github.com/Relirk/fiap-android-appiadas",
          "creation_date":"",
          "title":"Appiadas"
+      },
+      {
+         "id":"r8jFKWZoGPaAm6cFYs9f",
+         "type":"mobile",
+         "description":"<p>Experiência de Gestão de chaves PIX para o Mercado pago</p> <br> <p>Projeto estruturado com o uso de webview + ReactJS com arquitetura SSR.</p> <p>Utilização de Wrappers e APIs em NodeJS e Golang.</p>",
+         "cover_image":"/assets/projects/mobile-projects/webp/relirk_mp_pix_mobile.webp",
+         "github_url":"",
+         "creation_date":"",
+         "apple_store_url":"https://apps.apple.com/br/app/mercado-pago-banco-digital/id925436649",
+         "google_play_url":"https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=en&gl=BR",
+         "title":"Gestão de chaves PIX"
+      },
+      {
+         "id":"gKltsRSVPYD29G1rA415",
+         "type":"mobile",
+         "description":"<p>Área de gestão para PIX, basicamente serve como um painel que gerencia todas as funcionalidades de PIX dentro do Mercado Pago, facilitando o seu acesso ao usuário.</p> <br> <p>Projeto estruturado com o uso de Wrappers em NodeJS servido o conteúdo de forma dinâmica para aplicações nativa Android e iOS</p> <p>Utilização de Wrappers e APIs em NodeJS e Golang.</p>",
+         "cover_image":"/assets/projects/mobile-projects/webp/relirk_mp_area_pix_mobile.webp",
+         "github_url":"",
+         "creation_date":"",
+         "apple_store_url":"https://apps.apple.com/br/app/mercado-pago-banco-digital/id925436649",
+         "google_play_url":"https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=en&gl=BR",
+         "title":"Área PIX"
+      },
+      {
+         "id":"w2oPcwxCo318W1U5VMEn",
+         "type":"mobile",
+         "description": "<p>Primeira versão da experiência de Open Finance para o Mercado pago</p> <br> <p>Projeto estruturado com o uso de webview + ReactJS com arquitetura SSR.</p> <p>Utilização de Wrappers e APIs em NodeJS e Golang.</p>",
+         "cover_image":"/assets/projects/mobile-projects/webp/relirk_mp_area_pix_mobile.webp",
+         "github_url":"",
+         "creation_date":"",
+         "apple_store_url":"https://apps.apple.com/br/app/mercado-pago-banco-digital/id925436649",
+         "google_play_url":"https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=en&gl=BR",
+         "title":"Open Finance"
       }
    ],
    "gameProjects":[
