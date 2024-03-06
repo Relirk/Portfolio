@@ -518,6 +518,15 @@
          "description":"Sem descrição",
          "cover_image":"/assets/projects/game-projects/webp/relirk_infinity_runner.webp",
          "type":"game"
+      },
+      {
+         "id":"dACgM2TJmowg107yuJJf",
+         "title":"Metroidvania Platform 2D Game",
+         "github_url":"",
+         "cdn_url":"",
+         "description":"Sem descrição",
+         "cover_image":"/assets/projects/game-projects/webp/relirk_metroidvania_platform_2d_game.webp",
+         "type":"game"
       }
    ]
 }
