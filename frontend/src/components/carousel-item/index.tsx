@@ -47,9 +47,11 @@ export default function CarouselItem(props: ICarouselItemPropType) {
           blurDataURL={placeholderLoadingImage}
         />
 
-        <div className={image_filter}>
-          <p className={image_filter_text}>{project.title}</p>
-        </div>
+        <a href={`#id-${project.id}`}>
+          <div className={image_filter} >
+            <p className={image_filter_text}>{project.title}</p>
+          </div>
+        </a>
 
         <CarouselItemDetail projectTitle={project.title} projectId={project.id}/>
       </div>

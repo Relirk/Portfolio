@@ -500,6 +500,24 @@
          "description":"Sem descrição",
          "cover_image":"/assets/projects/game-projects/webp/relirk-platformer-2d-game.webp",
          "type":"game"
+      },
+      {
+         "id":"s0dIMruzkl4VZQLWFCoy",
+         "title":"Hyper Casual Mobile Game",
+         "github_url":"",
+         "cdn_url":"",
+         "description":"Sem descrição",
+         "cover_image":"/assets/projects/game-projects/webp/relirk_hyper_casual_mobile_game.webp",
+         "type":"game"
+      },
+      {
+         "id":"8LfjieZQhleSWubyQaZL",
+         "title":"Infinity Runner",
+         "github_url":"",
+         "cdn_url":"",
+         "description":"Sem descrição",
+         "cover_image":"/assets/projects/game-projects/webp/relirk_infinity_runner.webp",
+         "type":"game"
       }
    ]
 }

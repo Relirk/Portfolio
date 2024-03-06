@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+
 import GridButtons from '@/components/grid-buttons'
 import EmblaCarousel from '@/components/embla-carousel'
 import projects from '../../../public/database.json'
@@ -17,8 +18,7 @@ export default function ProjectsSection() {
   const [mobileVisible, setMobileVisible] = useState(false);
   const [gameVisible, setGameVisible] = useState(false);
 
-
-  const changePresentation = (selected) => {
+  const changePresentation = (selected: string) => {
     switch(selected) {
       case 'frontend':
         setFrontendVisible(true);
