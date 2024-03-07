@@ -256,15 +256,15 @@
          "cover_image":"/assets/projects/backend-projects/relirk-node-movie-spider.png",
          "github_url":"https://github.com/Relirk/movies-webcrawler-spider",
          "type":"backend",
-         "cdn_url":"",
-         "description":"Projeto de spider com NodeJS e Cherrio que captura todos os filmes com melhor classificação no site da IMDb."
+         "creation_date": "Oct 29 2019 00:00:00 AM",
+         "description":"<p>Projeto de spider com NodeJS e Cherrio que captura todos os filmes com melhor classificação no site da IMDb<br><br> A idéia d projeto é aprender funcionalidades avançadas e libs novas do NodeJS, o recurso de spider pega todas as melhores classificações do IMDb e plata em um arquivo .txt local na máquina so usuário que pode ser usado para fins de métrica, avaliações, relatórios e podendo ser utilizado em diversas outras aplicações</p>"
       },
       {
          "id":"I5y2NMPDJozi29TLe4mC",
          "github_url":"https://github.com/Relirk/gobarber",
-         "description":"Projeto de conclusão do Bootcamp da Rocketseat 2019 (Versão antiga)",
+         "description":"<p>Projeto de conclusão do Bootcamp da Rocketseat 2019<br><br> O projeto consistia em criar um sistema de cadastro de clientes e agendamentos para a barbearia, foi criado um frontend em ReactJS, mobile em React Native e um backend em NodeJS + MongoDB. <br><br> O sisteme permitia com que o usuário cadastrasse um agendamento de corte, permitia o cadastro de usuários da barbearia, análise de horários disponíveis e consulta de agendamentos.</p>",
          "cover_image":"/assets/projects/backend-projects/relirk-gobarber-api.png",
-         "cdn_url":"",
+         "creation_date": "Feb 23 2020 00:00:00 AM",
          "title":"Go Barber API",
          "type":"backend"
       },
@@ -272,27 +272,30 @@
          "id":"VeXvd5gtNMEJS4Cj4Lgp",
          "title":"Parse Dashboard",
          "cover_image":"/assets/projects/backend-projects/relirk-parse-dashboard.png",
-         "description":"Dashboard do Parse alimentada por uma extensão do MongoDB e hospedada pelo Heroku",
+         "description":"<p>Parse Dashboard<br><br> O projeto consiste na criação de um dashboard do Parse SDK alimentado por uma extensão do MongoDB e hospedado pelo Heroku. <br><br> Criei esse projeto com o intuito de aprender a como configurar uma sdk do parse de ponta a ponta após o Facebook ter deixado ela como open source</p>",
          "cdn_url":"https://relirk-parse-dashboard.herokuapp.com/login",
          "github_url":"https://github.com/Relirk/relirk-parse-dashboard",
-         "type":"backend"
+         "type":"backend",
+         "creation_date": "May 15 2019 00:00:00 AM"
       },
       {
          "id":"vyodkZTahj1kNJEcykI8",
          "type":"backend",
-         "description":"Aplicação fake do Instagram, utilizando ReactJS, Amazon S3(já desativado) para upload de fotos e deploy pelo Heroku",
+         "description":"<p>Aplicação fake do Instagram<br><br> Aplicação criada utilizando uma estrutura ReactJS, serviços do Amazon S3(já desativado) para upload de fotos e fluxo de deploy através da plataforma do Heroku</p>",
          "github_url":"https://github.com/Relirk/instagram-clone-backend",
          "cdn_url":"https://rlk-instagram-clone-backend.herokuapp.com/",
          "title":"Instagram API",
-         "cover_image":"/assets/projects/backend-projects/relirk-instagram-api.png"
+         "cover_image":"/assets/projects/backend-projects/relirk-instagram-api.png",
+         "creation_date": "Jun 18 2019 00:00:00 AM"
       },
       {
          "id":"xdSpkx6qTvo5uOvFlEjL",
-         "description":"Aplicação de upload de arquivos no S3(já desativado), hospedagem no Heroku e sync na web",
+         "description":"<p>Projeto de upload de imagens<br><br> A idéia era criar uma aplicação que fizesse upload de arquivos no Amazon S3(já desativado), possuisse um frontend para a inserção e visualização dos históricos de imagens com hospedagem no Heroku e sincronização na web</p>",
          "title":"Upload Image API",
          "github_url":"https://github.com/Relirk/upload-project-backend",
          "cover_image":"/assets/projects/backend-projects/relirk-upload-image-api.png",
          "type":"backend",
+         "creation_date": "Jun 20 2019 00:00:00 AM",
          "cdn_url":"https://rlk-upload-project-backend.herokuapp.com/"
       }
    ],
