@@ -11,9 +11,9 @@ export default function CarouselItemDetail(props: { projectTitle: string; projec
     <div className={carousel_content}>
       <div>
         <h3 className={content_title}>{projectTitle}</h3>
-        <p className={content_description}>28 de Setembro de 2024</p>
+        <p className={content_description}></p>
       </div>
-      {/* <a href={`#id-${projectId}`} className={link_more_info}>Ver detalhes</a> */}
+      <a href={`#id-${projectId}`} className={link_more_info}>Ver detalhes</a>
     </div>
   )
 }
