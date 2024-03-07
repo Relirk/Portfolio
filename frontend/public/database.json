@@ -4,7 +4,7 @@
          "id":"4h9JMWN5yWNT5urckMFN",
          "description":"<p>Hotsite para abresentação do projeto final da graduação de bacharelado da USJT<br><br> A idéia iniciál do projeto, era criar um hotsite simples e direto para exemplificar o propósito do aplicativo desenvolvido para o projeto de conclusão de curso e como funcionária através da visão de um possível comprador ou usuário.<br><br> Foi um projeto muito divertido e rápido de desenvolver e acredito que exemplifica bem o conceito de Hotsite.</p>",
          "github_url":"https://github.com/GitHubMarketPlace/Hotsite",
-         "cdn_url":"relirk-marketplace-hotsite-usjt.surge.sh",
+         "cdn_url":"https://relirk-marketplace-hotsite-usjt.surge.sh/",
          "creation_date": "Jun 1 2017 10:00:00 AM",
          "cover_image":"/assets/projects/frontend-projects/relirk-marketplace-usjt.png",
          "title":"MKP Market Place",
@@ -412,9 +412,7 @@
          "description":"O MarketPlace é o aplicativo que foi utilizado como meu projeto de conclusão de curso para o bacharelado em Ciência da Computação na USJT. Ele é um aplicativo Android focado totalmente em dar a melhor alternativa de compra para todo e qualquer tipo de usuário utilizando-se de algoritmos de recomendação e IA para criar uma boa base de escolhas com base no seu perfil.",
          "github_url":"https://github.com/GitHubMarketPlace/MarketPlace",
          "cover_image":"/assets/projects/mobile-projects/relirk-android-marketplace-usjt.png",
-         "type":"mobile",
-         "google_play_url":"",
-         "apple_store_url":""
+         "type":"mobile"
       },
       {
          "id":"d3b82jplMCxryehW3XY7",

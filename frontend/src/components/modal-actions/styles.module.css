@@ -1,0 +1,34 @@
+.button_grid {
+  justify-content: end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 12rem);
+  --font: "Pixelify Sans", sans-serif;
+  --dark: #111014;
+  --light: #F9F9F9;
+  --primary: #ccff00;
+}
+
+.link_base {
+  cursor: pointer;
+  font-size: .9rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--dark);
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  margin: 0.5rem 0;
+  animation: backgroundScale 1s .5s forwards;
+  
+  height: 2rem;
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes backgroundScale {
+  to {  
+    background-color: var(--primary);
+    transform: scale(1.1);
+  }
+}

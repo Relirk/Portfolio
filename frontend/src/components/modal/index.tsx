@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image'
 import formatDate from '@/util/date'
+import ModalActions from '@/components/modal-actions'
 import { placeholderLoadingImage } from '@/constants'
 import styles from './styles.module.css'
 
@@ -41,9 +42,10 @@ export default function Modal(props: { customId: string; project: any; }) {
               <p>Realizado em {formattedDate}</p>
             </div>
 
-            <div className={project_data_1} dangerouslySetInnerHTML={ { __html: project.description } }>
-            </div>
+            <div className={project_data_1} dangerouslySetInnerHTML={ { __html: project.description } }></div>
           </div>
+  
+          <ModalActions project={project} />
       </div>
     </div>
   )
