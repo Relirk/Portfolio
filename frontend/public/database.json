@@ -2,10 +2,10 @@
    "frontendProjects":[
       {
          "id":"4h9JMWN5yWNT5urckMFN",
-         "description":"Hotsite feito para conclusão de curso do bacharelado de Ciência da Computação na USJT. A idéia era criar um hotsite simples para exemplificar de maneira simples o propósito do aplicativo desenvolvido e como funcionária através da visão de um possível comprador ou usuário.",
+         "description":"<p>Hotsite para abresentação do projeto final da graduação de bacharelado da USJT<br><br> A idéia iniciál do projeto, era criar um hotsite simples e direto para exemplificar o propósito do aplicativo desenvolvido para o projeto de conclusão de curso e como funcionária através da visão de um possível comprador ou usuário.<br><br> Foi um projeto muito divertido e rápido de desenvolver e acredito que exemplifica bem o conceito de Hotsite.</p>",
          "github_url":"https://github.com/GitHubMarketPlace/Hotsite",
          "cdn_url":"relirk-marketplace-hotsite-usjt.surge.sh",
-         "creation_date": "",
+         "creation_date": "Jun 1 2017 00:00:00 AM",
          "cover_image":"/assets/projects/frontend-projects/relirk-marketplace-usjt.png",
          "title":"MKP Market Place",
          "type":"frontend"
@@ -14,10 +14,10 @@
          "id":"6dKQKhMon1jsHkCXMoNP",
          "title":"Star Wars Info",
          "github_url":"https://github.com/Relirk/relirk.swInfo",
-         "description":"Aplicação de busca na api do Star Wars utilizando recursos do React e Local Storage",
+         "description":"<p>Site responsivo para o seminário de conhecimentos gerais sobre responsividade na RLK Studios<br><br> O conceito do seminário era criar uma aplicação web com uma api interna em um monorepo capaz de fazer uma busca na Star Wars API utilizando recursos do ReactJS e Local Storage a fim de exemplificar um site responsivo fazendo uso de abordagens mais avançadas</p>",
          "type":"frontend",
          "cdn_url":"",
-         "creation_date": "",
+         "creation_date": "Nov 29 2019 00:00:00 AM",
          "cover_image":"/assets/projects/frontend-projects/relirk-swinfo.png"
       },
       {
@@ -25,9 +25,9 @@
          "github_url":"https://github.com/Relirk/luizalabs-challenge-cepMap-frontend",
          "title":"Magalu Maps",
          "cover_image":"/assets/projects/frontend-projects/relirk-luizalabs.png",
-         "description":"Ferramenta de pesquisa de cep e plot no Gooble maps da coordenada criada para o desafio da Magazine Luiza, utilizando React e Material-UI",
+         "description":"<p>Ferramenta criada para o desafio da Magazine Luiza<br><br> O conceito do desafio era criar uma ferramenta de pesquisa de CEP e plotagem das informações e coordenadas no serviço do Google maps. <br><br> Um ponto bem legal desse mini projeto foi que escolhi utilizar uma biblioteca visual pronta, no caso o Material-UI, onde isso me ajudou não só a dar uma boa resposta no desafio como também a aprender algo novo</p>",
          "cdn_url":"",
-         "creation_date": "",
+         "creation_date": "Sep 29 2019 00:00:00 AM",
          "type":"frontend"
       },
       {
@@ -35,9 +35,9 @@
          "github_url":"https://github.com/Relirk/imersao-react-aluraflix/tree/master",
          "title":"Aluraflix",
          "cover_image":"/assets/projects/frontend-projects/relirk-imersao-alura-aluraflix.png",
-         "description":"Projeto realizado durante a Imersão Alura em Julho de 2020. A idéia foi criar uma plataforma onde fosse possível assistir vídeos e gestiona-los com a api deo vimeo.",
+         "description":"<p>Projeto realizado durante a Imersão Alura de 2020 <br><br> A idéia do projeto foi criar uma plataforma de vídeos onde fosse possível assistir e fazer a gestão de conteúdo com a Vimeo API <br><br> Esse projeto foi super divertido de realizar não só pelo propósito, mas também porque fazia um bom tempo que eu não trabalhava com a Vimeo API, e como eu adoro a idéia de trabalhar e otimizar conteúdo de vídeo, isso foi um prato cheio para o aprendizado</p>",
          "cdn_url":"https://imersao-react-aluraflix-git-master-relirk.vercel.app/",
-         "creation_date": "",
+         "creation_date": "Jul 30 2020 00:00:00 AM",
          "type":"frontend"
       },
       {
@@ -46,27 +46,28 @@
          "title":"Brafé 2",
          "cdn_url":"http://relirk-brafe-2.surge.sh/",
          "type":"frontend",
-         "creation_date": "",
-         "description":"Template de aprendizado para o uso do framework Bootstrap 2 feito com conceitos de Grid e Flexbox",
+         "creation_date": "Feb 2 2020 00:00:00 AM",
+         "description":"<p>Projeto de aprendizado realizado durante os cursos da Origamid<br><br> Esse projéto é um template de aprendizado para o uso do framework Bootstrap 2 feito utilizando conceitos de Grid e Flexbox, a idéia é verificar o que foi alterado do Bootstrap 1 para essa nova versão, conhecer novos recursos e descobrir se ficou mais fácil ou mais difícil desenvolver um site responsivo utilizando o framework</p>",
          "cover_image":"/assets/projects/frontend-projects/relirk-brafe-1.png"
       },
       {
          "id":"DOyLlZrgPOPplDulbr6R",
-         "description":"Template de aprendizado para o uso do framework Bootstrap 3 feito com conceitos de Grid e Flexbox",
+         "description":"<p>Projeto de aprendizado realizado durante os cursos da Origamid<br><br> Esse projéto é um template de aprendizado para o uso do framework Bootstrap 3 feito utilizando conceitos de Grid e Flexbox, a idéia é verificar o que foi alterado do Bootstrap 2 para essa nova versão, conhecer novos recursos e descobrir se ficou mais fácil ou mais difícil desenvolver um site responsivo utilizando o framework</p>",
          "github_url":"https://github.com/Relirk/Origamid/tree/master/brafe-3",
          "type":"frontend",
          "title":"Brafé 3",
-         "creation_date": "",
+         "creation_date": "Feb 3 2020 00:00:00 AM",
          "cover_image":"/assets/projects/frontend-projects/relirk-brafe-3.png",
          "cdn_url":"http://relirk-brafe-3.surge.sh/"
       },
       {
          "id":"Eckfqcqc5kRgDGzCsRos",
          "cover_image":"/assets/projects/frontend-projects/relirk-wildbeast.png",
-         "description":"Template de site inteiramente feito com técnicas de Grid Layout",
+         "description":"<p>Projeto realizado durante os cursos de expecialização da Origamid<br><br> Esse projeto é um template de site inteiramente feito  com HTML5 e CSS fazendo o uso somente de técnicas de Grid Layout. <br><br> Sem sombra de dúvidas esse é um dos meus projetos favoritos realizados na Origamid, nele eu aprendi de forma consistente como utilizar técnicas que sempre estarão presentes no meu dia a dia, além é claro da estética do site que eu também gostei muito</p>",
          "github_url":"https://github.com/Relirk/Origamid/tree/master/wildbeast",
          "type":"frontend",
          "title":"Wildbeast",
+         "creation_date": "Feb 10 2020 00:00:00 AM",
          "cdn_url":"http://relirk-wildbeast.surge.sh/"
       },
       {
@@ -75,17 +76,17 @@
          "title":"DynAd - Soluções em Adserver e mídia programática",
          "type":"frontend",
          "cover_image":"/assets/projects/frontend-projects/relirk-dynad.png",
-         "creation_date": "",
+         "creation_date": "Feb 10 2019 00:00:00 AM",
          "cdn_url":"https://www.dynad.net/",
-         "description":"Landing Page Dynad, feita durante o período de serviço na empresa UOL para o UOL AD Lab",
+         "description":"<p>Landing Page criada durante o período de serviço na empresa UOL - Universo Online para o UOL AD Lab<br><br> Na época desse projeto eu trabalhava como desenvolvedor backend e me ofereceram um projeto frontend porque na área de AD eu era uma das poucas pessoas com conhecimento para atuar no projeto. <br><br> A idéia geral era simples e criamos uma Landing Page para a Dynad, que é uma empresa da UOL que oferece serviços de Adserver e mídia programática para grandes e médias empresas. Foi o meu primeiro trabalho utilizando um projeto frontend legado com um novo layout de UX, achei super divertido e pude elevar meu conhecimento sobre Jquery e PHP moderno na época</p>",
          "rights":{}
       },
       {
          "id":"GF5gmchMe9cECgale5uC",
-         "creation_date": "",
+         "creation_date": "Feb 8 2019 00:00:00 AM",
          "type":"frontend",
          "cover_image":"/assets/projects/frontend-projects/relirk-bikcraft.png",
-         "description":"Template de site responsivo para portifólio de um cliente, utilizando CSS3, HTML5, JQuery, Modernizr e integração com Google Analilytics",
+         "description":"<p>Template responsivo criado durante o curso para criar sites para uma marca específica na Origamid<br><br> A idéia consiste em criar um site responsivo para portifólio de um cliente, utilizando CSS3, HTML5, JQuery, Modernizr e integração com Google Analilytics a fim de trabalhar com métricas e performance dos dados do cliente </p>",
          "cdn_url":"http://relirk-bikcraft.surge.sh/",
          "title":"Bikcraft",
          "github_url":"https://github.com/Relirk/Origamid/tree/master/bikcraft"
@@ -96,17 +97,17 @@
          "cover_image":"/assets/projects/frontend-projects/relirk-pipefy.png",
          "title":"Pipefy",
          "type":"frontend",
-         "creation_date": "",
-         "description":"Template da tela de Kanban do Pipefy para estudo de drag and drop com ReactJS",
+         "creation_date": "Jan 26 2020 00:00:00 AM",
+         "description":"p>Interface criada em um UI Clone da Rocketseat<br><br> O projeto consiste em recriar a tela de Kanban do Pipefy para estudo de drag and drop com ReactJS. Nesse projeto fizemos o uso de um arquivo local e uma fake API, o que na época achei mega interessante e útil para provar idéias de forma rápida e efetiva</p>",
          "cdn_url":"http://relirk-pipefy.surge.sh/"
       },
       {
          "id":"JaXl5grFzBMzZcWNwSNo",
          "type":"frontend",
-         "description":"Template da home da Netflix usando ReactJS, Webpack, Lodash e a API themoviedb para parte de busca e listagem do site",
+         "description":"<p>Clonagem da interface da Netflix<br><br> Este projeto é um clone front-end simplificado da home da Netflix. Foi criado com ReactJS, Webpack, Lodash e CSS (Grid e Flexbox). Ele usa o MovieDB API para procurar filmes e exibir detalhes quando o usuário interage com ele.</p>",
          "cdn_url":"http://relirk-netflix.surge.sh/",
          "title":"Netflix",
-         "creation_date": "",
+         "creation_date": "Jan 30 2018 00:00:00 AM",
          "cover_image":"/assets/projects/frontend-projects/relirk-netflix.png",
          "github_url":"https://github.com/Relirk/netflix-clone-frontend"
       },
@@ -114,21 +115,21 @@
          "id":"MESMlXyzT9pGpwOSxnco",
          "title":"Twitter",
          "cover_image":"/assets/projects/frontend-projects/relirk-twitter.png",
-         "creation_date": "",
+         "creation_date": "Jun 4 2018 00:00:00 AM",
          "cdn_url":"http://relirk-twitter.surge.sh/",
-         "description":"Template do perfil de usuário do Twitter (2018) inteiramente construido com Flexbox",
+         "description":"<p>Clonagem da interface do Twitter<br><br> A idéia era clonar a interface inteira da home do Twitter apenas fazendo o uso de Flexbox e HTML, utilizei a linha de comando do http-server para subir o servidor local e validar o projeto</p>",
          "github_url":"https://github.com/Relirk/twitter-clone-frontend",
          "type":"frontend"
       },
       {
          "id":"MN9HYpRQQIpU0tiBHNyQ",
          "type":"frontend",
-         "creation_date": "",
+         "creation_date": "Feb 23 2020 00:00:00 AM",
          "cdn_url":"",
          "title":"Go Barber Web",
          "github_url":"https://github.com/Relirk/gobarber",
          "cover_image":"/assets/projects/frontend-projects/relirk-gobarber.png",
-         "description":"Projeto de conclusão do Bootcamp da Rocketseat 2019 (Versão antiga)"
+         "description":"<p>Projeto de conclusão do Bootcamp da Rocketseat 2019<br><br> O projeto consistia em criar um sistema de cadastro de clientes e agendamentos para a barbearia, foi criado um frontend em ReactJS, mobile em React Native e um backend em NodeJS + MongoDB. <br><br> O sisteme permitia com que o usuário cadastrasse um agendamento de corte, permitia o cadastro de usuários da barbearia, análise de horários disponíveis e consulta de agendamentos.</p>"
       },
       {
          "id":"P3QVHoDdpxBTPgKX9avB",
@@ -136,17 +137,16 @@
          "cdn_url":"http://relirk-naturally-bizarre.surge.sh/",
          "type":"frontend",
          "github_url":"https://github.com/Relirk/naturally-bizarre",
-         "creation_date": "",
+         "creation_date": "Feb 7 2017 00:00:00 AM",
          "title":"Naturally Bizarre",
-         "description":"Experimentos baseados na série The Nature of Code, de Daniel Shiffman. Projeto feito com pré processadores e canvas"
+         "description":"<p>Projeto realizado com inspiração no trabalho do Luiz Bizarro<br><br> Experimentos baseados na série The Nature of Code, de Daniel Shiffman, projeto realizado interamente com pré processadores e canvas</p>"
       },
       {
          "id":"X0m2MnEAg6rb5lGnLKYQ",
-         "description":"Market Place de serviços finânceiros e empréstimos da empresa FinanZero",
-         "github_url":"",
+         "description":"<p>Site criado para a empresa FinanZero<br><br> Site Wordpress criado para a empreza FinanZero, um market place de serviços finânceiros e empréstimos focado principalmente em ser um buscador de empréstimos online. <br><br> Aqui foram implementadas diversas técnicas de SEO e Analytics para garantir uma boa performance, controle de dados e busca organica.</p>",
          "rights":{},
-         "creation_date": "",
-         "cdn_url":"",
+         "creation_date": "Set 1 2019 00:00:00 AM",
+         "cdn_url":"https://finanzero.com.br/",
          "title":"FinanZero: O Melhor Buscador de Empréstimos",
          "type":"frontend",
          "cover_image":"/assets/projects/frontend-projects/relirk-finanzero.png"
@@ -156,18 +156,18 @@
          "cdn_url":"https://rlk-instagram-clone-frontend.herokuapp.com/",
          "cover_image":"/assets/projects/frontend-projects/relirk-instagram.png",
          "type":"frontend",
-         "description":"Aplicação fake do Instagram, utilizando ReactJS, Amazon S3(já desativado) para upload de fotos e deploy pelo Heroku",
+         "description":"<p>Aplicação fake do Instagram<br><br> Aplicação criada utilizando uma estrutura ReactJS, serviços do Amazon S3(já desativado) para upload de fotos e fluxo de deploy através da plataforma do Heroku</p>",
          "github_url":"https://github.com/Relirk/instagram-clone-frontend",
-         "creation_year":"",
+         "creation_date": "Jun 18 2019 00:00:00 AM",
          "title":"Instagram Web"
       },
       {
          "id":"aFMH02dyseGthWEiw6nN",
          "type":"frontend",
          "description":"Chat web feito com Express, NodeJs e Socket.IO.",
-         "creation_date": "",
+         "creation_date": "Feb 23 2020 00:00:00 AM",
          "cdn_url":"",
-         "title":"Express Chat",
+         "title":"<p>Express chat<br><br> A idéia dessa aplicação foi criar uma plataforma de envio de mensagens com os conceitos de frontend disponibilizados pelo Express, onde ela foi inteiramente construida fazendo o uso do framework no NodeJs e da bibliotea Socket.IO</p>",
          "cover_image":"/assets/projects/frontend-projects/relirk-express-chat.png",
          "github_url":"https://github.com/Relirk/express-chat"
       },
@@ -175,19 +175,21 @@
          "id":"d4NqbkTYZWoX7pXWbYXu",
          "type":"frontend",
          "title":"Animais fantásticos",
+         "creation_date": "Feb 8 2020 00:00:00 AM",
          "github_url":"https://github.com/Relirk/Origamid/tree/master/animais-fantasticos",
          "cover_image":"/assets/projects/frontend-projects/relirk-animais-fantasticos.png",
-         "description":"Template de site estruturado com Javascript ES6, animações e Webpack",
+         "description":"<p>Projeto criado durante o curso de HTML com animações da Origamid<br><br> O conceito do projeto era criar um template de site estruturado com Javascript ES6, animações e fazendo o uso de configurações especificas de otimização com Webpack</p>",
          "cdn_url":"http://relirk-fantastic-animals.surge.sh/"
       },
       {
          "id":"dClfoX5nDH93AnQDSLE6",
+         "creation_date": "Jun 21 2019 00:00:00 AM",
          "cover_image":"/assets/projects/frontend-projects/relirk-bossabox.png",
          "github_url":"https://github.com/Relirk/bossabox-challenge-vuttr-frontend",
          "title":"VUTTR (Very Useful Tools to Remember)",
          "cdn_url":"",
          "type":"frontend",
-         "description":"Ferramenta de pesquisa e associação de tags criada para o desafio de vaga da Bossabox, utilizando React e Material-UI"
+         "description":"<p>Desafio Bossabox React<br><br> O desafio era cria uma ferramenta de pesquisa e associação de tags criada para o desafio de vaga da Bossabox, nesse desafio eu utilizei ReactJS e Material-UI. <br><br> De maneira geral a ferramenta permitia que o usuário cadastrasse uma ferramenta, agregasse uma descrição da mesma, criasse tags de referência e conseguisse buscar por conteúdo ou apenas pelas tags criadas</p>"
       },
       {
          "id":"eIHCVz4vYc0AXSYvWMRU",
@@ -195,17 +197,19 @@
          "type":"frontend",
          "cover_image":"/assets/projects/frontend-projects/relirk-upload-image.png",
          "title":"Upload Image Web",
-         "description":"Aplicação de upload de arquivos no S3(já desativado), hospedagem no Heroku e sync na web",
-         "github_url":"https://github.com/Relirk/upload-project-frontend"
+         "description":"<p>Projeto de upload de imagens<br><br> A idéia era criar uma aplicação que fizesse upload de arquivos no Amazon S3(já desativado), possuisse um frontend para a inserção e visualização dos históricos de imagens com hospedagem no Heroku e sincronização na web</p>",
+         "github_url":"https://github.com/Relirk/upload-project-frontend",
+         "creation_date": "Jun 20 2019 00:00:00 AM"
       },
       {
          "id":"jzaEqwEMk7BIpzHz1edd",
          "github_url":"https://github.com/Relirk/Origamid/tree/master/brafe-1",
          "title":"Brafé 1",
-         "description":"Template de aprendizado para o uso do framework Bootstrap 1 feito com conceitos de Grid e Flexbox",
+         "description":"<p>Projeto de aprendizado realizado durante os cursos da Origamid<br><br> Esse projéto é um template de aprendizado para o uso do framework Bootstrap 1 feito utilizando conceitos de Grid e Flexbox, a idéia é conhecer novos recursos e descobrir como é desenvolver um site responsivo utilizando o framework</p>",
          "cover_image":"/assets/projects/frontend-projects/relirk-brafe-1.png",
          "cdn_url":"http://relirk-brafe-1.surge.sh/",
-         "type":"frontend"
+         "type":"frontend",
+         "creation_date": "Feb 1 2019 00:00:00 AM"
       },
       {
          "id":"oNiV7OjA9KHWi1dEpssd",
@@ -213,8 +217,8 @@
          "cdn_url":"http://relirk-flexblog.surge.sh/",
          "cover_image":"/assets/projects/frontend-projects/relirk-flexblog.png",
          "github_url":"https://github.com/Relirk/Origamid/tree/master/flexblog",
-         "description":"Template de site construido inteiramente com Flexbox",
-         "creation_date": "",
+         "description":"<p>Projeto de aprendizado realizado durante os cursos da Origamid<br><br> A idéia era criar um template de site responsivo com a temática de um blog genérico construido inteiramente com HTML5 e recursos do flexbox</p>",
+         "creation_date": "Feb 15 2019 00:00:00 AM",
          "title":"Flexblog"
       },
       {
@@ -224,14 +228,14 @@
          "type":"frontend",
          "github_url":"https://github.com/Relirk/Origamid/tree/master/rest",
          "cdn_url":"http://relirk-rest.surge.sh/",
-         "description":"Template de cardápio para aplicação de estudos de Tipografia"
+         "description":"<p>Projeto de aprendizado realizado durante os cursos da Origamid<br><br> A idéia era criar um template de cardápio de restaurantes para aplicação de estudos de Tipografia avançada</p>"
       },
       {
          "id":"Jb1XwaHKHcpTkjITT7qX",
          "title":"Gestão de chaves PIX",
          "cover_image":"/assets/projects/frontend-projects/relirk_mp_pix.png",
          "type":"frontend",
-         "github_url":"",
+         "creation_date": "Jun 16 2023 00:00:00 AM",
          "cdn_url":"https://www.mercadopago.com.br/pix-keys/app/key-management",
          "description":"<p>Experiência de Gestão de chaves PIX para o Mercado pago</p> <br> <p>Projeto estruturado com o uso de webview + ReactJS com arquitetura SSR.</p> <p>Utilização de Wrappers e APIs em NodeJS e Golang.</p>"
       },
@@ -240,7 +244,7 @@
          "title":"Open Finance",
          "cover_image":"/assets/projects/frontend-projects/relirk_mp_opf.png",
          "type":"frontend",
-         "github_url":"",
+         "creation_date": "Mai 12 2022 00:00:00 AM",
          "cdn_url":"https://www.mercadopago.com.br/open-banking/app/consent-management",
          "description":"<p>Primeira versão da experiência de Open Finance para o Mercado pago</p> <br> <p>Projeto estruturado com o uso de webview + ReactJS com arquitetura SSR.</p> <p>Utilização de Wrappers e APIs em NodeJS e Golang.</p>"
       }
