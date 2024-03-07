@@ -1,4 +1,6 @@
+import { useEffect, useState } from 'react';
 import Image from 'next/image'
+import formatDate from '@/util/date'
 import { placeholderLoadingImage } from '@/constants'
 import styles from './styles.module.css'
 
@@ -13,6 +15,11 @@ const {
 
 export default function Modal(props: { customId: string; project: any; }) {
   const { customId, project } = props;
+  const [formattedDate, setFormattedDate] = useState('');
+  
+  useEffect(() => {
+    setFormattedDate(formatDate(project.creation_date));
+  }, [project.creation_date]);
 
   return (
     <div id={customId} className={modal_overlay}>
@@ -31,6 +38,7 @@ export default function Modal(props: { customId: string; project: any; }) {
                 quality={80}
                 placeholder="blur"
                 blurDataURL={placeholderLoadingImage} />
+              <p>Realizado em {formattedDate}</p>
             </div>
 
             <div className={project_data_1} dangerouslySetInnerHTML={ { __html: project.description } }>

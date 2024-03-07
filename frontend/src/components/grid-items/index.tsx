@@ -50,7 +50,7 @@ export default function GridItems(props: { projects: any, active: boolean, title
               </div>
             </a>
 
-            <ItemDetail projectTitle={project.title} projectId={project.id}/>
+            <ItemDetail projectTitle={project.title} projectId={project.id} projectDate={project.creation_date}/>
           </div>
         ))}
 

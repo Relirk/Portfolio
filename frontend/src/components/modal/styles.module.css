@@ -40,7 +40,6 @@
 .modal_overlay .modal > iframe, .modal_overlay .modal > div {
   border: none;
   width: 100%;
-  height: 100%;
 }
 .modal_overlay .close {
   background-color: var(--primary);

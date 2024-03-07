@@ -10,6 +10,7 @@
     "deploy": "firebase deploy"
   },
   "dependencies": {
+    "date-fns": "^3.3.1",
     "embla-carousel": "^8.0.0-rc22",
     "embla-carousel-class-names": "^8.0.0-rc22",
     "embla-carousel-react": "^8.0.0-rc22",
