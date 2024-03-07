@@ -228,6 +228,7 @@
          "type":"frontend",
          "github_url":"https://github.com/Relirk/Origamid/tree/master/rest",
          "cdn_url":"http://relirk-rest.surge.sh/",
+         "creation_date": "Jan 13 2019 10:00:00 AM",
          "description":"<p>Projeto de aprendizado realizado durante os cursos da Origamid<br><br> A idéia era criar um template de cardápio de restaurantes para aplicação de estudos de Tipografia avançada</p>"
       },
       {

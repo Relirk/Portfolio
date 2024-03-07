@@ -1,0 +1,70 @@
+.footer_component {
+  --background: #111014;
+  --light: #F9F9F9;
+  --primary: #ccff00;
+  --secondary: #3c3c3c;
+  --font: "Pixelify Sans", sans-serif;
+  background-color: var(--background);
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-top: solid 2px var(--primary);
+  margin-top: 7rem;
+  padding: 6rem 0;
+}
+
+.footer_container {
+}
+
+.other_menus {
+  font-family: var(--font);
+  font-size: 1.5rem;
+  font-weight: unset;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 20rem);
+  height: 100%;
+}
+
+.other_link {
+  text-decoration: none;
+  color: var(--light);
+}
+
+.other_link:hover {
+  color: var(--primary);
+}
+
+.other_link:hover::after {
+  width: 100%;
+}
+
+.other_link::after {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 1px;
+  left: 0;
+  z-index: 9;
+  height: 5px;
+  width: 0;
+  background: var(--primary);
+  border-radius: 16px;
+  transition: all .3s ease-out 0s;
+}
+
+.link_container {
+  width: 100%;
+  color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+.other_info {
+  font-family: var(--font);
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--secondary);
+}
