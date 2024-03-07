@@ -2,6 +2,7 @@
 import { useState } from 'react'
 
 import GridButtons from '@/components/grid-buttons'
+import GridItems from '@/components/grid-items'
 import EmblaCarousel from '@/components/embla-carousel'
 import projects from '../../../public/database.json'
 import bgBackend from '../../../public/assets/carousel/background/webp/backend-background.webp'
@@ -65,36 +66,63 @@ export default function ProjectsSection() {
         }}/>
 
       {projects.frontendProjects.length > 0 && (
-        
-        <EmblaCarousel
-          title="Desenvolvimento - Front-End"
-          projects={projects.frontendProjects}
-          backgroundImage={bgFrontend}
-          active={frontendVisible}/>
+        <>
+          {/* <EmblaCarousel
+            title="Desenvolvimento - Front-End"
+            projects={projects.frontendProjects}
+            backgroundImage={bgFrontend}
+            active={frontendVisible}/> */}
+
+          <GridItems
+            title="Desenvolvimento - Front-End"
+            projects={projects.frontendProjects}
+            active={frontendVisible}/>
+        </>
       )}
 
       {projects.mobileProjects.length > 0 && (
-        <EmblaCarousel
-          title="Desenvolvimento - Mobile"
-          projects={projects.mobileProjects}
-          backgroundImage={bgMobile}
-          active={mobileVisible}/>
+        <>
+          {/* <EmblaCarousel
+            title="Desenvolvimento - Mobile"
+            projects={projects.mobileProjects}
+            backgroundImage={bgMobile}
+            active={mobileVisible}/> */}
+
+          <GridItems
+            title="Desenvolvimento - Mobile"
+            projects={projects.mobileProjects}
+            active={mobileVisible}/>
+        </>
       )}
       
       {projects.backendProjects.length > 0 && (
-        <EmblaCarousel
-          title="Desenvolvimento - Back-End"
-          projects={projects.backendProjects}
-          backgroundImage={bgBackend}
-          active={backendVisible}/>
+        <>
+          {/* <EmblaCarousel
+            title="Desenvolvimento - Back-End"
+            projects={projects.backendProjects}
+            backgroundImage={bgBackend}
+            active={backendVisible}/> */}
+          
+          <GridItems
+            title="Desenvolvimento - Back-End"
+            projects={projects.backendProjects}
+            active={backendVisible}/>
+        </>
       )}
       
       {projects.gameProjects.length > 0 && (
-        <EmblaCarousel
-          title="Desenvolvimento - Games"
-          projects={projects.gameProjects}
-          backgroundImage={bgGame}
-          active={gameVisible}/>
+        <>
+          {/* <EmblaCarousel
+            title="Desenvolvimento - Games"
+            projects={projects.gameProjects}
+            backgroundImage={bgGame}
+            active={gameVisible}/> */}
+
+          <GridItems
+            title="Desenvolvimento - Games"
+            projects={projects.gameProjects}
+            active={gameVisible}/>
+        </>
       )}
     </section>
   )

@@ -8,7 +8,6 @@ import Modal from '@/components/modal'
 import CarouselItem from '@/components/carousel-item'
 import CarouselHeader from '@/components/caroulsel-header'
 import CarouselButtons from '@/components/carousel-buttons'
-import CarouselProgressBar from '@/components/caroulsel-progress-bar';
 import carouselItemStyles from '@/components/carousel-item/styles.module.css'
 import styles from './styles.module.css'
 

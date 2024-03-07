@@ -6,7 +6,7 @@
          "github_url":"https://github.com/GitHubMarketPlace/Hotsite",
          "cdn_url":"relirk-marketplace-hotsite-usjt.surge.sh",
          "creation_date": "",
-         "cover_image":"/assets/projects/frontend-projects/webp/relirk-marketplace-usjt.webp",
+         "cover_image":"/assets/projects/frontend-projects/relirk-marketplace-usjt.png",
          "title":"MKP Market Place",
          "type":"frontend"
       },
@@ -18,13 +18,13 @@
          "type":"frontend",
          "cdn_url":"",
          "creation_date": "",
-         "cover_image":"/assets/projects/frontend-projects/webp/relirk-swinfo.webp"
+         "cover_image":"/assets/projects/frontend-projects/relirk-swinfo.png"
       },
       {
          "id":"AnwKh8PKW2DFIotK8ARt",
          "github_url":"https://github.com/Relirk/luizalabs-challenge-cepMap-frontend",
          "title":"Magalu Maps",
-         "cover_image":"/assets/projects/frontend-projects/webp/relirk-luizalabs.webp",
+         "cover_image":"/assets/projects/frontend-projects/relirk-luizalabs.png",
          "description":"Ferramenta de pesquisa de cep e plot no Gooble maps da coordenada criada para o desafio da Magazine Luiza, utilizando React e Material-UI",
          "cdn_url":"",
          "creation_date": "",
@@ -34,7 +34,7 @@
          "id":"1d50c304-e651-43c2-94cb-1a4e07ff44fa",
          "github_url":"https://github.com/Relirk/imersao-react-aluraflix/tree/master",
          "title":"Aluraflix",
-         "cover_image":"/assets/projects/frontend-projects/webp/relirk-imersao-alura-aluraflix.webp",
+         "cover_image":"/assets/projects/frontend-projects/relirk-imersao-alura-aluraflix.png",
          "description":"Projeto realizado durante a Imersão Alura em Julho de 2020. A idéia foi criar uma plataforma onde fosse possível assistir vídeos e gestiona-los com a api deo vimeo.",
          "cdn_url":"https://imersao-react-aluraflix-git-master-relirk.vercel.app/",
          "creation_date": "",
@@ -48,7 +48,7 @@
          "type":"frontend",
          "creation_date": "",
          "description":"Template de aprendizado para o uso do framework Bootstrap 2 feito com conceitos de Grid e Flexbox",
-         "cover_image":"/assets/projects/frontend-projects/webp/relirk-brafe-1.webp"
+         "cover_image":"/assets/projects/frontend-projects/relirk-brafe-1.png"
       },
       {
          "id":"DOyLlZrgPOPplDulbr6R",
@@ -57,12 +57,12 @@
          "type":"frontend",
          "title":"Brafé 3",
          "creation_date": "",
-         "cover_image":"/assets/projects/frontend-projects/webp/relirk-brafe-3.webp",
+         "cover_image":"/assets/projects/frontend-projects/relirk-brafe-3.png",
          "cdn_url":"http://relirk-brafe-3.surge.sh/"
       },
       {
          "id":"Eckfqcqc5kRgDGzCsRos",
-         "cover_image":"/assets/projects/frontend-projects/webp/relirk-wildbeast.webp",
+         "cover_image":"/assets/projects/frontend-projects/relirk-wildbeast.png",
          "description":"Template de site inteiramente feito com técnicas de Grid Layout",
          "github_url":"https://github.com/Relirk/Origamid/tree/master/wildbeast",
          "type":"frontend",
@@ -74,7 +74,7 @@
          "github_url":"",
          "title":"DynAd - Soluções em Adserver e mídia programática",
          "type":"frontend",
-         "cover_image":"/assets/projects/frontend-projects/webp/relirk-dynad.webp",
+         "cover_image":"/assets/projects/frontend-projects/relirk-dynad.png",
          "creation_date": "",
          "cdn_url":"https://www.dynad.net/",
          "description":"Landing Page Dynad, feita durante o período de serviço na empresa UOL para o UOL AD Lab",
@@ -84,7 +84,7 @@
          "id":"GF5gmchMe9cECgale5uC",
          "creation_date": "",
          "type":"frontend",
-         "cover_image":"/assets/projects/frontend-projects/webp/relirk-bikcraft.webp",
+         "cover_image":"/assets/projects/frontend-projects/relirk-bikcraft.png",
          "description":"Template de site responsivo para portifólio de um cliente, utilizando CSS3, HTML5, JQuery, Modernizr e integração com Google Analilytics",
          "cdn_url":"http://relirk-bikcraft.surge.sh/",
          "title":"Bikcraft",
@@ -93,7 +93,7 @@
       {
          "id":"JBt5ZBae3poz8i6ta9An",
          "github_url":"https://github.com/Relirk/pipefy-clone-frontend",
-         "cover_image":"/assets/projects/frontend-projects/webp/relirk-pipefy.webp",
+         "cover_image":"/assets/projects/frontend-projects/relirk-pipefy.png",
          "title":"Pipefy",
          "type":"frontend",
          "creation_date": "",
@@ -107,13 +107,13 @@
          "cdn_url":"http://relirk-netflix.surge.sh/",
          "title":"Netflix",
          "creation_date": "",
-         "cover_image":"/assets/projects/frontend-projects/webp/relirk-netflix.webp",
+         "cover_image":"/assets/projects/frontend-projects/relirk-netflix.png",
          "github_url":"https://github.com/Relirk/netflix-clone-frontend"
       },
       {
          "id":"MESMlXyzT9pGpwOSxnco",
          "title":"Twitter",
-         "cover_image":"/assets/projects/frontend-projects/webp/relirk-twitter.webp",
+         "cover_image":"/assets/projects/frontend-projects/relirk-twitter.png",
          "creation_date": "",
          "cdn_url":"http://relirk-twitter.surge.sh/",
          "description":"Template do perfil de usuário do Twitter (2018) inteiramente construido com Flexbox",
@@ -127,12 +127,12 @@
          "cdn_url":"",
          "title":"Go Barber Web",
          "github_url":"https://github.com/Relirk/gobarber",
-         "cover_image":"/assets/projects/frontend-projects/webp/relirk-gobarber.webp",
+         "cover_image":"/assets/projects/frontend-projects/relirk-gobarber.png",
          "description":"Projeto de conclusão do Bootcamp da Rocketseat 2019 (Versão antiga)"
       },
       {
          "id":"P3QVHoDdpxBTPgKX9avB",
-         "cover_image":"/assets/projects/frontend-projects/webp/relirk-naturally-bizarre.webp",
+         "cover_image":"/assets/projects/frontend-projects/relirk-naturally-bizarre.png",
          "cdn_url":"http://relirk-naturally-bizarre.surge.sh/",
          "type":"frontend",
          "github_url":"https://github.com/Relirk/naturally-bizarre",
@@ -149,12 +149,12 @@
          "cdn_url":"",
          "title":"FinanZero: O Melhor Buscador de Empréstimos",
          "type":"frontend",
-         "cover_image":"/assets/projects/frontend-projects/webp/relirk-finanzero.webp"
+         "cover_image":"/assets/projects/frontend-projects/relirk-finanzero.png"
       },
       {
          "id":"X4tXjZo9wvosZIogEzHg",
          "cdn_url":"https://rlk-instagram-clone-frontend.herokuapp.com/",
-         "cover_image":"/assets/projects/frontend-projects/webp/relirk-instagram.webp",
+         "cover_image":"/assets/projects/frontend-projects/relirk-instagram.png",
          "type":"frontend",
          "description":"Aplicação fake do Instagram, utilizando ReactJS, Amazon S3(já desativado) para upload de fotos e deploy pelo Heroku",
          "github_url":"https://github.com/Relirk/instagram-clone-frontend",
@@ -168,7 +168,7 @@
          "creation_date": "",
          "cdn_url":"",
          "title":"Express Chat",
-         "cover_image":"/assets/projects/frontend-projects/webp/relirk-express-chat.webp",
+         "cover_image":"/assets/projects/frontend-projects/relirk-express-chat.png",
          "github_url":"https://github.com/Relirk/express-chat"
       },
       {
@@ -176,13 +176,13 @@
          "type":"frontend",
          "title":"Animais fantásticos",
          "github_url":"https://github.com/Relirk/Origamid/tree/master/animais-fantasticos",
-         "cover_image":"/assets/projects/frontend-projects/webp/relirk-animais-fantasticos.webp",
+         "cover_image":"/assets/projects/frontend-projects/relirk-animais-fantasticos.png",
          "description":"Template de site estruturado com Javascript ES6, animações e Webpack",
          "cdn_url":"http://relirk-fantastic-animals.surge.sh/"
       },
       {
          "id":"dClfoX5nDH93AnQDSLE6",
-         "cover_image":"/assets/projects/frontend-projects/webp/relirk-bossabox.webp",
+         "cover_image":"/assets/projects/frontend-projects/relirk-bossabox.png",
          "github_url":"https://github.com/Relirk/bossabox-challenge-vuttr-frontend",
          "title":"VUTTR (Very Useful Tools to Remember)",
          "cdn_url":"",
@@ -193,7 +193,7 @@
          "id":"eIHCVz4vYc0AXSYvWMRU",
          "cdn_url":"https://rlk-upload-project-frontend.herokuapp.com/",
          "type":"frontend",
-         "cover_image":"/assets/projects/frontend-projects/webp/relirk-upload-image.webp",
+         "cover_image":"/assets/projects/frontend-projects/relirk-upload-image.png",
          "title":"Upload Image Web",
          "description":"Aplicação de upload de arquivos no S3(já desativado), hospedagem no Heroku e sync na web",
          "github_url":"https://github.com/Relirk/upload-project-frontend"
@@ -203,7 +203,7 @@
          "github_url":"https://github.com/Relirk/Origamid/tree/master/brafe-1",
          "title":"Brafé 1",
          "description":"Template de aprendizado para o uso do framework Bootstrap 1 feito com conceitos de Grid e Flexbox",
-         "cover_image":"/assets/projects/frontend-projects/webp/relirk-brafe-1.webp",
+         "cover_image":"/assets/projects/frontend-projects/relirk-brafe-1.png",
          "cdn_url":"http://relirk-brafe-1.surge.sh/",
          "type":"frontend"
       },
@@ -211,7 +211,7 @@
          "id":"oNiV7OjA9KHWi1dEpssd",
          "type":"frontend",
          "cdn_url":"http://relirk-flexblog.surge.sh/",
-         "cover_image":"/assets/projects/frontend-projects/webp/relirk-flexblog.webp",
+         "cover_image":"/assets/projects/frontend-projects/relirk-flexblog.png",
          "github_url":"https://github.com/Relirk/Origamid/tree/master/flexblog",
          "description":"Template de site construido inteiramente com Flexbox",
          "creation_date": "",
@@ -220,7 +220,7 @@
       {
          "id":"uC2RSbsb2J7SPFJqfMcm",
          "title":"Rest",
-         "cover_image":"/assets/projects/frontend-projects/webp/relirk-rest.webp",
+         "cover_image":"/assets/projects/frontend-projects/relirk-rest.png",
          "type":"frontend",
          "github_url":"https://github.com/Relirk/Origamid/tree/master/rest",
          "cdn_url":"http://relirk-rest.surge.sh/",
@@ -229,7 +229,7 @@
       {
          "id":"Jb1XwaHKHcpTkjITT7qX",
          "title":"Gestão de chaves PIX",
-         "cover_image":"/assets/projects/frontend-projects/webp/relirk_mp_pix.webp",
+         "cover_image":"/assets/projects/frontend-projects/relirk_mp_pix.png",
          "type":"frontend",
          "github_url":"",
          "cdn_url":"https://www.mercadopago.com.br/pix-keys/app/key-management",
@@ -238,7 +238,7 @@
       {
          "id":"Bqu02H6nBWrq4O12ZARL",
          "title":"Open Finance",
-         "cover_image":"/assets/projects/frontend-projects/webp/relirk_mp_opf.webp",
+         "cover_image":"/assets/projects/frontend-projects/relirk_mp_opf.png",
          "type":"frontend",
          "github_url":"",
          "cdn_url":"https://www.mercadopago.com.br/open-banking/app/consent-management",
@@ -249,7 +249,7 @@
       {
          "id":"E0lG5jP6fKJpWT4Do8yZ",
          "title":"NodeJS Spider",
-         "cover_image":"/assets/projects/backend-projects/webp/relirk-node-movie-spider.webp",
+         "cover_image":"/assets/projects/backend-projects/relirk-node-movie-spider.png",
          "github_url":"https://github.com/Relirk/movies-webcrawler-spider",
          "type":"backend",
          "cdn_url":"",
@@ -259,7 +259,7 @@
          "id":"I5y2NMPDJozi29TLe4mC",
          "github_url":"https://github.com/Relirk/gobarber",
          "description":"Projeto de conclusão do Bootcamp da Rocketseat 2019 (Versão antiga)",
-         "cover_image":"/assets/projects/backend-projects/webp/relirk-gobarber-api.webp",
+         "cover_image":"/assets/projects/backend-projects/relirk-gobarber-api.png",
          "cdn_url":"",
          "title":"Go Barber API",
          "type":"backend"
@@ -267,7 +267,7 @@
       {
          "id":"VeXvd5gtNMEJS4Cj4Lgp",
          "title":"Parse Dashboard",
-         "cover_image":"/assets/projects/backend-projects/webp/relirk-parse-dashboard.webp",
+         "cover_image":"/assets/projects/backend-projects/relirk-parse-dashboard.png",
          "description":"Dashboard do Parse alimentada por uma extensão do MongoDB e hospedada pelo Heroku",
          "cdn_url":"https://relirk-parse-dashboard.herokuapp.com/login",
          "github_url":"https://github.com/Relirk/relirk-parse-dashboard",
@@ -280,14 +280,14 @@
          "github_url":"https://github.com/Relirk/instagram-clone-backend",
          "cdn_url":"https://rlk-instagram-clone-backend.herokuapp.com/",
          "title":"Instagram API",
-         "cover_image":"/assets/projects/backend-projects/webp/relirk-instagram-api.webp"
+         "cover_image":"/assets/projects/backend-projects/relirk-instagram-api.png"
       },
       {
          "id":"xdSpkx6qTvo5uOvFlEjL",
          "description":"Aplicação de upload de arquivos no S3(já desativado), hospedagem no Heroku e sync na web",
          "title":"Upload Image API",
          "github_url":"https://github.com/Relirk/upload-project-backend",
-         "cover_image":"/assets/projects/backend-projects/webp/relirk-upload-image-api.webp",
+         "cover_image":"/assets/projects/backend-projects/relirk-upload-image-api.png",
          "type":"backend",
          "cdn_url":"https://rlk-upload-project-backend.herokuapp.com/"
       }
@@ -300,7 +300,7 @@
          "google_play_url":"",
          "type":"mobile",
          "creation_date":"",
-         "cover_image":"/assets/projects/mobile-projects/webp/relirk-gobarber-mobile.webp",
+         "cover_image":"/assets/projects/mobile-projects/relirk-gobarber-mobile.png",
          "apple_store_url":"",
          "creation_year":"2019",
          "title":"Go Barber App"
@@ -308,7 +308,7 @@
       {
          "id":"AOxDAJn2ORjF7MbkB3Db",
          "title":"Waybee Driver",
-         "cover_image":"/assets/projects/mobile-projects/webp/relirk-waybee-driver.webp",
+         "cover_image":"/assets/projects/mobile-projects/relirk-waybee-driver.png",
          "apple_store_url":"https://appadvice.com/app/waybee-driver/1418563640",
          "google_play_url":"https://play.google.com/store/apps/details?id=com.waybee.apps.driver&hl=pt_BR&gl=US",
          "type":"mobile",
@@ -318,7 +318,7 @@
       {
          "id":"C8YolYBdBkdLiCBc93wk",
          "title":"Ping-pong X",
-         "cover_image":"/assets/projects/mobile-projects/webp/relirk-android-pingpongx.webp",
+         "cover_image":"/assets/projects/mobile-projects/relirk-android-pingpongx.png",
          "type":"mobile",
          "creation_date":"",
          "description":"Aplicativo com o objetivo de simular um placar de controle de pontos para tênis de mesa.",
@@ -327,7 +327,7 @@
       {
          "id":"FwDHbtOOLOzGSVaWJ69e",
          "description":"Aplicativo para compra e delivery de alimentos de food trucks, está versão do o app é destinada ao comprador/usuário comum",
-         "cover_image":"/assets/projects/mobile-projects/webp/relirk-vaptfood.webp",
+         "cover_image":"/assets/projects/mobile-projects/relirk-vaptfood.png",
          "type":"mobile",
          "creation_date":"",
          "title":"Vaptfood"
@@ -336,14 +336,14 @@
          "id":"GvTAAMIDJ9WiBDvkbFeL",
          "description":"Aplicativo que simula uma pokedex de pokémon, aqui eu utilizei a api open source do pokemon e fiz pequenas edições para manipular o controle de detalhe e atributos do pokemon.",
          "github_url":"https://github.com/Relirk/fiap-android-pokedex",
-         "cover_image":"/assets/projects/mobile-projects/webp/relirk-android-pokemon.webp",
+         "cover_image":"/assets/projects/mobile-projects/relirk-android-pokemon.png",
          "title":"Pokedex",
          "creation_date":"",
          "type":"mobile"
       },
       {
          "id":"ISN2GVWtiCT8yHGgxF8A",
-         "cover_image":"/assets/projects/mobile-projects/webp/relirk-android-imc.webp",
+         "cover_image":"/assets/projects/mobile-projects/relirk-android-imc.png",
          "description":"Aplicativo que tem como objetivo calcular o IMC de um usuário com base em seu peso e sua altura.",
          "type":"mobile",
          "github_url":"https://github.com/Relirk/fiap-android-imc",
@@ -353,7 +353,7 @@
       {
          "id":"Ks5LtnwNkalLoab4o63I",
          "github_url":"https://github.com/Relirk/fiap-android-lembretedecompras",
-         "cover_image":"/assets/projects/mobile-projects/webp/relirk-android-lembrete-de-compras.webp",
+         "cover_image":"/assets/projects/mobile-projects/relirk-android-lembrete-de-compras.png",
          "title":"Lembrete de compras",
          "description":"Aplicativo de lista de comprar, permite com que o usuário adicione items e gerencie da maneira que achar mais conveniente. O aplicativo utiliza de recursos nativos de armazenamento local para persistir a lista e garantir uma melhor performance.",
          "creation_date":"",
@@ -361,7 +361,7 @@
       },
       {
          "id":"Q8vDqivjgBHi49TM0QPS",
-         "cover_image":"/assets/projects/mobile-projects/webp/relirk-vaptfood-food-truck.webp",
+         "cover_image":"/assets/projects/mobile-projects/relirk-vaptfood-food-truck.png",
          "title":"Vaptfood - Food Truck",
          "description":"Aplicativo para compra e delivery de alimentos de food trucks, está versão do o app é destinada ao vendedor do Food Truck",
          "creation_date":"",
@@ -375,7 +375,7 @@
          "description":"Clone da interface inicial do Nubank feito com React Native e animações",
          "type":"mobile",
          "apple_store_url":"",
-         "cover_image":"/assets/projects/mobile-projects/webp/relirk-nubank-mobile.webp",
+         "cover_image":"/assets/projects/mobile-projects/relirk-nubank-mobile.png",
          "google_play_url":""
       },
       {
@@ -386,7 +386,7 @@
          "google_play_url":"",
          "github_url":"https://github.com/Relirk/uber-clone-mobile",
          "description":"Clone da interface de rota do Uber feito com React Native e Google Maps",
-         "cover_image":"/assets/projects/mobile-projects/webp/relirk-uber-mobile.webp",
+         "cover_image":"/assets/projects/mobile-projects/relirk-uber-mobile.png",
          "type":"mobile"
       },
       {
@@ -397,21 +397,21 @@
          "google_play_url":"",
          "type":"mobile",
          "github_url":"https://github.com/Relirk/github-repo-realmdb",
-         "cover_image":"/assets/projects/mobile-projects/webp/relirk-realm-react-native.webp"
+         "cover_image":"/assets/projects/mobile-projects/relirk-realm-react-native.png"
       },
       {
          "id":"a8fkDtQTQq0Vp0RNw9nN",
          "title":"MKP MarketPlace",
          "description":"O MarketPlace é o aplicativo que foi utilizado como meu projeto de conclusão de curso para o bacharelado em Ciência da Computação na USJT. Ele é um aplicativo Android focado totalmente em dar a melhor alternativa de compra para todo e qualquer tipo de usuário utilizando-se de algoritmos de recomendação e IA para criar uma boa base de escolhas com base no seu perfil.",
          "github_url":"https://github.com/GitHubMarketPlace/MarketPlace",
-         "cover_image":"/assets/projects/mobile-projects/webp/relirk-android-marketplace-usjt.webp",
+         "cover_image":"/assets/projects/mobile-projects/relirk-android-marketplace-usjt.png",
          "type":"mobile",
          "google_play_url":"",
          "apple_store_url":""
       },
       {
          "id":"d3b82jplMCxryehW3XY7",
-         "cover_image":"/assets/projects/mobile-projects/webp/relirk-concreserv.webp",
+         "cover_image":"/assets/projects/mobile-projects/relirk-concreserv.png",
          "google_play_url":"",
          "description":"Aplicativo desenvolvido sob demanda, para envio, prospecção e manejo de propostas para venda de concreto da empresa Concreserv",
          "apple_store_url":"",
@@ -425,7 +425,7 @@
          "description":"Após começarem a migração do aplicativo antigo para um modelo hibrido utilizando ReactJS, fui chamado a participar do desenvolvimento da primeira versão.",
          "type":"mobile",
          "apple_store_url":"https://apps.apple.com/br/app/col%C3%A9gio-bandeirantes/id1067461270",
-         "cover_image":"/assets/projects/mobile-projects/webp/relirk-colegio-bandeirantes.webp",
+         "cover_image":"/assets/projects/mobile-projects/relirk-colegio-bandeirantes.png",
          "title":"Colégio Bandeirantes.",
          "github_url":""
       },
@@ -435,7 +435,7 @@
          "description":"Aplicativo escolar para estudantes",
          "type":"mobile",
          "creation_date":"",
-         "cover_image":"/assets/projects/mobile-projects/webp/relirk-waybee-student.webp",
+         "cover_image":"/assets/projects/mobile-projects/relirk-waybee-student.png",
          "apple_store_url":"https://apps.apple.com/br/app/waybee-student/id1418549753",
          "google_play_url":"https://play.google.com/store/apps/details?id=com.waybee.apps.student&hl=pt_BR&gl=US"
       },
@@ -443,7 +443,7 @@
          "id":"zg0ysyhI3mEVU6R9MFPb",
          "type":"mobile",
          "description":"Aplicativo que gerava diversos tipos de piadas de forma aleatória (Serve muito bem para quem é tiozão).",
-         "cover_image":"/assets/projects/mobile-projects/webp/relirk-android-appiadas.webp",
+         "cover_image":"/assets/projects/mobile-projects/relirk-android-appiadas.png",
          "github_url":"https://github.com/Relirk/fiap-android-appiadas",
          "creation_date":"",
          "title":"Appiadas"
@@ -452,7 +452,7 @@
          "id":"r8jFKWZoGPaAm6cFYs9f",
          "type":"mobile",
          "description":"<p>Experiência de Gestão de chaves PIX para o Mercado pago</p> <br> <p>Projeto estruturado com o uso de webview + ReactJS com arquitetura SSR.</p> <p>Utilização de Wrappers e APIs em NodeJS e Golang.</p>",
-         "cover_image":"/assets/projects/mobile-projects/webp/relirk_mp_pix_mobile.webp",
+         "cover_image":"/assets/projects/mobile-projects/relirk_mp_pix_mobile.png",
          "github_url":"",
          "creation_date":"",
          "apple_store_url":"https://apps.apple.com/br/app/mercado-pago-banco-digital/id925436649",
@@ -463,7 +463,7 @@
          "id":"gKltsRSVPYD29G1rA415",
          "type":"mobile",
          "description":"<p>Área de gestão para PIX, basicamente serve como um painel que gerencia todas as funcionalidades de PIX dentro do Mercado Pago, facilitando o seu acesso ao usuário.</p> <br> <p>Projeto estruturado com o uso de Wrappers em NodeJS servido o conteúdo de forma dinâmica para aplicações nativa Android e iOS</p> <p>Utilização de Wrappers e APIs em NodeJS e Golang.</p>",
-         "cover_image":"/assets/projects/mobile-projects/webp/relirk_mp_area_pix_mobile.webp",
+         "cover_image":"/assets/projects/mobile-projects/relirk_mp_area_pix_mobile.png",
          "github_url":"",
          "creation_date":"",
          "apple_store_url":"https://apps.apple.com/br/app/mercado-pago-banco-digital/id925436649",
@@ -474,7 +474,7 @@
          "id":"w2oPcwxCo318W1U5VMEn",
          "type":"mobile",
          "description": "<p>Primeira versão da experiência de Open Finance para o Mercado pago</p> <br> <p>Projeto estruturado com o uso de webview + ReactJS com arquitetura SSR.</p> <p>Utilização de Wrappers e APIs em NodeJS e Golang.</p>",
-         "cover_image":"/assets/projects/mobile-projects/webp/relirk_mp_area_pix_mobile.webp",
+         "cover_image":"/assets/projects/mobile-projects/relirk_mp_area_pix_mobile.png",
          "github_url":"",
          "creation_date":"",
          "apple_store_url":"https://apps.apple.com/br/app/mercado-pago-banco-digital/id925436649",
@@ -489,7 +489,7 @@
          "github_url":"",
          "cdn_url":"https://relirk-top-down-2d-game.surge.sh/",
          "description":"<p>Projeto realizado durante o curso Start Gamedev da empresa Crie seus jogos.<br><br> Durante o curso aprendemos a desenvolver algumas mecânicas para um jogo top down 2D, sendo elas: Tilesets, personagem, NPCs, sistema de crafting, sistema de farm, sistema de plantação, HUDs, sistema de pesca, sistema de construção, combate e sonorização.<br><br> Como features adicionais tomei a liberdade de acrescentar novas funcionalidades ao projeto, como: <ul><li>Barra de vide dinâmica e sistema de vida para o personagem;</li> <li>2 novas opções de ferramentas (picareta e espada);</li> <li>Balanceamento de dano para armas diferentes;</li> <li>Avançar dialogo através de tecla e não por clique na interface;</li> <li>Novo sistema de mineração.</li></ul></p>",
-         "cover_image":"/assets/projects/game-projects/webp/relirk-top-down-2d-game.webp",
+         "cover_image":"/assets/projects/game-projects/relirk-top-down-2d-game.png",
          "type":"game"
       },
       {
@@ -498,7 +498,7 @@
          "github_url":"",
          "cdn_url":"https://relirk-platformer-2d-game.surge.sh/",
          "description":"Sem descrição",
-         "cover_image":"/assets/projects/game-projects/webp/relirk-platformer-2d-game.webp",
+         "cover_image":"/assets/projects/game-projects/relirk-platformer-2d-game.png",
          "type":"game"
       },
       {
@@ -507,7 +507,7 @@
          "github_url":"",
          "cdn_url":"",
          "description":"Sem descrição",
-         "cover_image":"/assets/projects/game-projects/webp/relirk_hyper_casual_mobile_game.webp",
+         "cover_image":"/assets/projects/game-projects/relirk_hyper_casual_mobile_game.png",
          "type":"game"
       },
       {
@@ -516,7 +516,7 @@
          "github_url":"",
          "cdn_url":"",
          "description":"Sem descrição",
-         "cover_image":"/assets/projects/game-projects/webp/relirk_infinity_runner.webp",
+         "cover_image":"/assets/projects/game-projects/relirk_infinity_runner.png",
          "type":"game"
       },
       {
@@ -525,7 +525,7 @@
          "github_url":"",
          "cdn_url":"",
          "description":"Sem descrição",
-         "cover_image":"/assets/projects/game-projects/webp/relirk_metroidvania_platform_2d_game.webp",
+         "cover_image":"/assets/projects/game-projects/relirk_metroidvania_platform_2d_game.png",
          "type":"game"
       }
    ]

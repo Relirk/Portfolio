@@ -1,0 +1,161 @@
+.items {
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 28rem);
+  margin: 0 3rem;
+  --font: "Pixelify Sans", sans-serif;
+  --item-height: 16rem;
+  --light: #F9F9F9;
+  --primary: #ccff00;
+  --secondary: #111014;
+  --background-opacity: rgb(0 0 0 / 40%);
+}
+
+.item {
+  position: relative;
+  border-radius: 0.6rem;
+  margin: 1rem 0;
+  width: 100%;
+  color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.item:hover {
+  transform: scale(1.2);
+  position: relative;
+  z-index: 2;
+}
+
+.item:hover .image {
+  border: solid 3px var(--primary);
+}
+
+.item:hover .image_filter {
+  background-color: transparent;
+  border-bottom: none;
+}
+
+.item:hover .image_filter_text {
+  color: transparent;
+}
+
+.item:hover .content {
+  display: flex;
+  animation: showDown .5s forwards;
+  width: 98%;
+  height: 4rem;
+  z-index: -50;
+  position: absolute;
+  bottom: -3.8rem;
+  left: 1%;
+}
+
+.image {
+  cursor: pointer;
+  display: block;
+  height: var(--item-height);
+  width: 100%;
+  object-fit: cover;
+  border-radius: .6rem;
+}
+
+.lazy_load_image {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.image_filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--background-opacity);
+  border-bottom: solid 3px var(--primary);
+  height: var(--item-height);
+  width: 100%;
+  border-radius: .6rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s;
+}
+
+.image_filter_text {
+  color: var(--light);
+  text-align: center;
+  font-family: var(--font);
+  font-size: 1.2rem;
+  transition: .5s;
+}
+
+.title_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem auto;
+  --light: #F9F9F9;
+  --primary: #ccff00;
+  --third: #18161c
+  background-color: var(--third);
+  border-top: solid var(--primary);
+  border-bottom: solid var(--primary);
+}
+
+.title_content:nth-child(2) {
+  text-align: right;
+}
+
+.title_text {
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-family: var(--font);
+  font-weight: unset;
+  width: 21rem;
+  text-transform: capitalize;
+  position: relative;
+  color: var(--light);
+  margin: 0 3rem;
+}
+
+.title_text:hover {
+  color: var(--primary);
+}
+
+/* Item detail classes */
+.content{
+  background-color: var(--secondary);
+  display: none;
+  position: absolute;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 0 1rem 1rem;
+}
+
+@keyframes showDown {
+  from {
+    opacity: 0;
+    transform: translateY(-200%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Item detail classes */
+
+.display_visible {
+  display: grid;
+}
+
+.display_visible_text {
+  display: flex;
+}
+
+.display_none {
+  display: none;
+}

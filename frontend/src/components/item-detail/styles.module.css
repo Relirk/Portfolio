@@ -1,0 +1,42 @@
+.content_title {
+  --font: "Pixelify Sans", sans-serif;
+  --dark: #111014;
+  --light: #F9F9F9;
+  --primary: #ccff00;
+  --secondary: #24202a;
+  color: var(--light);
+  font-family: var(--font);
+  font-size: 0.8rem;
+  font-weight: unset;
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+
+.content_description {
+  color: var(--light);
+  font-family: var(--font);
+  margin-left: 1rem;
+  font-size: 0.6rem;
+}
+
+.link_more_info {
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: var(--dark);
+  padding: 0.5rem;
+  margin-right: 1rem;
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  animation: backgroundScale 1s .5s forwards;
+}
+
+@keyframes backgroundScale {
+  to {  
+    background-color: var(--primary);
+    transform: scale(1.1);
+  }
+}
