@@ -303,13 +303,11 @@
    "mobileProjects":[
       {
          "id":"3rcG28ZPcLaT2L4h978U",
-         "description":"Projeto de conclusão do Bootcamp da Rocketseat 2019 ",
+         "description":"<p>Projeto de conclusão do Bootcamp da Rocketseat 2019<br><br> O projeto consistia em criar um sistema de cadastro de clientes e agendamentos para a barbearia, foi criado um frontend em ReactJS, mobile em React Native e um backend em NodeJS + MongoDB. <br><br> O sisteme permitia com que o usuário cadastrasse um agendamento de corte, permitia o cadastro de usuários da barbearia, análise de horários disponíveis e consulta de agendamentos.</p>",
          "github_url":"https://github.com/Relirk/gobarber",
-         "google_play_url":"",
          "type":"mobile",
-         "creation_date":"",
+         "creation_date": "Feb 23 2020 10:00:00 AM",
          "cover_image":"/assets/projects/mobile-projects/relirk-gobarber-mobile.png",
-         "apple_store_url":"",
          "creation_year":"2019",
          "title":"Go Barber App"
       },
@@ -320,97 +318,92 @@
          "apple_store_url":"https://appadvice.com/app/waybee-driver/1418563640",
          "google_play_url":"https://play.google.com/store/apps/details?id=com.waybee.apps.driver&hl=pt_BR&gl=US",
          "type":"mobile",
-         "creation_date":"",
-         "description":"Aplicativo escolar para motoristas e páis de alunos"
+         "creation_date":"Sep 24 2019 10:00:00 AM",
+         "description":"<p>O Waybee Driver é um aplicativo desenvolvido para melhorar e qualificar todo o processo do transporte escolar. Com recursos modernos e inteligentes, ele traz ferramentas que auxiliam o trabalho dos motoristas e trazem mais segurança para as crianças e suas famílias.<br><br> Recursos para o motorista: <ul><li>Roteirização automática e flexível, que pode ser alterada pelo motorista sempre que necessário;</li> <li>Integração com Waze;</li> <li>Otimização de tempo no trajeto;</li> <li>Comunicação automática com os pais e alunos, informando os momentos de embarque e desembarque;</li> <li>Comunicação personalizada com as famílias, informando imprevistos ou novidades;</li> <li>Recebimento das mensalidades pelo aplicativo;</li><li>plataforma de benefícios.</li></ul></p>"
       },
       {
          "id":"C8YolYBdBkdLiCBc93wk",
          "title":"Ping-pong X",
          "cover_image":"/assets/projects/mobile-projects/relirk-android-pingpongx.png",
          "type":"mobile",
-         "creation_date":"",
-         "description":"Aplicativo com o objetivo de simular um placar de controle de pontos para tênis de mesa.",
+         "creation_date":"Sep 1 2020 10:00:00 AM",
+         "description":"<p>App de simulação de partidas (ilustrado o cenário de uma partida de tenis de mesa), aplicação de multiplas técnicas de intent | Disciplina de Android da FIAP ministrada em Agosto/Setembro de 2020</p>",
          "github_url":"https://github.com/Relirk/fiap-android-pingpongx"
       },
       {
          "id":"FwDHbtOOLOzGSVaWJ69e",
-         "description":"Aplicativo para compra e delivery de alimentos de food trucks, está versão do o app é destinada ao comprador/usuário comum",
+         "description":"<p>Aplicativo para compra e delivery de alimentos de food trucks em feiras organizadas <br><br> Está versão do o app é destinada ao comprador/usuário comum como comprador</p>",
          "cover_image":"/assets/projects/mobile-projects/relirk-vaptfood.png",
          "type":"mobile",
-         "creation_date":"",
+         "creation_date":"Mar 18 2018 10:00:00 AM",
          "title":"Vaptfood"
       },
       {
          "id":"GvTAAMIDJ9WiBDvkbFeL",
-         "description":"Aplicativo que simula uma pokedex de pokémon, aqui eu utilizei a api open source do pokemon e fiz pequenas edições para manipular o controle de detalhe e atributos do pokemon.",
+         "description":"<p>Aplicativo que simula uma pokédex de Pokémon.<br><br> Nesse projeto, eu utilizei a API open source do Pokémon e fiz pequenas edições para manipular o controle de detalhe e atributos dos pokémons. <br><br> O objetivo principal foi o estudo de web services e aprender a melhor forma de realizar testes no Android. Esse trabalho foi realizado na disciplina de Android da FIAP ministrada em Agosto/Setembro de 2020</p>",
          "github_url":"https://github.com/Relirk/fiap-android-pokedex",
          "cover_image":"/assets/projects/mobile-projects/relirk-android-pokemon.png",
          "title":"Pokedex",
-         "creation_date":"",
+         "creation_date":"Sep 18 2020 10:00:00 AM",
          "type":"mobile"
       },
       {
          "id":"ISN2GVWtiCT8yHGgxF8A",
          "cover_image":"/assets/projects/mobile-projects/relirk-android-imc.png",
-         "description":"Aplicativo que tem como objetivo calcular o IMC de um usuário com base em seu peso e sua altura.",
+         "description":"<p>Aplicativo que tem como objetivo calcular o IMC com base no peso e sua altura informados pelo usuário. <br><br> Esse trabalho foi realizado na disciplina de Android da FIAP ministrada em Agosto/Setembro de 2020</p>",
          "type":"mobile",
          "github_url":"https://github.com/Relirk/fiap-android-imc",
          "title":"Cálculo de IMC",
-         "creation_date":""
+         "creation_date":"Aug 27 2020 10:00:00 AM"
       },
       {
          "id":"Ks5LtnwNkalLoab4o63I",
          "github_url":"https://github.com/Relirk/fiap-android-lembretedecompras",
          "cover_image":"/assets/projects/mobile-projects/relirk-android-lembrete-de-compras.png",
          "title":"Lembrete de compras",
-         "description":"Aplicativo de lista de comprar, permite com que o usuário adicione items e gerencie da maneira que achar mais conveniente. O aplicativo utiliza de recursos nativos de armazenamento local para persistir a lista e garantir uma melhor performance.",
-         "creation_date":"",
+         "description":"<p>Aplicativo de lista de compras, permite com que o usuário adicione items e gerencie os itens da maneira que achar mais conveniente. <br><br>O aplicativo utiliza de recursos nativos de armazenamento local para persistir a lista e garantir uma melhor performance. Esse trabalho foi realizado na disciplina de Android da FIAP ministrada em Agosto/Setembro de 2020</p>",
+         "creation_date":"Sep 15 2020 10:00:00 AM",
          "type":"mobile"
       },
       {
          "id":"Q8vDqivjgBHi49TM0QPS",
          "cover_image":"/assets/projects/mobile-projects/relirk-vaptfood-food-truck.png",
          "title":"Vaptfood - Food Truck",
-         "description":"Aplicativo para compra e delivery de alimentos de food trucks, está versão do o app é destinada ao vendedor do Food Truck",
-         "creation_date":"",
+         "description":"<p>Aplicativo para compra e delivery de alimentos de food trucks em feiras organizadas <br><br> Está versão do o app é destinada ao vendedor do Food Truck</p>",
+         "creation_date":"Mar 19 2018 10:00:00 AM",
          "type":"mobile"
       },
       {
          "id":"VLns5yyk4QAMVvwt76q1",
          "github_url":"https://github.com/Relirk/nubank-clone-mobile",
-         "creation_date":"",
+         "creation_date":"Feb 23 2020 10:00:00 AM",
          "title":"Nubank App",
-         "description":"Clone da interface inicial do Nubank feito com React Native e animações",
+         "description":"<p>Clone da interface inicial do Nubank feito com React Native e animações. <br><br> Este trabalho foi baseado no estudo realizado pela Rocketseat através do vídeo 'Clonando interface do Nubank (+ ANIMAÇÕES) com React Native'.</p>",
          "type":"mobile",
-         "apple_store_url":"",
-         "cover_image":"/assets/projects/mobile-projects/relirk-nubank-mobile.png",
-         "google_play_url":""
+         "cover_image":"/assets/projects/mobile-projects/relirk-nubank-mobile.png"
       },
       {
          "id":"Wzg9HRa5kStlDSTnxn4V",
-         "creation_year":"2019",
+         "creation_date":"Jul 26 2020 10:00:00 AM",
          "title":"Uber Clone",
-         "apple_store_url":"",
-         "google_play_url":"",
          "github_url":"https://github.com/Relirk/uber-clone-mobile",
-         "description":"Clone da interface de rota do Uber feito com React Native e Google Maps",
+         "description":"<p>Clone da interface de trajeto da Uber feito com React Native e animações. <br><br> Este trabalho foi baseado no estudo realizado pela Rocketseat através do vídeo 'Clonando interface do Uber com React Native'.</p>",
          "cover_image":"/assets/projects/mobile-projects/relirk-uber-mobile.png",
          "type":"mobile"
       },
       {
          "id":"ZgNkOKSGaD2X6mFHiKnI",
-         "apple_store_url":"",
-         "description":"Aplicação React Native usando armazenamento offline pelo Realm e consumo de repositórios da API do Github",
+         "description":"<p>Aplicação React Native utilizando armazenamento offline pelo Realm DB e consumo de repositórios da API do Github <br><br> Este trabalho foi baseado no estudo realizado pela Rocketseat através do vídeo 'React Native + RealmDB: APP do zero + API do Github'.</p>",
          "title":"Github Repo Offline",
-         "google_play_url":"",
          "type":"mobile",
          "github_url":"https://github.com/Relirk/github-repo-realmdb",
-         "cover_image":"/assets/projects/mobile-projects/relirk-realm-react-native.png"
+         "cover_image":"/assets/projects/mobile-projects/relirk-realm-react-native.png",
+         "creation_date":"Jul 26 2020 10:00:00 AM"
       },
       {
          "id":"a8fkDtQTQq0Vp0RNw9nN",
          "title":"MKP MarketPlace",
-         "description":"O MarketPlace é o aplicativo que foi utilizado como meu projeto de conclusão de curso para o bacharelado em Ciência da Computação na USJT. Ele é um aplicativo Android focado totalmente em dar a melhor alternativa de compra para todo e qualquer tipo de usuário utilizando-se de algoritmos de recomendação e IA para criar uma boa base de escolhas com base no seu perfil.",
+         "description":"<p>O MarketPlace é o aplicativo que foi utilizado como meu projeto de conclusão de curso para o bacharelado em Ciência da Computação na USJT. <br><br> Ele é um aplicativo Android focado totalmente em dar a melhor alternativa de compra para todo e qualquer tipo de usuário utilizando-se de algoritmos de recomendação e IA para criar uma boa base de escolhas com base no seu perfil.</p>",
          "github_url":"https://github.com/GitHubMarketPlace/MarketPlace",
          "cover_image":"/assets/projects/mobile-projects/relirk-android-marketplace-usjt.png",
          "type":"mobile"
@@ -418,29 +411,25 @@
       {
          "id":"d3b82jplMCxryehW3XY7",
          "cover_image":"/assets/projects/mobile-projects/relirk-concreserv.png",
-         "google_play_url":"",
-         "description":"Aplicativo desenvolvido sob demanda, para envio, prospecção e manejo de propostas para venda de concreto da empresa Concreserv",
-         "apple_store_url":"",
+         "description":"<p>Aplicativo desenvolvido sob demanda, para envio, prospecção e manejo de propostas para venda de concreto da empresa Concreserv</p>",
          "title":"Concreserv",
-         "github_url":"",
          "type":"mobile"
       },
       {
          "id":"mfHKSSHF3EtGWIUA5awR",
          "google_play_url":"https://play.google.com/store/apps/details?id=br.net.colband.apps.colegiobandeirantes&hl=pt_BR&gl=US",
-         "description":"Após começarem a migração do aplicativo antigo para um modelo hibrido utilizando ReactJS, fui chamado a participar do desenvolvimento da primeira versão.",
+         "description":"<p>Após começarem a migração do aplicativo antigo para um modelo hibrido utilizando ReactJS, fui chamado a participar do desenvolvimento da primeira versão do app.</p>",
          "type":"mobile",
          "apple_store_url":"https://apps.apple.com/br/app/col%C3%A9gio-bandeirantes/id1067461270",
          "cover_image":"/assets/projects/mobile-projects/relirk-colegio-bandeirantes.png",
-         "title":"Colégio Bandeirantes.",
-         "github_url":""
+         "title":"Colégio Bandeirantes."
       },
       {
          "id":"p5cSo1oP3BisUpVZp2L1",
          "title":"Waybee Student",
-         "description":"Aplicativo escolar para estudantes",
+         "description":"<p>Waybee Student é uma poderosa ferramenta que conecta pais, alunos e escola, oferecendo recursos inteligentes e modernos que facilitam o acompanhamento da vida escolar.<br><br> Recursos para alunos: <ul><li>Visualização de notas e avaliações;</li> <li>Horário de aulas;</li> <li>Agenda e calendário;</li> <li>Visualização de comunicados e notícias da escola;</li> <li>Acompanhamento das faltas.</li></ul></p>",
          "type":"mobile",
-         "creation_date":"",
+         "creation_date":"Sep 24 2019 10:00:00 AM",
          "cover_image":"/assets/projects/mobile-projects/relirk-waybee-student.png",
          "apple_store_url":"https://apps.apple.com/br/app/waybee-student/id1418549753",
          "google_play_url":"https://play.google.com/store/apps/details?id=com.waybee.apps.student&hl=pt_BR&gl=US"
@@ -448,10 +437,10 @@
       {
          "id":"zg0ysyhI3mEVU6R9MFPb",
          "type":"mobile",
-         "description":"Aplicativo que gerava diversos tipos de piadas de forma aleatória (Serve muito bem para quem é tiozão).",
+         "description":"<p>Aplicativo que gera diversos tipos de piadas de forma aleatória (Serve muito bem para quem é tiozão). Disciplina de Android da FIAP ministrada em Agosto/Setembro de 2020</p>",
          "cover_image":"/assets/projects/mobile-projects/relirk-android-appiadas.png",
          "github_url":"https://github.com/Relirk/fiap-android-appiadas",
-         "creation_date":"",
+         "creation_date":"Aug 27 2020 10:00:00 AM",
          "title":"Appiadas"
       },
       {
@@ -459,8 +448,7 @@
          "type":"mobile",
          "description":"<p>Experiência de Gestão de chaves PIX para o Mercado pago</p> <br> <p>Projeto estruturado com o uso de webview + ReactJS com arquitetura SSR.</p> <p>Utilização de Wrappers e APIs em NodeJS e Golang.</p>",
          "cover_image":"/assets/projects/mobile-projects/relirk_mp_pix_mobile.png",
-         "github_url":"",
-         "creation_date":"",
+         "creation_date": "Jun 16 2023 10:00:00 AM",
          "apple_store_url":"https://apps.apple.com/br/app/mercado-pago-banco-digital/id925436649",
          "google_play_url":"https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=en&gl=BR",
          "title":"Gestão de chaves PIX"
@@ -470,8 +458,7 @@
          "type":"mobile",
          "description":"<p>Área de gestão para PIX, basicamente serve como um painel que gerencia todas as funcionalidades de PIX dentro do Mercado Pago, facilitando o seu acesso ao usuário.</p> <br> <p>Projeto estruturado com o uso de Wrappers em NodeJS servido o conteúdo de forma dinâmica para aplicações nativa Android e iOS</p> <p>Utilização de Wrappers e APIs em NodeJS e Golang.</p>",
          "cover_image":"/assets/projects/mobile-projects/relirk_mp_area_pix_mobile.png",
-         "github_url":"",
-         "creation_date":"",
+         "creation_date": "Jun 16 2023 10:00:00 AM",
          "apple_store_url":"https://apps.apple.com/br/app/mercado-pago-banco-digital/id925436649",
          "google_play_url":"https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=en&gl=BR",
          "title":"Área PIX"
@@ -482,7 +469,7 @@
          "description": "<p>Primeira versão da experiência de Open Finance para o Mercado pago</p> <br> <p>Projeto estruturado com o uso de webview + ReactJS com arquitetura SSR.</p> <p>Utilização de Wrappers e APIs em NodeJS e Golang.</p>",
          "cover_image":"/assets/projects/mobile-projects/relirk_mp_area_pix_mobile.png",
          "github_url":"",
-         "creation_date":"",
+         "creation_date": "May 12 2022 10:00:00 AM",
          "apple_store_url":"https://apps.apple.com/br/app/mercado-pago-banco-digital/id925436649",
          "google_play_url":"https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=en&gl=BR",
          "title":"Open Finance"
@@ -499,21 +486,21 @@
          "type":"game"
       },
       {
+         "id":"dACgM2TJmowg107yuJJf",
+         "title":"Metroidvania Platform 2D Game",
+         "github_url":"",
+         "cdn_url":"https://relirk-metroidvania-platform-2d-game.surge.sh/",
+         "description":"Sem descrição",
+         "cover_image":"/assets/projects/game-projects/relirk_metroidvania_platform_2d_game.png",
+         "type":"game"
+      },
+      {
          "id":"3tDXuksbCS5OoBOIVzP5",
          "title":"Platformer 2D Game",
          "github_url":"",
          "cdn_url":"https://relirk-platformer-2d-game.surge.sh/",
          "description":"Sem descrição",
          "cover_image":"/assets/projects/game-projects/relirk-platformer-2d-game.png",
-         "type":"game"
-      },
-      {
-         "id":"s0dIMruzkl4VZQLWFCoy",
-         "title":"Hyper Casual Mobile Game",
-         "github_url":"",
-         "cdn_url":"",
-         "description":"Sem descrição",
-         "cover_image":"/assets/projects/game-projects/relirk_hyper_casual_mobile_game.png",
          "type":"game"
       },
       {
@@ -526,12 +513,12 @@
          "type":"game"
       },
       {
-         "id":"dACgM2TJmowg107yuJJf",
-         "title":"Metroidvania Platform 2D Game",
+         "id":"s0dIMruzkl4VZQLWFCoy",
+         "title":"Hyper Casual Mobile Game",
          "github_url":"",
-         "cdn_url":"https://relirk-metroidvania-platform-2d-game.surge.sh/",
+         "cdn_url":"",
          "description":"Sem descrição",
-         "cover_image":"/assets/projects/game-projects/relirk_metroidvania_platform_2d_game.png",
+         "cover_image":"/assets/projects/game-projects/relirk_hyper_casual_mobile_game.png",
          "type":"game"
       }
    ]

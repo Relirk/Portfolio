@@ -36,7 +36,8 @@ export default function Modal(props: { customId: string; project: any; }) {
                 alt="Project modal preview"
                 width={300}
                 height={300}
-                quality={80}
+                quality={60}
+                loading="lazy"
                 placeholder="blur"
                 blurDataURL={placeholderLoadingImage} />
               <p>Realizado em {formattedDate}</p>

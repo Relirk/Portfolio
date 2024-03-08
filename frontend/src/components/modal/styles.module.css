@@ -85,9 +85,8 @@
 
 @media (min-width: 60em) {
   .modal_overlay .modal {
-    height: 75%;
+    height: 52%;
     margin: 6% auto;
-    /* max-height: 57em; */
     max-width: 66em;
     width: 85%;
   }
