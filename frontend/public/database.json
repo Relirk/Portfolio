@@ -520,6 +520,16 @@
          "description":"Sem descrição",
          "cover_image":"/assets/projects/game-projects/relirk_hyper_casual_mobile_game.png",
          "type":"game"
+      },
+      {
+         "id":"4Z9qP9iaU5ZjOBzfDyST",
+         "title":"Flappy Bird Clone",
+         "github_url":"",
+         "apk_download": "/assets/download/Flappy Bird.apk",
+         "creation_date":"Mar 13 2024 10:00:00 AM",
+         "description":"<p>Projeto realizado como forma de estudo de jogos em Android<br><br> A idéia era realizar uma pequena cópia do antigo app Flappy Bird<br><br> As features desenvolvidas foram: <ul><li>Salto do personagem;</li> <li>Tela de menu inicial;</li> <li>Sistema de pontuação;</li> <li>Play/Pause durante a partida;</li> <li>Sistema de medalhas (bronze, prata, outro e platina);</li><li>Animações customizadas.</li></ul></p>",
+         "cover_image":"/assets/projects/game-projects/relirk_flappy_bird_clone.png",
+         "type":"game"
       }
    ]
 }

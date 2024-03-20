@@ -20,6 +20,10 @@ export default function ModalActions(props: { project: any; }) {
       {project.cdn_url && (
         <a href={project.cdn_url} className={link_base} target="_blank">Veja Online</a>
       )}
+
+      {project.apk_download && (
+        <a href={project.apk_download} className={link_base} download>Baixar .apk</a>
+      )}
       
       {project.google_play_url && (
         <a href={project.google_play_url} className={link_base} target="_blank">Play Store</a>
